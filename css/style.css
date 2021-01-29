@@ -8,6 +8,7 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 .ayush3{
   cursor: pointer;
   color: #0a98c0;
@@ -15,6 +16,17 @@
   font-weight: 1000;
 }
 
+/* .vaishnavi1{
+  width: 250px;
+  height: 300px;
+} */
+
+.ayush5:hover{
+  padding: 10px;
+  transition: all 0.2s ease-in;
+  border-radius: 10%;
+ 
+}
 body {
   background: rgb(22, 22, 22);
   color: #444;
@@ -280,16 +292,17 @@ hr{
   border-radius: 20px;
 }
 
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
 
 /* Desktop Navigation */
 
-.main-nav {
-  /* Drop Down */
-  /* Deep Drop Down */
-}
+/* .main-nav {
+  Drop Down 
+   Deep Drop Down 
+} */
 
 .main-nav,
 .main-nav * {
@@ -776,10 +789,10 @@ hr{
 
 /* Portfolio Section
 --------------------------------*/
-.nabin-projects{
-width: 360px;
+/* .nabin-projects{
+width: 385px;
 height: 300px;
-}
+} */
 
 
 #portfolio {
@@ -820,12 +833,21 @@ height: 300px;
   position: relative;
   overflow: hidden;
   margin-bottom: 30px;
+  padding-bottom: 24px;
 }
 
 #portfolio .portfolio-item .portfolio-wrap {
   overflow: hidden;
   position: relative;
   margin: 0;
+  border-radius: 15px;
+  border: 2px solid white;
+  
+}
+#portfolio .portfolio-item .portfolio-wrap:hover {
+
+  border: 2px solid cyan;
+  
 }
 
 #portfolio .portfolio-item .portfolio-wrap:hover img {
@@ -917,10 +939,20 @@ height: 300px;
 
 #portfolio .portfolio-item .portfolio-wrap:hover {
   background: #282646;
+  margin: 10px 0px 0px 0px;
+  border-radius: 20px;
+  transform: scale(1.01);
+  transition: all 0.2s ease-in;
+  
 }
 
 #portfolio .portfolio-item .portfolio-wrap:hover .portfolio-info {
   opacity: 1;
+}
+
+#portfolio .portfolio-item .portfolio-wrap .portfolio-info:hover{
+padding-bottom: 20px;
+padding-top: 20px;
 }
 
 /* Testimonials Section
