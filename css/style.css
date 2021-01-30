@@ -16,10 +16,6 @@
   font-weight: 1000;
 }
 
-#particles-js{
-  height: 100%;
-
-
 /* .vaishnavi1{
   width: 250px;
   height: 300px;
@@ -30,7 +26,6 @@
   transition: all 0.2s ease-in;
   border-radius: 10%;
  
-
 }
 body {
   background: rgb(22, 22, 22);
@@ -43,7 +38,7 @@ a {
   transition: 0.5s;
 }
 #particles-js{
-  height: 650px;
+  height: 100%;
 }
 a:hover,
 a:active,
@@ -97,11 +92,11 @@ h6 {
   color: white;
 }
 /* Prelaoder */
-#intro .intro-info>h2:hover {
+#intro>div>div>div.col-md-6.intro-info.order-md-first.order-last>h2:hover {
   color: #1fad83;
 }
 
-#intro .intro-info>h2>span:hover {
+#intro>div>div>div.col-md-6.intro-info.order-md-first.order-last>h2>span:hover {
   color: aqua;
 }
 
