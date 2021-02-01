@@ -15,10 +15,10 @@
   font-size: 20px;
   font-weight: 1000;
 }
-body{
+/* body{
     margin-top:20px;
     background:#eee;
-}
+} */
 .aditya{
   padding-top: 120px;
 }
@@ -310,7 +310,7 @@ h6 {
 }
 
 #intro>div>div>div.col-md-6.intro-info.order-md-first.order-last>h2>span:hover {
-  color: aqua;
+  color: #10efff;
 }
 
 #preloader {
@@ -502,13 +502,14 @@ hr{
   border-radius: 4px;
   transition: 0.5s;
   color: #fff;
-  background: #1bb1dc;
+  background: #ffc75f;
   color: #fff;
+  border-radius: 30px;
 }
 
 #intro .intro-info .btn-get-started:hover,
 #intro .intro-info .btn-services:hover {
-  background: #9714d3;
+  /* background: #e0ba11; */
   border-radius: 30px;
 }
 
@@ -820,8 +821,8 @@ hr{
   width: 100%;
   -webkit-transform: scale(1.03);
   transform: scale(1.03);
-  border: 6px solid rgb(0, 217, 255);
-  border-radius: 10px;
+  border-bottom: 6px solid rgb(0, 217, 255);
+ 
 }
 
 #about .about-img::before {
