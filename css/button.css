@@ -93,3 +93,474 @@
     bottom: 100%;
   }
 }
+
+
+/* animation  below carousel 
+
+
+/* animation in  place of telent to shine */
+
+/* :: 8.0 Hero Area CSS */
+.welcome-area {
+  position: relative;
+  z-index: 1;
+}
+
+.welcome-area .icon-scroll {
+  width: 26px;
+  height: 39px;
+  position: absolute;
+  z-index: 999999;
+  left: 50%;
+  bottom: 40px;
+  margin-left: -13px;
+  -webkit-box-shadow: inset 0 0 0 2px #ffffff;
+  box-shadow: inset 0 0 0 2px #ffffff;
+  border-radius: 25px;
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+.welcome-area .icon-scroll::before {
+  position: absolute;
+  z-index: 999999;
+  content: '';
+  width: 6px;
+  height: 6px;
+  background: #ffffff;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  top: 8px;
+  border-radius: 4px;
+  -webkit-animation: iconScroll linear 1200ms infinite;
+  animation: iconScroll linear 1200ms infinite;
+}
+
+@-webkit-keyframes iconScroll {
+  0% {
+    top: 8px;
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+    top: 23px;
+  }
+
+  100% {
+    top: 8px;
+    opacity: 0;
+  }
+}
+
+@keyframes iconScroll {
+  0% {
+    top: 8px;
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+    top: 23px;
+  }
+
+  100% {
+    top: 8px;
+    opacity: 0;
+  }
+}
+
+.welcome-slides {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.welcome-slides .owl-prev,
+.welcome-slides .owl-next {
+  -webkit-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  transition-duration: 500ms;
+  border-radius: 50%;
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  top: 50%;
+  left: 70px;
+  margin-top: -33px;
+  z-index: 10;
+  text-align: center;
+  line-height: 44px;
+  border: 2px solid #9293bc;
+  color: #9293bc;
+  font-size: 34px;
+}
+
+.welcome-slides .owl-prev:hover,
+.welcome-slides .owl-prev:focus,
+.welcome-slides .owl-next:hover,
+.welcome-slides .owl-next:focus {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #000000;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+  .welcome-slides .owl-prev,
+  .welcome-slides .owl-next {
+    left: 30px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+
+  .welcome-slides .owl-prev,
+  .welcome-slides .owl-next {
+    width: 40px;
+    left: 15px;
+    height: 40px;
+    font-size: 18px;
+    line-height: 38px;
+  }
+}
+
+.welcome-slides .owl-next {
+  left: auto;
+  right: 70px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .welcome-slides .owl-next {
+    right: 30px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .welcome-slides .owl-next {
+    right: 15px;
+  }
+}
+
+.single-welcome-slide {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100vh !important;
+  background-color: #fff;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .single-welcome-slide {
+    height: 800px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .single-welcome-slide {
+    height: 800px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .single-welcome-slide {
+    height: 700px;
+  }
+}
+
+.single-welcome-slide .welcome-text {
+  position: relative;
+  z-index: 1;
+}
+
+.single-welcome-slide .welcome-text h2 {
+  position: relative;
+  z-index: 1;
+  font-weight: 700;
+  font-size: 90px;
+  /* text-transform: uppercase; */
+  display: block;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .single-welcome-slide .welcome-text h2 {
+    font-size: 60px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .single-welcome-slide .welcome-text h2 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .single-welcome-slide .welcome-text h2 {
+    font-size: 42px;
+  }
+}
+
+.single-welcome-slide .welcome-text h2::after {
+  position: absolute;
+  content: "";
+  height: 23px;
+  width: 400px;
+  top: 67px;
+  right: 5px;
+  z-index: -1;
+  background-image: -webkit-linear-gradient(120deg, #48C5BF 24%, #228bc3bf 43%, #9F3869 77%);
+  background-image: -ms-linear-gradient(120deg, #48C5BF 24%, #228bc3bf 43%, #9F3869 77%);
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .single-welcome-slide .welcome-text h2::after {
+    top: 40px;
+    height: 15px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .single-welcome-slide .welcome-text h2::after {
+    top: 45px;
+    height: 20px;
+    right: 0;
+    width: 240px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .single-welcome-slide .welcome-text h2::after {
+    top: 20px;
+  }
+}
+
+.single-welcome-slide .welcome-text h6 {
+  color: #ffffff;
+  margin-bottom: 50px;
+  /* text-transform: uppercase; */
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 767px) {
+  .single-welcome-slide .welcome-text h6 {
+    font-size: 14px;
+  }
+}
+
+.single-welcome-slide .welcome-text .hero-mail-contact {
+  color: #ffffff;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.single-welcome-slide .welcome-text .hero-mail-contact:hover,
+.single-welcome-slide .welcome-text .hero-mail-contact:focus {
+  color: #48C5BF;
+}
+
+.single-welcome-slide .welcome-text-two {
+  position: relative;
+  z-index: 1;
+  letter-spacing: 0.5px;
+}
+
+.single-welcome-slide .welcome-text-two h5 {
+  /* font-size: 40px; */
+  color: #ffffff;
+  /* text-transform: uppercase; */
+  letter-spacing: 0.5px;
+  /* font-weight: 700;  */
+}
+
+@media only screen and (max-width: 767px) {
+  .single-welcome-slide .welcome-text-two h5 {
+    font-size: 15px;
+  }
+}
+
+.single-welcome-slide .welcome-text-two h2 {
+  font-size: 85px;
+  color: #ffffff;
+  letter-spacing: 2.5px;
+  /* text-transform: uppercase; */
+  /*background-image: -webkit-linear-gradient(120deg, #48C5BF 24%, #228bc3bf 43%,#9F3869 77%);*/
+  font-weight: 600;
+}
+
+.single-welcome-slide .welcome-text-two span {
+  background: linear-gradient(to right, #9A3D72 0%, #228BC4 58%, #2FA9AB 80%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .single-welcome-slide .welcome-text-two h2 {
+    font-size: 62px;
+  }
+}
+
+@media only screen and (min-width: 475px) and (max-width: 768px) {
+  .single-welcome-slide .welcome-text-two h2 {
+    font-size: 55px;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .single-welcome-slide .welcome-text-two h2 {
+    font-size: 14vw;
+  }
+}
+
+
+.single-welcome-slide .welcome-text-two .event-meta {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 50px;
+}
+
+.single-welcome-slide .welcome-text-two .event-meta a {
+  color: #ffffff;
+  margin-right: 40px;
+
+}
+
+@media only screen and (max-width: 767px) {
+  .single-welcome-slide .welcome-text-two .event-meta a {
+    margin-right: 15px;
+    font-size: 15px;
+  }
+}
+
+.single-welcome-slide .welcome-text-two .event-meta a i {
+  margin-right: 5px;
+}
+
+/* Devfolio Button */
+
+#devfolio-apply-now {
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  align-items: center;
+  background-color: #3770FF;
+  border-radius: 3px;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px 20px;
+  text-align: center;
+  text-transform: none;
+  text-align: center;
+  display: inline-block;
+  /*background-color:-webkit-linear-gradient(120deg, #48C5BF 24%, #228bc3bf 43%,#9F3869 77%);*/
+}
+
+#devfolio-apply-now:not([disabled]) {
+  cursor: pointer;
+}
+
+#devfolio-apply-now:hover {
+  background-color: #2954BF !important;
+}
+
+#devfolio-apply-now .logo {
+  /* Please keep the color of Devfolio logo mark either whit
+                e (#FFFFFF) or black (#000000) */
+  fill: white;
+}
+
+
+/* animation in  place of telent to shine */
+
+
+.bg-overlay {
+  position: relative;
+  z-index: 1;
+}
+
+.bg-overlay::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #191127;
+}
+
+.bg-gradient-overlay {
+  position: relative;
+  z-index: 1;
+}
+
+.bg-gradient-overlay::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: #c63fa4;
+  background-image: -moz-linear-gradient(240deg, #9F3868 0%, #48C5BF 100%);
+  background-image: -webkit-linear-gradient(240deg, #9F3868 0%, #48C5BF 100%);
+  background-image: -ms-linear-gradient(240deg, #9F3868 0%, #48C5BF 100%);
+  opacity: 0.9;
+}
+
+.bg-gradient-overlay-2 {
+  position: relative;
+  z-index: 1;
+}
+
+.bg-gradient-overlay-2::after {
+  border-radius: 10px;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.6);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.8)), color-stop(30%, rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0)));
+  background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0) 100%);
+  background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0) 100%);
+}
+
+.bg-img {
+  background-position: center center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+.jarallax {
+  position: relative;
+  z-index: 0;
+}
+
+.jarallax .jarallax-img {
+  position: absolute;
+  object-fit: cover;
+  font-family: 'object-fit: cover';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
