@@ -9,9 +9,10 @@
 # General
 --------------------------------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 .ayush3{
   cursor: pointer;
-  color: #0a98c0;
+ 
   font-size: 20px;
   font-weight: 1000;
 }
@@ -283,7 +284,7 @@ h6 {
 .back-to-top {
   position: fixed;
   display: none;
-  background: #1bb1dc;
+  background:#ffc75f;
   color: #fff;
   width: 44px;
   height: 44px;
@@ -387,7 +388,7 @@ hr{
 }
 
 #topbar .social-links a:hover {
-  color: #1bb1dc;
+  color: #ffc75f;
 }
 
 #topbar .social-links a:first-child {
@@ -435,13 +436,15 @@ hr{
   text-transform: uppercase;
 }
 #header .logo h1 a:hover{
-  color: #07f7ff;
+  transform: scale(1.1);
+  color: darkorange;
   font-weight: bold;
   text-decoration: none;
 }
 #header .logo h1 a {
   color: #ffc75f;
   font-weight: bold;
+
   text-decoration: none;
 }
 
@@ -553,7 +556,7 @@ hr{
 .main-nav a:hover,
 .main-nav .active>a,
 .main-nav li:hover>a {
-  color: #1bb1dc;
+  color: #ffc75f;
   text-decoration: none;
 }
 
@@ -821,7 +824,7 @@ hr{
   width: 100%;
   -webkit-transform: scale(1.03);
   transform: scale(1.03);
-  border-bottom: 6px solid rgb(0, 217, 255);
+  border-bottom: 6px solid #ffc75f;
  
 }
 
@@ -1562,7 +1565,7 @@ padding-top: 20px;
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #0a98c0;
+  background: #ffc75f;
   color: #fff;
 }
 
