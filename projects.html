@@ -70,6 +70,7 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/button.css">
   <style>
     .display-4 {
       font-family: 'Roboto', sans-serif;
@@ -102,7 +103,7 @@
 
             <div class="logo float-left">
                 <!-- Uncomment below if you prefer to use an image logo -->
-                <h1 class="text-success prob-state1"><a href="#intro" class="scrollto ">VIBHAV</a></h1>
+                <h1 class="text-success "><a href="/index.html#intro" class="scrollto prob-state1">VIBHAV</a></h1>
                 <!-- <a href="#header" class="scrollto"><img src="img/logo.png" alt="" class="img-fluid"></a> -->
             </div>
      
@@ -111,22 +112,32 @@
         <ul>
           <li class="active"><a href="index.html">Home</a></li>
           <li><a href="/index.html#about">About Us</a></li>
-          <li><a href="team.html">Our Team</a></li>
-          <li><a href="#">Alumni</a></li>
-          <li><a href="internexperience.html">Intern Experiences</a></li>
 
-          <li><a href="#team"></a></li>
+          <li class="drop-down"><a href="">Our Team</a>
+            <ul>
+
+
+              <li><a href="team.html">Our Team</a></li>
+              <li><a href="internexperience.html">Intern Experiences</a></li>
+              <li><a href="alumni.html">Alumni</a></li>
+
+
+
+            </ul>
+          </li>
+
+  
           <li class="drop-down"><a href="">Our Work</a>
             <ul>
 
 
-              <li><a href="#">Projects</a></li>
+              <li><a href="projects.html">Projects</a></li>
               <li><a href="#">Workshops</a></li>
               <li><a href="#">Events</a></li>
 
             </ul>
           </li>
-          <li><a href="#footer">Contact Us</a></li>
+          <li><a href="/index.html#footer">Contact Us</a></li>
 
         </ul>
       </nav><!-- .main-nav -->
@@ -371,12 +382,8 @@
 
   <!--material layout cards-->
 
-
-  <!--==========================
-    Footer
-  ============================-->
   <footer id="footer" class="section-bg bg-dark">
-    <div class="footer-top">
+    <!-- <div class="footer-top">
       <div class="container">
 
         <div class="row">
@@ -405,10 +412,10 @@
 
                   <a href="https://www.instagram.com/team_vibhav/" class="instagram"><i class="fa fa-instagram"></i></a>
                   <a href="https://www.facebook.com/teamvibhavece" class="facebook"><i class="fa fa-facebook"></i></a>
+
                   <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
                   <a href="https://youtube.com/channel/UCt8W-_urFuy3dqulfQvk8fQ" class="instagram"><i
                       class="fa fa-youtube"></i></a>
-
                 </div>
 
               </div>
@@ -423,7 +430,7 @@
 
               <h4>Send us a message</h4>
 
-              <form action="" method="post" role="form" class="contactForm">
+              <form action="https://formspree.io/f/mvovygen" method="POST" role="form" class="contactForm">
                 <div class="form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
                     data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
@@ -448,8 +455,7 @@
                 <div id="sendmessage">Your message has been sent. Thank you!</div>
                 <div id="errormessage"></div>
 
-                <div class="text-center"><button type="submit" title="Send Message">Send
-                    Message</button></div>
+                <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div>
               </form>
             </div>
 
@@ -460,7 +466,7 @@
         </div>
 
       </div>
-    </div>
+    </div> -->
 
     <div class="container bg-dark">
       <div class="copyright text-light">
@@ -477,6 +483,7 @@
       </div>
     </div>
   </footer><!-- #footer -->
+
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
   <!-- Uncomment below i you want to use a preloader -->
