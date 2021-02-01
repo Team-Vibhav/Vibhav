@@ -1,13 +1,14 @@
 .prob-state1{
   position: relative;
   display: inline-block;
-  padding: 20px 50px;
+  padding: 10px 10px;
   color: #ffc75f;
   font-size: large;
   text-decoration: none;
   overflow: hidden;
   cursor: pointer;
   transition: 0.5s;
+  border-radius: 10px;
 }
 
 .prob-state1:hover{
@@ -190,6 +191,7 @@
     bottom: 100%;
   }
 }
+
 
 
 /* animation  below carousel 
@@ -661,3 +663,4 @@
   height: 100%;
   z-index: -1;
 }
+
