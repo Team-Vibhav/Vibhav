@@ -23,6 +23,16 @@
 .aditya{
   padding-top: 120px;
 }
+body > section > div > div.container.h-100 > div > div > div > div > h3{
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 2rem;
+}
+body > section > div > div.container.h-100 > div > div > div > div > h3:hover{
+  color: #ffc75f;
+  cursor: pointer;
+  
+}
 .blog-page .single_post {
     -webkit-transition: all .4s ease;
     transition: all .4s ease
