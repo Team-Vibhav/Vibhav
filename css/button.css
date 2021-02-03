@@ -206,6 +206,7 @@
   z-index: 1;
 }
 
+
 .welcome-area .icon-scroll {
   width: 26px;
   height: 39px;
@@ -237,6 +238,8 @@
   -webkit-animation: iconScroll linear 1200ms infinite;
   animation: iconScroll linear 1200ms infinite;
 }
+
+
 
 @-webkit-keyframes iconScroll {
   0% {
@@ -665,6 +668,96 @@
   z-index: -1;
 }
 
+
+/*Neon Text*/
+.site-title {
+  text-align: center;
+  font-size: 1rem;
+  margin: 20px 0 20px 0;
+  color: #cde98c
+}
+
+
+a {
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.site-title a {
+  font-size: 1em;
+  color: #ffc75f;
+  font-family: 'Roboto', sans-serif;
+}
+
+.site-title a {
+  -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon2 1.5s ease-in-out infinite alternate;
+  animation: neon2 1.5s ease-in-out infinite alternate;
+}
+/*glow*/
+@keyframes neon2 {
+  from {
+    text-shadow: 0 0 10px #ffc75f, 0 0 20px #ffc75f, 0 0 30px #ffc75f, 0 0 40px #ffc75f, 0 0 70px #ffc75f, 0 0 80px #ffc75f, 0 0 100px #ffc75f, 0 0 150px #ffc75f;
+  }
+  to {
+    text-shadow: 0 0 5px #ffc75f, 0 0 10px #ffc75f, 0 0 15px #ffc75f, 0 0 20px #ffc75f, 0 0 35px #ffc75f, 0 0 40px #ffc75f, 0 0 50px #ffc75f, 0 0 75px #ffc75f;
+  }
+}
+
+/*webkit glow*/
+@-webkit-keyframes neon2 {
+  from {
+    text-shadow: 0 0 10px #ffc75f, 0 0 20px #ffc75f, 0 0 30px #ffc75f, 0 0 40px #ffc75f, 0 0 70px #ffc75f, 0 0 80px #ffc75f, 0 0 100px #ffc75f, 0 0 150px #ffc75f;
+  }
+  to {
+    text-shadow: 0 0 5px #ffc75f, 0 0 10px #ffc75f, 0 0 15px #ffc75f, 0 0 20px #ffc75f, 0 0 35px #ffc75f, 0 0 40px #ffc75f, 0 0 50px #ffc75f, 0 0 75px #ffc75f;
+  }
+}
+
+/*moz glow*/
+@-moz-keyframes neon2 {
+  from {
+    text-shadow: 0 0 10px #ffc75f, 0 0 20px #ffc75f, 0 0 30px #ffc75f, 0 0 40px #ffc75f, 0 0 70px #ffc75f, 0 0 80px #ffc75f, 0 0 100px #ffc75f, 0 0 150px #ffc75f;
+  }
+  to {
+    text-shadow: 0 0 5px #ffc75f, 0 0 10px #ffc75f, 0 0 15px #ffc75f, 0 0 20px #ffc75f, 0 0 35px #ffc75f, 0 0 40px #ffc75f, 0 0 50px #ffc75f, 0 0 75px #ffc75f;
+  }
+}
+
+
+/* beyond infinity animation */
+@keyframes typing { from { width: 0; } }
+@keyframes caret { 50% { border-color: transparent; } }
+
+.typing-text{
+font-family: monospace; 
+color: #f2f8a4;
+width: 16ch;
+border-right: .08em solid;
+overflow: hidden;
+font-size: 3em;
+white-space: nowrap;
+animation: typing 3s steps(17, end), caret .5s step-end infinite;
+}
+
+
+@media (max-width: 768px) {
+  .typing-text {
+    font-size: 1.5em;
+  }
+
+}
+@media (max-width: 991px) {
+  .typing-text {
+    font-size: 2em;
+  }
+
+}
+
+.handw{
+  height: 50px;
+}
 .btncolor{
   
   background-color:#0A98C0;
