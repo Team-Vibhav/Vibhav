@@ -680,3 +680,8 @@ animation: typing 3s steps(17, end), caret .5s step-end infinite;
   animation: 0.5s draw linear forwards;
 
 }
+
+/* Material cards Padding */
+.Mat-Card-Pad{
+  padding-left: 12px;
+}
