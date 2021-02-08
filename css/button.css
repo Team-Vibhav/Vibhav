@@ -596,12 +596,12 @@ a {
 .typing-text{
 font-family: monospace; 
 color: #f2f8a4;
-width: 16ch;
+width: 18ch;
 border-right: .08em solid;
 overflow: hidden;
 font-size: 3em;
 white-space: nowrap;
-animation: typing 3s steps(17, end), caret .5s step-end infinite;
+animation: typing 3s steps(18, end), caret .5s step-end infinite;
 }
 
 
@@ -679,4 +679,9 @@ animation: typing 3s steps(17, end), caret .5s step-end infinite;
   -webkit-animation: 0.5s draw linear forwards;
   animation: 0.5s draw linear forwards;
 
+}
+
+/* Material cards Padding */
+.Mat-Card-Pad{
+  padding-left: 12px;
 }
