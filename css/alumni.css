@@ -24,6 +24,7 @@
   margin: 10% 13%;
    }
  }
+
 .card__collection {
   position: relative;
   top:20px;
@@ -33,6 +34,11 @@
   justify-content: center;
   font-family: "Do Hyeon", sans-serif;
   overflow: hidden;
+}
+@media (max-width:700px) {
+  .card__collection .cards {
+    margin:20px auto !important;
+  }
 }
 .card__collection .cards {
   width: 300px;
@@ -46,6 +52,7 @@
   background-position: center;
   margin: 20px;
 }
+
 .card__collection .cards--two {
   position: relative;
   backface-visibility: hidden;
