@@ -455,7 +455,7 @@ hr{
 }
 #header .logo h1 a:hover{
   transform: scale(1.1);
-  color: rgb(0, 0, 0);
+  color: rgb(238, 255, 2);
   font-weight: bold;
   text-decoration: none;
 }
