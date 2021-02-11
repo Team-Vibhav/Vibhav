@@ -737,9 +737,7 @@ animation: typing 3s steps(18, end), caret .5s step-end infinite;
   left: 50%;
   transform: translate(-50%, -50%);
 
-
-/* Material cards Padding */
+}
 .Mat-Card-Pad{
   padding-left: 12px;
-
 }
