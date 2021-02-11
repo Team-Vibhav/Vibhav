@@ -455,7 +455,7 @@ hr{
 }
 #header .logo h1 a:hover{
   transform: scale(1.1);
-  color: rgb(0, 0, 0);
+  color: rgb(238, 255, 2);
   font-weight: bold;
   text-decoration: none;
 }
@@ -1756,11 +1756,11 @@ padding-top: 20px;
 }
 
 #footer .credits a {
-  color: #1bb1dc;
+  color: #ffc404;
 }
 
 #footer .credits a:hover {
-  color: #0a98c0;
+  color: #dca91b;
 }
 
 /*--------------------------------------------------------------
