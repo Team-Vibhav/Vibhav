@@ -741,3 +741,9 @@ animation: typing 3s steps(18, end), caret .5s step-end infinite;
 .Mat-Card-Pad{
   padding-left: 12px;
 }
+
+/* matetial google card font */
+
+.cardFont{
+ font-size: 1.3rem;
+}
