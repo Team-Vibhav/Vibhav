@@ -854,7 +854,7 @@ hr{
   height: 92%;
   z-index: -1;
   content: '';
-  background-color: #131313;
+  background-color: rgb(22, 22, 22);
   transition: .5s;
 }
 
@@ -866,7 +866,7 @@ hr{
   height: 92%;
   z-index: -1;
   content: '';
-  background-color:  #131313;
+  background-color:  rgb(22, 22, 22);
   transition: .5s;
 }
 
