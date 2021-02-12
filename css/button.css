@@ -112,7 +112,7 @@
 
 
 
-/* animation  below carousel 
+/* animation  below carousel
 
 
 /* animation in  place of telent to shine */
@@ -479,7 +479,7 @@
   top: 0;
   left: 0;
   z-index: -1;
-  background-color: #191127;
+  background-color: #000;
 }
 
 .bg-gradient-overlay {
@@ -623,7 +623,7 @@ a {
 }
 
 .typing-text{
-font-family: monospace; 
+font-family: monospace;
 color: #f2f8a4;
 width: 18ch;
 border-right: .08em solid;
@@ -631,7 +631,7 @@ overflow: hidden;
 font-size: 3em;
 white-space: nowrap;
 animation: typing 3s steps(18, end), caret .5s step-end infinite;
->>>>>>> upstream/main
+
 }
 
 
