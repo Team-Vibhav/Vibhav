@@ -631,7 +631,7 @@ overflow: hidden;
 font-size: 3em;
 white-space: nowrap;
 animation: typing 3s steps(18, end), caret .5s step-end infinite;
->>>>>>> upstream/main
+
 }
 
 
@@ -740,4 +740,9 @@ animation: typing 3s steps(18, end), caret .5s step-end infinite;
 }
 .Mat-Card-Pad{
   padding-left: 12px;
+}
+
+/*project description*/
+.text-project{
+  font-size: small;
 }
