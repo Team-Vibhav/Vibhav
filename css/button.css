@@ -742,4 +742,7 @@ animation: typing 3s steps(18, end), caret .5s step-end infinite;
   padding-left: 12px;
 }
 
-/* matetial google card font */
+/*project description*/
+.text-project{
+  font-size: small;
+}
