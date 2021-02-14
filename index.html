@@ -20,6 +20,8 @@
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700"
     rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style.css" />
 
   <!-- Bootstrap CSS File -->
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -34,12 +36,13 @@
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
+
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="css/button.css">
 </head>
 
-<body>
+<body class="">
   <!--==========================
   Header
   ============================-->
@@ -97,16 +100,32 @@
             </ul>
           </li>
           <li><a href="#footer">Contact Us</a></li>
-
+          <li class="toggle-btn">Toggle Mode
+            <label class="switch btn_d_m">
+            <input type="checkbox" onclick="lm_function()">
+            <span class="slider round"></span>
+            </label>
+          </li>
         </ul>
       </nav><!-- .main-nav -->
 
+      <script type="text/javascript">
+        function lm_function(){
+          document.body.classList.toggle('dark-mode');
+      }
+      </script>
     </div>
   </header><!-- #header -->
   <header>
     <div class="mid">
-      <video autoplay muted loop>
-        <source class="embed-responsive" src="img/1.mp4" type="video/mp4">
+
+      <div onclick="change() ">
+        <i  id="btn"class="fa fa-volume-up my-float"></i>
+
+      </div>
+
+      <video id="media" autoplay loop img-fluid>
+        <source class="embed-responsive media" src="img/2.mp4" type="video/mp4">
       </video>
     </div>
   </header>
@@ -279,7 +298,7 @@
         </div>
 
       </div>
-    </section><!-- #services --> -->
+    </section><!-- #services -->
 
     <!--==========================
       Why Us Section
@@ -382,9 +401,8 @@
         <div class="row">
           <div class="col-lg-9 text-center text-lg-left">
             <h3 class="cta-title">Want to join us?</h3>
-            <p class="cta-text"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-              anim id est laborum.</p>
+            <p class="cta-text"> Join us to be the part of the best team of Nimbus and explore with us new
+              heights of knowledge and technology. Click on the button to fill the required google form.</p>
           </div>
           <div class="col-lg-3 cta-btn-container text-center">
             <a class="align-middle prob-state "
@@ -401,49 +419,29 @@
     ============================-->
     <section id="features">
       <div class="container">
-
+        <p class="glitch text-center">
+          Timeline
+        </p>
+        <div class="glitch1 mt-0">Coming Soon</div>
+        <div class="scanlines"></div>
         <div class="row feature-item">
-          <div class="col-lg-6 wow fadeInUp">
+          <!-- <div class="col-lg-6 wow fadeInUp">
             <img src="img/features-1.svg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0">
-            <h4>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h4>
-            <p>
-              Ipsum in aspernatur ut possimus sint. Quia omnis est occaecati possimus ea. Quas molestiae perspiciatis
-              occaecati qui rerum. Deleniti quod porro sed quisquam saepe. Numquam mollitia recusandae non ad at et a.
-            </p>
-            <p>
-              Ad vitae recusandae odit possimus. Quaerat cum ipsum corrupti. Odit qui asperiores ea corporis deserunt
-              veritatis quidem expedita perferendis. Qui rerum eligendi ex doloribus quia sit. Porro rerum eum eum.
-            </p>
-          </div>
-        </div>
+          </div> -->
 
-        <div class="row feature-item mt-5 pt-5">
-          <div class="col-lg-6 wow fadeInUp order-1 order-lg-2">
-            <img src="img/features-2.svg" class="img-fluid" alt="">
-          </div>
 
-          <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
-            <h4>Neque saepe temporibus repellat ea ipsum et. Id vel et quia tempora facere reprehenderit.</h4>
-            <p>
-              Delectus alias ut incidunt delectus nam placeat in consequatur. Sed cupiditate quia ea quis. Voluptas nemo
-              qui aut distinctio. Cumque fugit earum est quam officiis numquam. Ducimus corporis autem at blanditiis
-              beatae incidunt sunt.
-            </p>
-            <p>
-              Voluptas saepe natus quidem blanditiis. Non sunt impedit voluptas mollitia beatae. Qui esse molestias.
-              Laudantium libero nisi vitae debitis. Dolorem cupiditate est perferendis iusto.
-            </p>
-            <p>
-              Eum quia in. Magni quas ipsum a. Quis ex voluptatem inventore sint quia modi. Numquam est aut fuga
-              mollitia exercitationem nam accusantium provident quia.
-            </p>
+          <div class="row feature-item mt-5 pt-5">
+            <!-- <div class="col-lg-6 wow fadeInUp order-1 order-lg-2">
+              <img src="img/features-2.svg" class="img-fluid" alt="">
+            </div> -->
+
+            <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
+
+            </div>
+
           </div>
 
         </div>
-
-      </div>
     </section><!-- #about -->
 
 
@@ -510,16 +508,17 @@
 
 
       </div>
-    </section><!-- #testimonials --> -->
+    </section><!-- #testimonials -->
 
     <!--==========================
       Team Section
     ============================-->
-    <section id="team" class="section-bg bg-secondary">
+    <hr class=" w-100 " style="height:2px;border-width:0;color:gray;background-color:gray">
+    <section id="team">
       <div class="container">
         <div class="section-header">
-          <h3>Core-Coordinators</h3>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+          <h3 class="text-light"> Core-Coordinators</h3>
+          <!-- <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p> -->
         </div>
 
         <div class="row justify-content-center ">
@@ -592,9 +591,9 @@
         </div>
 
       </div>
-    </section><!-- #clients --> -->
+    </section><!-- #clients -->
 
-
+    <hr class=" w-100 " style="height:2px;border-width:0;color:gray;background-color:gray">
     <!--==========================
       Frequently Asked Questions Section
     ============================-->
@@ -602,84 +601,101 @@
       <div class="container">
         <header class="section-header">
           <h3 class="text-light">Frequently Asked Questions</h3>
-          <p class="text-light">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-          </p>
+          <!-- <p class="text-light">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+          </p> -->
         </header>
 
         <ul id="faq-list" class="wow fadeInUp">
           <li>
-            <a data-toggle="collapse" class="collapsed  text-light" href="#faq1">Non consectetur a erat nam at lectus
-              urna duis? <i class="ion-android-remove"></i></a>
+            <a data-toggle="collapse" class="collapsed  text-light" href="#faq1">Can the students from another branch
+              join Team Vibhav? <i class="ion-android-remove"></i></a>
             <div id="faq1" class="collapse" data-parent="#faq-list">
               <p class="text-light">
-                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur
-                gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                Yes, though the majority of Team Vibhav is from Electronic branch but we do have people from other
+                branches like Computer Science , Electrical and Civil Engineering as well.
               </p>
             </div>
           </li>
 
           <li>
-            <a data-toggle="collapse" href="#faq2" class="collapsed  text-light">Feugiat scelerisque varius morbi enim
-              nunc faucibus
-              a pellentesque? <i class="ion-android-remove"></i></a>
+            <a data-toggle="collapse" href="#faq2" class="collapsed  text-light">What will be asked in the interview? <i
+                class="ion-android-remove"></i></a>
             <div id="faq2" class="collapse" data-parent="#faq-list">
               <p class="text-light">
-                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id
-                donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit
-                ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                We will be judging you on the basis of your thought process, your work ethic and your ability to learn
+                new things. We need motivated people who can work as a team.
               </p>
             </div>
           </li>
 
           <li>
-            <a data-toggle="collapse" href="#faq3" class="collapsed  text-light">Dolor sit amet consectetur adipiscing
-              elit
-              pellentesque habitant morbi? <i class="ion-android-remove"></i></a>
+            <a data-toggle="collapse" href="#faq3" class="collapsed  text-light"> I am not that good at technical things
+              currently, should i give the interview?
+              <i class="ion-android-remove"></i></a>
             <div id="faq3" class="collapse" data-parent="#faq-list">
               <p class="text-light">
-                Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum
-                integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt.
-                Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                Technical skills are important but that is not the only parameter by which we judge you, so feel free to
+                appear for the interviews. Interviews are just for analyzing how well you can communicate freely.
               </p>
             </div>
           </li>
 
           <li>
-            <a data-toggle="collapse" href="#faq4" class="collapsed  text-light">Ac odio tempor orci dapibus. Aliquam
-              eleifend mi in
-              nulla? <i class="ion-android-remove"></i></a>
+            <a data-toggle="collapse" href="#faq4" class="collapsed  text-light">Are there any prerequisites to join
+              Team Vibhav?
+              <i class="ion-android-remove"></i></a>
             <div id="faq4" class="collapse" data-parent="#faq-list">
               <p class="text-light">
-                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id
-                donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit
-                ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                We are just looking for competent people, there are no prerequisites as such.
               </p>
             </div>
           </li>
 
           <li>
-            <a data-toggle="collapse" href="#faq5" class="collapsed  text-light">Tempus quam pellentesque nec nam
-              aliquam sem et
-              tortor consequat? <i class="ion-android-remove"></i></a>
+            <a data-toggle="collapse" href="#faq5" class="collapsed  text-light">In what kind of domains Team vibhav
+              make their projects?
+              <i class="ion-android-remove"></i></a>
             <div id="faq5" class="collapse" data-parent="#faq-list">
               <p class="text-light">
-                Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc
-                vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus
-                gravida quis blandit turpis cursus in
+                We mainly focus on electronics based projects like embedded systems, circuit logics and also align to
+                computer science related projects like in the field of machine learning and AR/VR.
+
               </p>
             </div>
           </li>
 
           <li>
-            <a data-toggle="collapse" href="#faq6" class="collapsed text-light">Tortor vitae purus faucibus ornare.
-              Varius vel
-              pharetra vel turpis nunc eget lorem dolor? <i class="ion-android-remove"></i></a>
+            <a data-toggle="collapse" href="#faq6" class="collapsed text-light">Can we join two clubs simultaneously?<i
+                class="ion-android-remove"></i></a>
             <div id="faq6" class="collapse" data-parent="#faq-list">
               <p class="text-light">
-                Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada
-                nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis
-                tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas
-                fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
+                We do not recommend joining two clubs simultaneously because the work schedule will be overly hectic and
+                you will not be able to give your 100% in any of the clubs. Final decision is always yours.
+              </p>
+            </div>
+          </li>
+          <li>
+            <a data-toggle="collapse" href="#faq7" class="collapsed text-light">What else can I learn by joining team
+              Vibhav?
+              <i class="ion-android-remove"></i></a>
+            <div id="faq7" class="collapse" data-parent="#faq-list">
+              <p class="text-light">
+                You will learn how to implement technology in real world problems by building prototypes from your ideas
+                and most importantly you will learn how to work in a team. Being a club abiding by - ‘Technology for a
+                Cause’, we adhere to socially acceptable solutions for prime social problems. Hence you will also be a
+                part of market research and analysis involved in product development.
+              </p>
+            </div>
+          </li>
+          <li>
+            <a data-toggle="collapse" href="#faq8" class="collapsed text-light">How Team Vibhav stands differently from
+              other teams?<i class="ion-android-remove"></i></a>
+            <div id="faq8" class="collapse" data-parent="#faq-list">
+              <p class="text-light">
+                We will provide you with a platform that will push you to do better and learn new things and basically
+                it's super fun to learn and hangout in the nimbus work environment regardless of the team. Since you’re
+                here reading this, might as well join the best team. :)
+
               </p>
             </div>
           </li>
@@ -706,20 +722,9 @@
 
 
 
-              <div class=" col-sm-12  ">
-                <div class="footer-links mx-auto w-50">
-                  <h4>Useful Links</h4>
-                  <ul class="mx-auto">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Terms of service</a></li>
-                    <li><a href="#">Privacy policy</a></li>
-                  </ul>
-                </div>
-
-
-                <div class="social-links w-50 mx-auto">
+              <div class=" col-sm-12 mt-5 ">
+                <h2 class="text-center">Follow Us On</h2>
+                <div class="social-links text-center mb-3">
 
 
                   <a href="https://www.instagram.com/team_vibhav/" class="instagram"><i
@@ -739,16 +744,17 @@
           </div>
 
           <div class="col-lg-8">
+            <h1 class="h3 mb-3 font-weight-normal text-center">Contact Us</h1>
 
             <form action="https://formspree.io/f/mvovygen" class="form-signin" method="POST">
-
-              <h1 class="h3 mb-3 font-weight-normal text-center">Contact Us</h1>
               <label for="inputEmail" class="sr-only">Email address</label>
-              <input type="email" id="inputEmail" class="form-control mb-3" placeholder="Email address" required>
+              <input name="email" type="email" id="inputEmail" class="form-control mb-3" placeholder="Email address"
+                required>
 
               <div class="form-group">
                 <label for="exampleFormControlTextarea1">Message</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                  required></textarea>
               </div>
 
               <button class="btn btn-lg btn-success btncolor " type="submit">Send Message</button>
