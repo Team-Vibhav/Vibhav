@@ -21,6 +21,12 @@
     background:#eee;
 } */
 
+
+/* add light mode css here */
+.dark-mode{
+  background: white;
+}
+/* light mode end */
 .aditya{
   padding-top: 120px;
 }
@@ -1885,5 +1891,3 @@ padding-top: 20px;
     margin-bottom: 25px;
   }
 }
-
-
