@@ -20,6 +20,8 @@
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700"
     rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style.css" />
 
   <!-- Bootstrap CSS File -->
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -33,6 +35,7 @@
   <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
@@ -105,8 +108,14 @@
   </header><!-- #header -->
   <header>
     <div class="mid">
-      <video autoplay muted loop img-fluid>
-        <source class="embed-responsive" src="img/2.mp4" type="video/mp4">
+
+      <div onclick="change() ">
+        <i  id="btn"class="fa fa-volume-up my-float"></i>
+
+      </div>
+
+      <video id="media" autoplay loop img-fluid>
+        <source class="embed-responsive media" src="img/2.mp4" type="video/mp4">
       </video>
     </div>
   </header>
@@ -400,29 +409,29 @@
     ============================-->
     <section id="features">
       <div class="container">
-        <header class="section-header">
-          <h3 class="text-light">Timeline of events and Workshops</h3>
-          <h2 class="text-light text-center">Coming Soon</h2>
-        </header>
-
+        <p class="glitch text-center">
+          Timeline
+        </p>
+        <div class="glitch1 mt-0">Coming Soon</div>
+        <div class="scanlines"></div>
         <div class="row feature-item">
-          <div class="col-lg-6 wow fadeInUp">
+          <!-- <div class="col-lg-6 wow fadeInUp">
             <img src="img/features-1.svg" class="img-fluid" alt="">
-          </div>
-        
+          </div> -->
 
-        <div class="row feature-item mt-5 pt-5">
-          <div class="col-lg-6 wow fadeInUp order-1 order-lg-2">
-            <img src="img/features-2.svg" class="img-fluid" alt="">
-          </div>
 
-          <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
-           
+          <div class="row feature-item mt-5 pt-5">
+            <!-- <div class="col-lg-6 wow fadeInUp order-1 order-lg-2">
+              <img src="img/features-2.svg" class="img-fluid" alt="">
+            </div> -->
+
+            <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
+
+            </div>
+
           </div>
 
         </div>
-
-      </div>
     </section><!-- #about -->
 
 
@@ -494,10 +503,11 @@
     <!--==========================
       Team Section
     ============================-->
-    <section id="team" class="section-bg bg-secondary">
+    <hr class=" w-100 " style="height:2px;border-width:0;color:gray;background-color:gray">
+    <section id="team">
       <div class="container">
         <div class="section-header">
-          <h3>Core-Coordinators</h3>
+          <h3 class="text-light"> Core-Coordinators</h3>
           <!-- <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p> -->
         </div>
 
@@ -573,7 +583,7 @@
       </div>
     </section><!-- #clients -->
 
-
+    <hr class=" w-100 " style="height:2px;border-width:0;color:gray;background-color:gray">
     <!--==========================
       Frequently Asked Questions Section
     ============================-->
@@ -728,11 +738,13 @@
 
             <form action="https://formspree.io/f/mvovygen" class="form-signin" method="POST">
               <label for="inputEmail" class="sr-only">Email address</label>
-              <input name="email" type="email" id="inputEmail" class="form-control mb-3" placeholder="Email address" required>
+              <input name="email" type="email" id="inputEmail" class="form-control mb-3" placeholder="Email address"
+                required>
 
               <div class="form-group">
                 <label for="exampleFormControlTextarea1">Message</label>
-                <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                  required></textarea>
               </div>
 
               <button class="btn btn-lg btn-success btncolor " type="submit">Send Message</button>
