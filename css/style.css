@@ -26,6 +26,29 @@
 .dark-mode{
   background: #a1cae2;
 }
+.dark-mode .header-scrolled{
+  background-color:#d6e6e6  !important;
+}
+.dark-mode #header .logo h1 a {
+    color: #696b83;
+  }
+.dark-mode .main-nav a, .dark-mode .toggle-btn{
+  color:black;
+}
+.dark-mode .main-nav a:hover{
+  color:blue;
+}
+.dark-mode #portfolio-flters li{
+  color: black !important;
+  font-weight: bold;
+}
+.dark-mode #portfolio-flters .filter-active{
+  color: blue !important;
+  font-weight: bold;
+}
+.dark-mode #portfolio > div > header > h3 {
+    color: #1f1b64;
+}
 /* light mode end */
 .aditya{
   padding-top: 120px;

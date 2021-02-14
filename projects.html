@@ -82,35 +82,38 @@
     <div id="topbar">
       <div class="container">
         <div class="social-links">
-
           <a href="https://www.instagram.com/team_vibhav/" class="instagram"><i class="fab fa-instagram"></i></a>
           <a href="https://www.facebook.com/teamvibhavece" class="facebook"><i class="fab fa-facebook"></i></a>
-
           <a href="https://www.linkedin.com/in/team-vibhav-6643b4206/" class="linkedin"><i
               class="fab fa-linkedin"></i></a>
           <a href="https://youtube.com/channel/UCt8W-_urFuy3dqulfQvk8fQ" class="instagram"><i
               class="fab fa-youtube"></i></a>
-
         </div>
       </div>
     </div>
 
-    <div class="container">
+    <div class="container pb-4">
 
-
-      <div class="logo float-left">
+      <div class="logo float-left ">
         <!-- Uncomment below if you prefer to use an image logo -->
-        <h1 class="text-success site-title"><a href="index.html#intro" class="scrollto">VIBHAV</a></h1>
+        <h1 class="text-success site-title"><a href="#intro" class="scrollto">VIBHAV</a></h1>
+
         <!-- <a href="#header" class="scrollto"><img src="img/logo.png" alt="" class="img-fluid"></a> -->
       </div>
 
 
-      <nav class="main-nav float-right d-none d-lg-block ">
-        <ul>
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="/index.html#about">About Us</a></li>
 
-          <li class="drop-down"><a href="">Our Team</a>
+
+      <nav class="main-nav float-right d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="#intro">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+
+
+
+
+
+          <li class="drop-down"><a href="team.html">Our Team</a>
             <ul>
 
 
@@ -119,22 +122,15 @@
               <li><a href="alumni.html">Alumni</a></li>
 
 
-
             </ul>
           </li>
-
-
-          <li class="drop-down"><a href="#">Our Work</a>
+          <li class="drop-down"><a href="projects.html">Our Work</a>
             <ul>
-
-
               <li><a href="projects.html">Projects</a></li>
               <li><a href="event.html">Events / Workshop</a></li>
-
             </ul>
           </li>
-          <li><a href="/index.html#footer">Contact Us</a></li>
-
+          <li><a href="#footer">Contact Us</a></li>
           <li class="toggle-btn">Toggle Mode
             <label class="switch btn_d_m">
             <input type="checkbox" onclick="lm_function()">
@@ -143,9 +139,7 @@
           </li>
         </ul>
       </nav><!-- .main-nav -->
-
     </div>
-
   </header><!-- #header -->
 
 
@@ -527,6 +521,7 @@
   <script type="text/javascript">
     function lm_function(){
       const b_g = document.getElementById('portfolio');
+      document.body.classList.toggle('dark-mode');
       b_g.classList.toggle('bg');
       b_g.classList.toggle('dark-mode');
   }
