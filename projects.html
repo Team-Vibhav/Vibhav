@@ -32,10 +32,6 @@
   <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
   <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
   <!--meterial layout card css-->
-
-  <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,200,500,600,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="dist/material-cards.css">
 
   <style type="text/css">
@@ -105,8 +101,8 @@
 
       <nav class="main-nav float-right d-none d-lg-block">
         <ul>
-          <li class="active"><a href="#intro">Home</a></li>
-          <li><a href="#about">About Us</a></li>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="/index.html#about">About Us</a></li>
 
 
 
@@ -125,12 +121,12 @@
           </li>
           <li class="drop-down"><a href="projects.html">Our Work</a>
             <ul>
-              <li><a href="projects.html">Projects</a></li>
+              <li><a href="#">Projects</a></li>
               <li><a href="event.html">Events / Workshop</a></li>
             </ul>
           </li>
           <li><a href="#footer">Contact Us</a></li>
-          <li class="toggle-btn" style="padding:5px 15px;">Toggle Mode
+          <li class="toggle-btn">Toggle Mode
             <label class="switch btn_d_m">
             <input type="checkbox" onclick="lm_function()">
             <span class="slider round"></span>
@@ -138,6 +134,12 @@
           </li>
         </ul>
       </nav><!-- .main-nav -->
+
+      <script type="text/javascript">
+        function lm_function(){
+          document.body.classList.toggle('dark-mode');
+      }
+      </script>
     </div>
   </header><!-- #header -->
 
@@ -169,7 +171,7 @@
       <div class="row portfolio-container">
 
         <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item filter-ml">
-          <div class="material-card Amber">
+          <div class="material-card Blue-Grey">
             <h2>
               <span>Braille OCR</span>
               <strong>
@@ -197,95 +199,6 @@
               <a class="fab fa-github Mat-Card-Pad" href="#"></a>
             </div>
           </div>
-        </div>
-        <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item filter-ai">
-          <article class="itembox material-card Orange">
-            <h2>
-              <span>Swarm Bot</span>
-              <strong>
-                <i class="fas fa-star"></i>
-                Team Vibhav
-              </strong>
-            </h2>
-            <div class="mc-content">
-              <div class="img-container">
-                <img class="img-responsive img-fluid" src="img/projects/swarm_bot.jpg" alt="Swarm-Bot">
-              </div>
-              <div class="mc-description text-project">
-                Swarm robotics is an approach to the coordination of multiple robots as a system which consist of large
-                numbers of mostly simple physical robots. It is supposed that a desired collective behaviour emerges
-                from the interactions between the robots and interactions of robots with the environment.
-              </div>
-            </div>
-            <a class="mc-btn-action">
-              <i class="fas fa-bars"></i>
-            </a>
-            <div class="mc-footer">
-              <h4>
-                github
-              </h4>
-              <a class="fab fa-github Mat-Card-Pad" href="#"></a>
-            </div>
-          </article>
-        </div>
-        <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item filter-es">
-          <article class="itembox material-card Deep-Orange">
-            <h2>
-              <span>Smart Solar</span>
-              <strong>
-                <i class="fas fa-star"></i>
-                Team Vibhav
-              </strong>
-            </h2>
-            <div class="mc-content">
-              <div class="img-container">
-                <img class="img-responsive img-fluid" src="img/projects/smartSolar1.jpg" alt="Smart-Solar">
-              </div>
-              <div class="mc-description text-project">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt nostrum ea error alias quo! Nemo.
-              </div>
-            </div>
-            <a class="mc-btn-action">
-              <i class="fas fa-bars"></i>
-            </a>
-            <div class="mc-footer">
-              <h4>
-                github
-              </h4>
-              <a class="fab fa-github Mat-Card-Pad" href="#"></a>
-            </div>
-          </article>
-        </div>
-        <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item filter-es">
-          <article class="itembox material-card Brown">
-            <h2>
-              <span>Smart Enrty System</span>
-              <strong>
-                <i class="fas fa-star"></i>
-                Team Vibhav
-              </strong>
-            </h2>
-            <div class="mc-content">
-              <div class="img-container">
-                <img class="img-responsive img-fluid" src="img/projects/smartEntrySystem.jpg" alt="Smart-Entry-System">
-              </div>
-              <div class="mc-description text-project">
-                As there is a major problem of seat occupancy in library due to unnecessary seat preservation of many
-                students for a day without being present in the library. Se we developed a system that shows the
-                presently occupied seats in the library and shows the live count of seats available to sit in the
-                library.
-              </div>
-            </div>
-            <a class="mc-btn-action">
-              <i class="fas fa-bars"></i>
-            </a>
-            <div class="mc-footer">
-              <h4>
-                github
-              </h4>
-              <a class="fab fa-github Mat-Card-Pad" href="#"></a>
-            </div>
-          </article>
         </div>
         <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item filter-ar">
           <article class="itembox material-card Grey">
@@ -317,6 +230,98 @@
             </div>
           </article>
         </div>
+        
+        <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item filter-es">
+          <article class="itembox material-card Brown">
+            <h2>
+              <span>Smart Solar</span>
+              <strong>
+                <i class="fas fa-star"></i>
+                Team Vibhav
+              </strong>
+            </h2>
+            <div class="mc-content">
+              <div class="img-container">
+                <img class="img-responsive img-fluid" src="img/projects/smartSolar1.jpg" alt="Smart-Solar">
+              </div>
+              <div class="mc-description text-project">
+                This is a mini portable solar power plant which is based on a sunflower model . This is a model which receives maximum sunlight and it saves a lot of space as compared to other solar plants
+              </div>
+            </div>
+            <a class="mc-btn-action">
+              <i class="fas fa-bars"></i>
+            </a>
+            <div class="mc-footer">
+              <h4>
+                github
+              </h4>
+              <a class="fab fa-github Mat-Card-Pad" href="#"></a>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item filter-es">
+          <article class="itembox material-card Brown">
+            <h2>
+              <span>Smart Entry System</span>
+              <strong>
+                <i class="fas fa-star"></i>
+                Team Vibhav
+              </strong>
+            </h2>
+            <div class="mc-content">
+              <div class="img-container">
+                <img class="img-responsive img-fluid" src="img/projects/smartEntrySystem.jpg" alt="Smart-Entry-System">
+              </div>
+              <div class="mc-description text-project">
+                As there is a major problem of seat occupancy in library due to unnecessary seat preservation of many
+                students for a day without being present in the library. Se we developed a system that shows the
+                presently occupied seats in the library and shows the live count of seats available to sit in the
+                library.
+              </div>
+            </div>
+            <a class="mc-btn-action">
+              <i class="fas fa-bars"></i>
+            </a>
+            <div class="mc-footer">
+              <h4>
+                github
+              </h4>
+              <a class="fab fa-github Mat-Card-Pad" href="#"></a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item filter-ai">
+          <article class="itembox material-card Teal">
+            <h2>
+              <span>Swarm Bot</span>
+              <strong>
+                <i class="fas fa-star"></i>
+                Team Vibhav
+              </strong>
+            </h2>
+            <div class="mc-content">
+              <div class="img-container">
+                <img class="img-responsive img-fluid" src="img/projects/swarm_bot.jpg" alt="Swarm-Bot">
+              </div>
+              <div class="mc-description text-project">
+                Swarm robotics is an approach to the coordination of multiple robots as a system which consist of large
+                numbers of mostly simple physical robots. It is supposed that a desired collective behaviour emerges
+                from the interactions between the robots and interactions of robots with the environment.
+              </div>
+            </div>
+            <a class="mc-btn-action">
+              <i class="fas fa-bars"></i>
+            </a>
+            <div class="mc-footer">
+              <h4>
+                github
+              </h4>
+              <a class="fab fa-github Mat-Card-Pad" href="#"></a>
+            </div>
+          </article>
+        </div>
+        
         <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item filter-ml">
           <article class="itembox material-card Blue-Grey">
             <h2>
@@ -378,7 +383,7 @@
           </article>
         </div>
         <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item filter-ar">
-          <article class="itembox material-card Blue-Grey">
+          <article class="itembox material-card Grey">
             <h2>
               <span>Ar maths Visualizer</span>
               <strong>
