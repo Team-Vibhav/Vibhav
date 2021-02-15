@@ -105,8 +105,8 @@
 
       <nav class="main-nav float-right d-none d-lg-block">
         <ul>
-          <li class="active"><a href="#intro">Home</a></li>
-          <li><a href="#about">About Us</a></li>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="/index.html#about">About Us</a></li>
 
 
 
@@ -125,12 +125,12 @@
           </li>
           <li class="drop-down"><a href="projects.html">Our Work</a>
             <ul>
-              <li><a href="projects.html">Projects</a></li>
+              <li><a href="#">Projects</a></li>
               <li><a href="event.html">Events / Workshop</a></li>
             </ul>
           </li>
           <li><a href="#footer">Contact Us</a></li>
-          <li class="toggle-btn" style="padding:5px 15px;">Toggle Mode
+          <li class="toggle-btn">Toggle Mode
             <label class="switch btn_d_m">
             <input type="checkbox" onclick="lm_function()">
             <span class="slider round"></span>
@@ -138,6 +138,12 @@
           </li>
         </ul>
       </nav><!-- .main-nav -->
+
+      <script type="text/javascript">
+        function lm_function(){
+          document.body.classList.toggle('dark-mode');
+      }
+      </script>
     </div>
   </header><!-- #header -->
 
