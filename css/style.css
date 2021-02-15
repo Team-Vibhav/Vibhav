@@ -26,6 +26,12 @@
 .dark-mode{
   background: #a1cae2;
 }
+.dark-mode p{
+  color: #376172 !important;
+}
+.dark-mode h3{
+  color:black !important;
+}
 .dark-mode .header-scrolled{
   background-color:#d6e6e6  !important;
 }
@@ -44,16 +50,54 @@
   color:black;
 }
 .dark-mode #portfolio-flters li{
-  color: black !important;
+  color: #376172 !important;
   font-weight: bold;
 }
 .dark-mode #portfolio-flters .filter-active{
   color: blue !important;
   font-weight: bold;
 }
-.dark-mode #portfolio > div > header > h3 {
-    color: #1f1b64;
+.dark-mode #about .about-img::before{
+  background-color: #a1cae2;
 }
+.dark-mode #about .about-img::after{
+  background-color: #a1cae2;
+}
+.dark-mode #about .about-content h2{
+  color:#43406f;
+}
+.dark-mode .text-white{
+  color: #1c1b1b !important;
+}
+.dark-mode .text-light{
+  color: #1c1b1b !important;
+}
+.dark-mode a.text-light:focus, a.text-light:hover {
+    color: #0962af !important;
+  }
+.dark-mode #call-to-action{
+  background: #d6e6e6;
+}
+.dark-mode #faq #faq-list li {
+  border-bottom: 1px solid #101010;
+  box-shadow: 0 2px #8dd5dc;
+}
+.dark-mode #call-to-action .cta-title {
+    color: #1a1818;
+  }
+.dark-mode .bg-dark {
+    background-color: #a1cae2 !important;
+}
+.dark-mode .back-to-top{
+  background: white;
+  border:2px solid black;
+}
+.dark-mode .back-to-top i{
+  color:black !important;
+}
+/* .dark-mode #topbar i{
+  color:black !important;
+} */
 .dark-mode .site-title a {
   -webkit-animation: neon3 1.5s ease-in-out infinite alternate;
   -moz-animation: neon3 1.5s ease-in-out infinite alternate;
