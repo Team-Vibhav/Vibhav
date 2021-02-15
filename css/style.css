@@ -26,6 +26,50 @@
 .dark-mode{
   background: #a1cae2;
 }
+.dark-mode .header-scrolled{
+  background-color:#d6e6e6  !important;
+}
+.dark-mode #header .logo h1 a {
+  color: white;
+  text-shadow: 0 0 10px cyan, 0 0 30px cyan;
+  }
+.dark-mode #header .logo h1 a:hover{
+    color: cyan;
+    text-shadow: 0 0 10px white, 0 0 30px white;
+  }
+.dark-mode .main-nav a, .dark-mode .toggle-btn{
+  color:black;
+}
+.dark-mode .main-nav a:hover{
+  color:black;
+}
+.dark-mode #portfolio-flters li{
+  color: black !important;
+  font-weight: bold;
+}
+.dark-mode #portfolio-flters .filter-active{
+  color: blue !important;
+  font-weight: bold;
+}
+.dark-mode #portfolio > div > header > h3 {
+    color: #1f1b64;
+}
+.dark-mode .site-title a {
+  -webkit-animation: neon3 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon3 1.5s ease-in-out infinite alternate;
+  animation: neon3 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon3 {
+  from {
+    text-shadow:  0 0 20px cyan, 0 0 40px cyan, 0 0 70px cyan, 0 0 80px #182f84, 0 0 90px #182f84, 0 0 100px #182f84, 0 0 120px #182f84, 0 0 150px cyan;
+  }
+}
+@-webkit-keyframes neon3 {
+  from {
+    text-shadow:  0 0 10px cyan, 0 0 20px cyan, 0 0 40px cyan, 0 0 70px cyan, 0 0 80px #182f84, 0 0 90px #182f84, 0 0 100px #182f84, 0 0 120px #182f84, 0 0 150px cyan;
+  }
+}
 /* light mode end */
 .aditya{
   padding-top: 120px;
