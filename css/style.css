@@ -30,13 +30,16 @@
   background-color:#d6e6e6  !important;
 }
 .dark-mode #header .logo h1 a {
-    color: #696b83;
+    color: #182f84;
+  }
+.dark-mode #header .logo h1 a:hover{
+    color: black;
   }
 .dark-mode .main-nav a, .dark-mode .toggle-btn{
   color:black;
 }
 .dark-mode .main-nav a:hover{
-  color:blue;
+  color:black;
 }
 .dark-mode #portfolio-flters li{
   color: black !important;
@@ -48,6 +51,17 @@
 }
 .dark-mode #portfolio > div > header > h3 {
     color: #1f1b64;
+}
+.dark-mode .site-title a {
+  -webkit-animation: neon3 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon3 1.5s ease-in-out infinite alternate;
+  animation: neon3 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon3 {
+  from {
+    text-shadow:  0 0 20px cyan, 0 0 40px cyan, 0 0 70px cyan, 0 0 80px cyan,0 0 90px cyan, 0 0 100px cyan;
+  }
 }
 /* light mode end */
 .aditya{
