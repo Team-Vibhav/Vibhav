@@ -30,10 +30,12 @@
   background-color:#d6e6e6  !important;
 }
 .dark-mode #header .logo h1 a {
-    color: #182f84;
+  color: white;
+  text-shadow: 0 0 10px cyan, 0 0 30px cyan;
   }
 .dark-mode #header .logo h1 a:hover{
-    color: black;
+    color: cyan;
+    text-shadow: 0 0 10px white, 0 0 30px white;
   }
 .dark-mode .main-nav a, .dark-mode .toggle-btn{
   color:black;
@@ -60,7 +62,12 @@
 
 @keyframes neon3 {
   from {
-    text-shadow:  0 0 20px cyan, 0 0 40px cyan, 0 0 70px cyan, 0 0 80px cyan,0 0 90px cyan, 0 0 100px cyan;
+    text-shadow:  0 0 20px cyan, 0 0 40px cyan, 0 0 70px cyan, 0 0 80px #182f84, 0 0 90px #182f84, 0 0 100px #182f84, 0 0 120px #182f84, 0 0 150px cyan;
+  }
+}
+@-webkit-keyframes neon3 {
+  from {
+    text-shadow:  0 0 10px cyan, 0 0 20px cyan, 0 0 40px cyan, 0 0 70px cyan, 0 0 80px #182f84, 0 0 90px #182f84, 0 0 100px #182f84, 0 0 120px #182f84, 0 0 150px cyan;
   }
 }
 /* light mode end */
