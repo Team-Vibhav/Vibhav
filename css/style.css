@@ -36,7 +36,7 @@
   color:black !important;
 }
 .dark-mode .header-scrolled{
-  background-color:#d6e6e6  !important;
+  background-color:#d8e7f4 !important;
 }
 .dark-mode #header .logo h1 a {
   color: white;
@@ -95,7 +95,7 @@
     color: #1a1818;
   }
 .dark-mode .bg-dark {
-    background-color: #c5dbdf !important;
+    background-color: #d7e3ec !important;
 }
 .dark-mode .back-to-top{
   background: white;
