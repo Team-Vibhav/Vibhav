@@ -46,8 +46,7 @@
   <!--==========================
   Header
   ============================-->
-  <header id="header">
-
+  <header id="header" class="aksh">
     <div id="topbar">
       <div class="container">
         <div class="social-links">
@@ -112,6 +111,16 @@
       <script type="text/javascript">
         function lm_function(){
           document.body.classList.toggle('dark-mode');
+          const aksh = document.body.classList;
+          if (aksh[0] == "dark-mode"){
+            ak.particles.color.value = '#314e52';
+            ak.particles.move.direction = 'bottom';
+            ak.particles.move.speed = '6';
+            ak.particles.number.value = '120';
+            console.log(aksh[0]);
+            particlesJS('particles-js',ak);
+        }
+        console.log("ak is",ak);
       }
       </script>
     </div>
@@ -298,7 +307,7 @@
         </div>
 
       </div>
-    </section><!-- #services -->
+    </section>--><!-- #services -->
 
     <!--==========================
       Why Us Section

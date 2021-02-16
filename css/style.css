@@ -24,7 +24,10 @@
 
 /* add light mode css here */
 .dark-mode{
-  background: #a1cae2;
+  background: #c5dbdf;
+}
+.dark-mode .aksh .main-nav a, .dark-mode .aksh .toggle-btn{
+  color: white;
 }
 .dark-mode p{
   color: #376172 !important;
@@ -49,6 +52,12 @@
 .dark-mode .main-nav a:hover{
   color:black;
 }
+.dark-mode #particles-js{
+  background-color: #d6e6e6;
+}
+.dark-mode .text {
+  color: #0a0a0a;
+}
 .dark-mode #portfolio-flters li{
   color: #376172 !important;
   font-weight: bold;
@@ -58,10 +67,10 @@
   font-weight: bold;
 }
 .dark-mode #about .about-img::before{
-  background-color: #a1cae2;
+  background-color: #c5dbdf;
 }
 .dark-mode #about .about-img::after{
-  background-color: #a1cae2;
+  background-color: #c5dbdf;
 }
 .dark-mode #about .about-content h2{
   color:#43406f;
@@ -86,7 +95,7 @@
     color: #1a1818;
   }
 .dark-mode .bg-dark {
-    background-color: #a1cae2 !important;
+    background-color: #c5dbdf !important;
 }
 .dark-mode .back-to-top{
   background: white;
@@ -94,6 +103,9 @@
 }
 .dark-mode .back-to-top i{
   color:black !important;
+}
+.dark-mode #footer .credits a {
+  color: #922100;
 }
 /* .dark-mode #topbar i{
   color:black !important;
