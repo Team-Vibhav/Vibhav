@@ -21,7 +21,7 @@
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700"
     rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-  
+
 
   <!-- Bootstrap CSS File -->
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -118,8 +118,15 @@
             ak.particles.move.speed = '6';
             ak.particles.number.value = '120';
             console.log(aksh[0]);
-            particlesJS('particles-js',ak);
         }
+        else
+        {
+            if (ak.particles.color.value == '#314e52')
+            {
+              ak.particles.color.value = '#ffffff';
+            }
+        }
+        particlesJS('particles-js',ak);
         console.log("ak is",ak);
       }
       </script>
