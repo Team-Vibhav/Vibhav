@@ -140,10 +140,19 @@
 
       </div>
 
-      <video id="media" autoplay img-fluid>
+      <video id="media" autoplay muted>
         <source class="embed-responsive media" src="img/2.mp4" type="video/mp4">
       </video>
-
+      <script type="text/javascript">
+        const vid = document.getElementById('media')
+        vid.onended = function(){
+          const x = window.innerHeight;
+          console.log(x);
+          if(window.scrollY < x){
+            window.scrollTo({top:x,behavior:"smooth"});
+          }
+        }
+      </script>
     </div>
   </header>
   <!--==========================

@@ -9,7 +9,7 @@
   box-sizing: border-box;
 }
 .dark-mode .alumni-heading{
-  background-color: rgb(196, 210, 213);
+  background-color: #f5f8fd;
   color: #0b115a;
 }
 .dark-mode .card__collection{
@@ -17,9 +17,7 @@
 }
 .dark-mode .alumni-heading:hover{
   color: black;
-  background-color: #e0f0f0;
-  border-bottom: 2px solid rgb(196, 210, 223);
-  box-shadow: 0 3px rgb(196, 210, 233);
+  background-color: #f5f8fd;
 }
 .alumni-heading{
   text-align: center;
@@ -29,7 +27,7 @@
   font-size: 46px;
   font-weight: 900;
   background-color: #808080;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .alumni-heading:hover{
   color: #ffffe0;
