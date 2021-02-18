@@ -638,7 +638,7 @@ a {
   font-family: 'Roboto', sans-serif;
 }
 
-.site-title a {
+.site-title a:hover {
   -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
   -moz-animation: neon2 1.5s ease-in-out infinite alternate;
   animation: neon2 1.5s ease-in-out infinite alternate;
