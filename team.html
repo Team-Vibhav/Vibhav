@@ -41,31 +41,7 @@
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/button.css">
     <link rel="stylesheet" href="../dist/material-cards.css">
-    <style type="text/css">
-        html {
-            position: relative;
-            min-height: 100%;
-        }
 
-        body {
-            background-color: #ECEFF1;
-            color: #37474F;
-            font-family: 'Raleway', sans-serif;
-            font-weight: 300;
-            font-size: 16px;
-        }
-
-        h1,
-        h2,
-        h3 {
-            font-weight: 200;
-        }
-    </style>
-    <style>
-        .display-4 {
-            font-family: 'Roboto', sans-serif;
-        }
-    </style>
 </head>
 
 <body>
@@ -80,7 +56,7 @@
                     <a href="https://www.instagram.com/team_vibhav/" class="instagram"><i
                         class="fab fa-instagram"></i></a>
                     <a href="https://www.facebook.com/teamvibhavece" class="facebook"><i class="fab fa-facebook"></i></a>
-  
+
                     <a href="https://www.linkedin.com/in/team-vibhav-6643b4206/" class="linkedin"><i class="fab fa-linkedin"></i></a>
                     <a href="https://youtube.com/channel/UCt8W-_urFuy3dqulfQvk8fQ" class="instagram"><i
                         class="fab fa-youtube"></i></a>
@@ -125,10 +101,23 @@
                         </ul>
                     </li>
                     <li><a href="/index.html#footer">Contact Us</a></li>
+                    <li class="toggle-btn">Toggle Mode
+                      <label class="switch btn_d_m">
+                      <input type="checkbox" onclick="lm_function()">
+                      <span class="slider round"></span>
+                      </label>
+                    </li>
+                  </ul>
+                </nav><!-- .main-nav -->
 
-                </ul>
-            </nav><!-- .main-nav -->
-
+                <script type="text/javascript">
+                  function lm_function(){
+                    const bg = document.getElementById('team')
+                    document.body.classList.toggle('dark-mode');
+                    bg.classList.toggle('dark-mode');
+                    bg.classList.toggle('bg');
+                }
+                </script>
         </div>
 
     </header><!-- #header -->
@@ -140,7 +129,7 @@
                 <hr class=" w-50  " style="height:2px;border-width:0;color:gray;background-color:gray">
 
             </div>
-            <div class="row slider justify-content-center  ">
+            <div class="row sliders justify-content-center  ">
 
 
                 <div class="col-lg-3 col-md-6 wow fadeInUp " data-wow-delay="0.1s">
@@ -164,9 +153,9 @@
                 </div>
 
 
-                
 
-               
+
+
 
 
                 <div class="col-lg-3 col-md-6 wow fadeInUp " data-wow-delay="0.1s">
@@ -282,7 +271,7 @@
                     </div>
                 </div>
 
-                
+
                 <div class="col-lg-3 col-md-6 wow fadeInUp " data-wow-delay="0.1s">
                     <div class="member shadow-lg ayush5 ">
                         <img src="img/team/Sanjana Bansal.jpg" class="img-fluid" alt="Aniket Srivastava">
@@ -315,7 +304,7 @@
                 <hr class=" w-50  " style="height:2px;border-width:0;color:gray;background-color:gray">
 
             </div>
-            <div class="row slider justify-content-center ">
+            <div class="row sliders justify-content-center ">
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
                     <div class="member  shadow-lg ayush5">
                         <img src="img/team/Yash Prakash Gupta.jpg" class="img-fluid "
@@ -554,7 +543,7 @@
                 <hr class=" w-50  " style="height:2px;border-width:0;color:gray;background-color:gray">
 
             </div>
-            <div class="row slider justify-content-center  my-4">
+            <div class="row sliders justify-content-center  my-4">
                 <div class="col-lg-3 col-md-6 wow fadeInUp " data-wow-delay="0.1s">
                     <div class="member shadow-lg ayush5">
                         <img src="img/team/Aabha.jpg" class="img-fluid " alt="Aniket Srivastava">
@@ -988,7 +977,7 @@
     <!-- Template Main Javascript File -->
     <script src="js/main.js"></script>
     <script>
-        $('.slider').slick({
+        $('.sliders').slick({
             dots: true,
             infinite: true,
             speed: 300,
