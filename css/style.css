@@ -47,7 +47,7 @@
 .dark-mode .main-nav a, .dark-mode .toggle-btn{
   color:black;
 }
-.dark-mode .main-nav a:hover, .dark-mode .toggle-btn:hover{
+.dark-mode .main-nav a:hover{
   color:black;
 }
 .dark-mode #particles-js{
@@ -420,7 +420,7 @@ h6 {
   border-radius: 50%;
   right: 15px;
   bottom: 15px;
-  transition: background 0.5s;
+  transition: 0.5s;
   z-index: 11;
 }
 
