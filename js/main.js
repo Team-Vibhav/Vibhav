@@ -32,8 +32,10 @@
   $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
       $('#header').addClass('header-scrolled');
+      $('#header').removeClass('aksh');
     } else {
       $('#header').removeClass('header-scrolled');
+      $('#header').addClass('aksh');
     }
   });
 
@@ -153,7 +155,7 @@ function change() {
   } else {
     btn.classList.remove("fa-volume-up");
     btn.classList.add("fa-volume-off");
-    
+
   }
   if ( element.muted) {
     element.muted = false;
@@ -163,5 +165,3 @@ function change() {
   }
 
 }
-
-
