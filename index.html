@@ -44,7 +44,7 @@
 
 <body onload="myfunction()">
   <div id="loading">
-   
+
   </div>
   <!--==========================
   Header
@@ -53,11 +53,13 @@
     <div id="topbar">
       <div class="container">
         <div class="social-links">
-          <a href="https://www.instagram.com/team_vibhav/" class="instagram"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.facebook.com/teamvibhavece" class="facebook"><i class="fab fa-facebook"></i></a>
-          <a href="https://www.linkedin.com/in/team-vibhav-6643b4206/" class="linkedin"><i
+          <a href="https://www.instagram.com/team_vibhav/" target="_blank" class="instagram"><i
+              class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/teamvibhavece" target="_blank" class="facebook"><i
+              class="fab fa-facebook"></i></a>
+          <a href="https://www.linkedin.com/in/team-vibhav-6643b4206/" target="_blank" class="linkedin"><i
               class="fab fa-linkedin"></i></a>
-          <a href="https://youtube.com/channel/UCt8W-_urFuy3dqulfQvk8fQ" class="instagram"><i
+          <a href="https://youtube.com/channel/UCt8W-_urFuy3dqulfQvk8fQ" target="_blank" class="instagram"><i
               class="fab fa-youtube"></i></a>
         </div>
       </div>
@@ -116,24 +118,20 @@
           document.body.classList.toggle('dark-mode');
 
           const aksh = document.body.classList;
-          if (aksh[0] == "dark-mode"){
+          if (aksh[0] == "dark-mode") {
             ak.particles.color.value = '#314e52';
             ak.particles.move.direction = 'bottom';
             ak.particles.move.speed = '6';
             ak.particles.number.value = '120';
             console.log(aksh[0]);
-        }
-        else
-        {
-            if (ak.particles.color.value == '#314e52')
-            {
+          } else {
+            if (ak.particles.color.value == '#314e52') {
               ak.particles.color.value = '#ffffff';
             }
+          }
+          particlesJS('particles-js', ak);
+          console.log("ak is", ak);
         }
-        particlesJS('particles-js',ak);
-        console.log("ak is",ak);
-      }
-
       </script>
     </div>
   </header><!-- #header -->
@@ -151,11 +149,14 @@
       </video>
       <script type="text/javascript">
         const vid = document.getElementById('media')
-        vid.onended = function(){
+        vid.onended = function () {
           const x = window.innerHeight;
           console.log(x);
-          if(window.scrollY < x){
-            window.scrollTo({top:x,behavior:"smooth"});
+          if (window.scrollY < x) {
+            window.scrollTo({
+              top: x,
+              behavior: "smooth"
+            });
           }
         }
       </script>
@@ -188,7 +189,7 @@
                   <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
                     <rect class="shape" height="60" width="320" />
                   </svg>
-                  <a href="https://discord.gg/9pjW2DQ4">
+                  <a target="_blank" href="https://discord.gg/9pjW2DQ4">
                     <div class="text  "><i class="fab fa-discord mr-3 "></i>Join Our
                       Community</div>
                   </a>
@@ -330,7 +331,8 @@
         </div>
 
       </div>
-    </section>--><!-- #services -->
+    </section>-->
+    <!-- #services -->
 
     <!--==========================
       Why Us Section
@@ -437,7 +439,7 @@
               heights of knowledge and technology. Click on the button to fill the required google form.</p>
           </div>
           <div class="col-lg-3 cta-btn-container text-center">
-            <a class="align-middle prob-state "
+            <a class="align-middle prob-state " target="_blank"
               href="https://docs.google.com/forms/d/e/1FAIpQLSfiKtu2oTvvLl62nBuF87P-qg_eu0eihKi34zT6n1XNohz-Ow/viewform?usp=sf_link"><span></span><span></span><span></span><span></span>Join
               us!</a>
           </div>
@@ -563,10 +565,11 @@
                   <h4>Yash Prakash Gupta</h4>
                   <span>Core-Coordinator</span>
                   <div class="social">
-                    <a href=""><i class="fab fa-twitter"></i></a>
-                    <a href=""><i class="fab fa-facebook"></i></a>
-                    <a href=""><i class="fab fa-google-plus"></i></a>
-                    <a href=""><i class="fab fa-linkedin"></i></a>
+                    <!-- <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a> -->
+                    <a target="_blank" href="https://github.com/yashprakash28"><i class="fab fa-github"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/yash-prakash-gupta/"><i
+                        class="fab fa-linkedin"></i></a>
                   </div>
                 </div>
               </div>
@@ -582,10 +585,12 @@
                   <h4>Aniket Srivastava</h4>
                   <span>Core-Coordinator</span>
                   <div class="social">
-                    <a href=""><i class="fab fa-twitter"></i></a>
-                    <a href=""><i class="fab fa-facebook"></i></a>
-                    <a href=""><i class="fab fa-google-plus"></i></a>
-                    <a href=""><i class="fab fa-linkedin"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/cyberrtrron/"><i
+                        class="fab fa-instagram"></i></a>
+                    <!-- <a target="_blank"href="#"><i class="fab fa-facebook"></i></a>
+                    <a target="_blank"href="#"><i class="fab fa-github"></i></a> -->
+                    <a target="_blank" href="https://www.linkedin.com/in/aniket-srivastava-63544b171/"><i
+                        class="fab fa-linkedin"></i></a>
                   </div>
                 </div>
               </div>
@@ -755,13 +760,14 @@
                 <div class="social-links text-center mb-3">
 
 
-                  <a href="https://www.instagram.com/team_vibhav/" class="instagram"><i
+                  <a href="https://www.instagram.com/team_vibhav/" target="_blank" class="instagram"><i
                       class="fab fa-instagram"></i></a>
-                  <a href="https://www.facebook.com/teamvibhavece" class="facebook"><i class="fab fa-facebook"></i></a>
+                  <a href="https://www.facebook.com/teamvibhavece" target="_blank" class="facebook"><i
+                      class="fab fa-facebook"></i></a>
 
-                  <a href="https://www.linkedin.com/in/team-vibhav-6643b4206/" class="linkedin"><i
+                  <a href="https://www.linkedin.com/in/team-vibhav-6643b4206/" target="_blank" class="linkedin"><i
                       class="fab fa-linkedin"></i></a>
-                  <a href="https://youtube.com/channel/UCt8W-_urFuy3dqulfQvk8fQ" class="instagram"><i
+                  <a href="https://youtube.com/channel/UCt8W-_urFuy3dqulfQvk8fQ" target="_blank" class="instagram"><i
                       class="fab fa-youtube"></i></a>
                 </div>
 
