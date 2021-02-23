@@ -1989,3 +1989,13 @@ padding-top: 20px;
     margin-bottom: 25px;
   }
 }
+
+.vaishnavi{
+  text-align: justify;
+  margin: auto;
+  display: block;
+}
+.vaishnavi1{
+  font-size: 24px;
+  text-align: center;
+}
