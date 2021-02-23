@@ -13,8 +13,8 @@
 
 
   <!-- Favicons -->
-  <link href="img/vibhav_logo.png" rel="icon">
-  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="img/vibhav_logo.jpg" rel="icon">
+  <link href="img/vibhav_logo.jpg" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link
@@ -42,7 +42,10 @@
   <link rel="stylesheet" href="css/button.css">
 </head>
 
-<body class="">
+<body onload="myfunction()">
+  <div id="loading">
+
+  </div>
   <!--==========================
   Header
   ============================-->
@@ -50,11 +53,13 @@
     <div id="topbar">
       <div class="container">
         <div class="social-links">
-          <a href="https://www.instagram.com/team_vibhav/" class="instagram"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.facebook.com/teamvibhavece" class="facebook"><i class="fab fa-facebook"></i></a>
-          <a href="https://www.linkedin.com/in/team-vibhav-6643b4206/" class="linkedin"><i
+          <a href="https://www.instagram.com/team_vibhav/" target="_blank" class="instagram"><i
+              class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/teamvibhavece" target="_blank" class="facebook"><i
+              class="fab fa-facebook"></i></a>
+          <a href="https://www.linkedin.com/in/team-vibhav-6643b4206/" target="_blank" class="linkedin"><i
               class="fab fa-linkedin"></i></a>
-          <a href="https://youtube.com/channel/UCt8W-_urFuy3dqulfQvk8fQ" class="instagram"><i
+          <a href="https://youtube.com/channel/UCt8W-_urFuy3dqulfQvk8fQ" target="_blank" class="instagram"><i
               class="fab fa-youtube"></i></a>
         </div>
       </div>
@@ -101,34 +106,32 @@
           <li><a href="#footer">Contact Us</a></li>
           <li class="toggle-btn">Toggle Mode
             <label class="switch btn_d_m">
-            <input type="checkbox" onclick="lm_function()">
-            <span class="slider round"></span>
+              <input type="checkbox" onclick="lm_function()">
+              <span class="slider round"></span>
             </label>
           </li>
         </ul>
       </nav><!-- .main-nav -->
 
       <script type="text/javascript">
-        function lm_function(){
+        function lm_function() {
           document.body.classList.toggle('dark-mode');
+
           const aksh = document.body.classList;
-          if (aksh[0] == "dark-mode"){
+          if (aksh[0] == "dark-mode") {
             ak.particles.color.value = '#314e52';
             ak.particles.move.direction = 'bottom';
             ak.particles.move.speed = '6';
             ak.particles.number.value = '120';
             console.log(aksh[0]);
-        }
-        else
-        {
-            if (ak.particles.color.value == '#314e52')
-            {
+          } else {
+            if (ak.particles.color.value == '#314e52') {
               ak.particles.color.value = '#ffffff';
             }
+          }
+          particlesJS('particles-js', ak);
+          console.log("ak is", ak);
         }
-        particlesJS('particles-js',ak);
-        console.log("ak is",ak);
-      }
       </script>
     </div>
   </header><!-- #header -->
@@ -137,18 +140,24 @@
     <div class="mid">
 
       <div onclick="change() ">
-        <i  id="btn"class="fa fa-volume-up my-float"></i>
+
+        <i id="btn" class="fa fa-volume-up my-float"></i>
+
+
       </div>
       <video id="media" autoplay muted="false">
         <source class="embed-responsive media" src="img/3.mp4" type="video/mp4">
       </video>
       <script type="text/javascript">
         const vid = document.getElementById('media')
-        vid.onended = function(){
+        vid.onended = function () {
           const x = window.innerHeight;
           console.log(x);
-          if(window.scrollY < x){
-            window.scrollTo({top:x,behavior:"smooth"});
+          if (window.scrollY < x) {
+            window.scrollTo({
+              top: x,
+              behavior: "smooth"
+            });
           }
         }
       </script>
@@ -182,7 +191,7 @@
                   <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
                     <rect class="shape" height="60" width="320" />
                   </svg>
-                  <a href="https://discord.gg/9pjW2DQ4">
+                  <a target="_blank" href="https://discord.gg/9pjW2DQ4">
                     <div class="text  "><i class="fab fa-discord mr-3 "></i>Join Our
                       Community</div>
                   </a>
@@ -211,7 +220,7 @@
 
           <div class="col-lg-5 col-md-6">
             <div class="about-img">
-              <img src="img/vibhav_logo.png" alt="">
+              <img src="img/vibhav_logo.jpg" alt="">
             </div>
           </div>
 
@@ -324,7 +333,8 @@
         </div>
 
       </div>
-    </section>--><!-- #services -->
+    </section>-->
+    <!-- #services -->
 
     <!--==========================
       Why Us Section
@@ -431,7 +441,7 @@
               heights of knowledge and technology. Click on the button to fill the required google form.</p>
           </div>
           <div class="col-lg-3 cta-btn-container text-center">
-            <a class="align-middle prob-state "
+            <a class="align-middle prob-state " target="_blank"
               href="https://docs.google.com/forms/d/e/1FAIpQLSfiKtu2oTvvLl62nBuF87P-qg_eu0eihKi34zT6n1XNohz-Ow/viewform?usp=sf_link"><span></span><span></span><span></span><span></span>Join
               us!</a>
           </div>
@@ -530,7 +540,8 @@
 
 
       </div>
-    </section>--><!-- #testimonials -->
+    </section>-->
+    <!-- #testimonials -->
 
     <!--==========================
       Team Section
@@ -556,6 +567,7 @@
                   <h4>Yash Prakash Gupta</h4>
                   <span>Core-Coordinator</span>
                   <div class="social">
+
                     <!-------
                     <a href="https://www.instagram.com/2_yash_8/"><i class="fab fa-instagram"></i></a>
                                     <a href="#"><i class="fab fa-facebook"></i></a>
@@ -563,6 +575,13 @@
                                     <a href="https://github.com/yashprakash28"><i class="fab fa-github"></i></a>
                                     <a href="https://www.linkedin.com/in/yash-prakash-gupta/"><i
                                             class="fab fa-linkedin"></i></a>
+
+                    <!-- <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a> -->
+                    <a target="_blank" href="https://github.com/yashprakash28"><i class="fab fa-github"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/yash-prakash-gupta/"><i
+                        class="fab fa-linkedin"></i></a>
+
                   </div>
                 </div>
               </div>
@@ -578,6 +597,7 @@
                   <h4>Aniket Srivastava</h4>
                   <span>Core-Coordinator</span>
                   <div class="social">
+
                     <a href="https://www.instagram.com/cyberrtrron/"><i class="fab fa-instagram"></i></a>
                     <!------
                     <a href="#"><i class="fab fa-facebook"></i></a>
@@ -585,6 +605,14 @@
                     -->
                     <a href="https://www.linkedin.com/in/aniket-srivastava-63544b171/"><i
                             class="fab fa-linkedin"></i></a>
+
+                    <a target="_blank" href="https://www.instagram.com/cyberrtrron/"><i
+                        class="fab fa-instagram"></i></a>
+                    <!-- <a target="_blank"href="#"><i class="fab fa-facebook"></i></a>
+                    <a target="_blank"href="#"><i class="fab fa-github"></i></a> -->
+                    <a target="_blank" href="https://www.linkedin.com/in/aniket-srivastava-63544b171/"><i
+                        class="fab fa-linkedin"></i></a>
+
                   </div>
                 </div>
               </div>
@@ -618,9 +646,10 @@
         </div>
 
       </div>
-    </section>--><!-- #clients -->
+    </section>-->
+    <!-- #clients -->
 
-      <!--==========================
+    <!--==========================
       Frequently Asked Questions Section
     ============================-->
     <section id="faq">
@@ -736,8 +765,8 @@
   <!--==========================
     Footer
   ============================-->
-  <footer id="footer" class="section-bg bg-dark">
-    <div class="footer-top">
+  <footer id="footer" class=" bg-dark">
+    <div class="footer-top bg-secondary">
       <div class="container">
 
         <div class="row">
@@ -748,18 +777,32 @@
 
 
 
-              <div class=" col-sm-12 mt-5 ">
-                <h2 class="text-center">Follow Us On</h2>
+              <div class=" col-sm-12  ">
+                <a href="https://festnimbus.com" class="link mb-2">
+                <img src="img/nimbus_black.png" alt="" width="100px" height = "100px" class="vaishnavi" >
+              </a>
+              <!-- <p class='vaishnavi'> Nimbus is the technical fest of NIT Hamirpur, in which Team Vibhav participates. 
+                Moreover being the biggest tech festival of North India, it is something not worth to be missed.
+                To know more about fest Nimbus, visit <a href="https://festnimbus.com" class="link mb-2">Here</a> -->
+                
+                
+              </p>
+              <h2 class='vaishnavi1 mt-3 text-light'>Visit Official Nimbus Site</h2> 
+              <!-- <div class="text-center">
+              <button class="btn btn-lg btn-success btncolor ">Here</button> --> 
+              <!-- </div> -->
+                <h3 class="text-center mt-3 text-light">Follow Us On</h3>
                 <div class="social-links text-center mb-3">
 
 
-                  <a href="https://www.instagram.com/team_vibhav/" class="instagram"><i
+                  <a href="https://www.instagram.com/team_vibhav/" target="_blank" class="instagram"><i
                       class="fab fa-instagram"></i></a>
-                  <a href="https://www.facebook.com/teamvibhavece" class="facebook"><i class="fab fa-facebook"></i></a>
+                  <a href="https://www.facebook.com/teamvibhavece" target="_blank" class="facebook"><i
+                      class="fab fa-facebook"></i></a>
 
-                  <a href="https://www.linkedin.com/in/team-vibhav-6643b4206/" class="linkedin"><i
+                  <a href="https://www.linkedin.com/in/team-vibhav-6643b4206/" target="_blank" class="linkedin"><i
                       class="fab fa-linkedin"></i></a>
-                  <a href="https://youtube.com/channel/UCt8W-_urFuy3dqulfQvk8fQ" class="instagram"><i
+                  <a href="https://youtube.com/channel/UCt8W-_urFuy3dqulfQvk8fQ" target="_blank" class="instagram"><i
                       class="fab fa-youtube"></i></a>
                 </div>
 
@@ -770,7 +813,7 @@
           </div>
 
           <div class="col-lg-8">
-            <h1 class="h3 mb-3 font-weight-normal text-center">Contact Us</h1>
+            <h1 class="h3 mb-3 font-weight-normal text-center text-light">Contact Us</h1>
 
             <form action="https://formspree.io/f/mvovygen" class="form-signin" method="POST">
               <label for="inputEmail" class="sr-only">Email address</label>
@@ -778,7 +821,7 @@
                 required>
 
               <div class="form-group">
-                <label for="exampleFormControlTextarea1">Message</label>
+                <label for="exampleFormControlTextarea1 ">Message</label>
                 <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3"
                   required></textarea>
               </div>
@@ -827,6 +870,13 @@
   <script src="js/main.js"></script>
   <script src="js/particles.js"></script>
   <script src="js/app.js"></script>
+  <script>
+    const preloader = document.getElementById('loading');
+
+    function myfunction() {
+      preloader.style.display = 'none';
+    }
+  </script>
 </body>
 
 </html>

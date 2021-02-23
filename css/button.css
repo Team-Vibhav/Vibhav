@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-.toggle-btn{
+
+.toggle-btn {
   display: block;
   position: relative;
   color: #a4a0d6;
@@ -8,7 +9,7 @@
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
-  font-weight:600;
+  font-weight: 600;
 }
 
 .switch {
@@ -49,15 +50,15 @@
   transition: .4s;
 }
 
-input:checked + .slider {
+input:checked+.slider {
   background-color: #cccca0;
 }
 
-input:focus + .slider {
+input:focus+.slider {
   box-shadow: 0 0 3px #ccc;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
   -webkit-transform: translateX(16px);
   -ms-transform: translateX(16px);
   transform: translateX(16px);
@@ -70,6 +71,7 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
 .prob-state {
   position: relative;
   display: inline-block;
@@ -647,7 +649,7 @@ a {
 /*glow*/
 @keyframes neon2 {
   from {
-    text-shadow:  0 0 20px #ffc75f, 0 0 40px #ffc75f, 0 0 70px #ffc75f, 0 0 80px #ffc75f,0 0 90px #ffb75f, 0 0 100px #ffc75f;
+    text-shadow: 0 0 20px #ffc75f, 0 0 40px #ffc75f, 0 0 70px #ffc75f, 0 0 80px #ffc75f, 0 0 90px #ffb75f, 0 0 100px #ffc75f;
   }
 
   /* to {
@@ -658,7 +660,7 @@ a {
 /*webkit glow*/
 @-webkit-keyframes neon2 {
   from {
-    text-shadow:  0 0 20px #ffc75f, 0 0 40px #ffc75f, 0 0 70px #ffc75f, 0 0 80px #ffc75f,0 0 90px #ffb75f, 0 0 100px #ffc75f;
+    text-shadow: 0 0 20px #ffc75f, 0 0 40px #ffc75f, 0 0 70px #ffc75f, 0 0 80px #ffc75f, 0 0 90px #ffb75f, 0 0 100px #ffc75f;
   }
 
   /* to {
@@ -668,14 +670,14 @@ a {
 
 /*moz glow*/
 /* @-moz-keyframes neon2 { */
-  from {
-    text-shadow: 0 0 5px #ffc75f, 0 0 10px #ffc75f, 0 0 15px #ffc75f, 0 0 20px #ffc75f, 0 0 35px #ffc75f, 0 0 40px #ffc75f, 0 0 50px #ffc75f, 0 0 75px #ffc75f;
-  }
+from {
+  text-shadow: 0 0 5px #ffc75f, 0 0 10px #ffc75f, 0 0 15px #ffc75f, 0 0 20px #ffc75f, 0 0 35px #ffc75f, 0 0 40px #ffc75f, 0 0 50px #ffc75f, 0 0 75px #ffc75f;
+}
 
-  to {
-    text-shadow: 0 0 2.5px #ffc75f, 0 0 5px #ffc75f, 0 0 7px #ffc75f, 0 0 10px #ffc75f, 0 0 17px #ffc75f, 0 0 20px #ffc75f, 0 0 25px #ffc75f, 0 0 37px #ffc75f;
-  }
-} */
+to {
+  text-shadow: 0 0 2.5px #ffc75f, 0 0 5px #ffc75f, 0 0 7px #ffc75f, 0 0 10px #ffc75f, 0 0 17px #ffc75f, 0 0 20px #ffc75f, 0 0 25px #ffc75f, 0 0 37px #ffc75f;
+}
+
 
 
 /* beyond infinity animation */
@@ -692,15 +694,15 @@ a {
   }
 }
 
-.typing-text{
-font-family: monospace;
-color: #f2f8a4;
-width: 18ch;
-border-right: .08em solid;
-overflow: hidden;
-font-size: 3em;
-white-space: nowrap;
-animation: typing 3s steps(18, end), caret .5s step-end infinite;
+.typing-text {
+  font-family: monospace;
+  color: #f2f8a4;
+  width: 18ch;
+  border-right: .08em solid;
+  overflow: hidden;
+  font-size: 3em;
+  white-space: nowrap;
+  animation: typing 3s steps(18, end), caret .5s step-end infinite;
 
 }
 
@@ -732,9 +734,9 @@ animation: typing 3s steps(18, end), caret .5s step-end infinite;
 .btncolor:hover {
   background-color: white;
   border: 2px solid #0A98C0;
-  padding:5px 15px;
+  padding: 5px 15px;
   border-radius: 7px;
-  color:#0A98C0;
+  color: #0A98C0;
   font-weight: 500;
 }
 
@@ -802,6 +804,7 @@ animation: typing 3s steps(18, end), caret .5s step-end infinite;
   text-align: center;
 
 }
+
 .mid video {
   width: 100%;
   height: 100%;
@@ -813,14 +816,16 @@ animation: typing 3s steps(18, end), caret .5s step-end infinite;
   transform: translate(-50%, -50%);
 
 }
-.Mat-Card-Pad{
+
+.Mat-Card-Pad {
   padding-left: 12px;
 }
 
 /*project description*/
-.text-project{
+.text-project {
   font-size: small;
 }
+
 .glitch {
   font-size: 3rem;
   font-weight: 700;
@@ -841,35 +846,42 @@ animation: typing 3s steps(18, end), caret .5s step-end infinite;
       -0.05em -0.025em 0 white,
       -0.025em 0.05em 0 white;
   }
+
   14% {
     text-shadow: 0.05em 0 0 white,
       -0.05em -0.025em 0 white,
       -0.025em 0.05em 0 white;
   }
+
   15% {
     text-shadow: -0.05em -0.025em 0 white,
       0.025em 0.025em 0 white,
       -0.05em -0.05em 0 white;
   }
+
   49% {
     text-shadow: -0.05em -0.025em 0 white,
       0.025em 0.025em 0 white,
       -0.05em -0.05em 0 white;
   }
+
   50% {
     text-shadow: 0.025em 0.05em 0 white,
       0.05em 0 0 white, 0 -0.05em 0 white;
   }
+
   99% {
     text-shadow: 0.025em 0.05em 0 white,
       0.05em 0 0 white, 0 -0.05em 0 white;
   }
+
   100% {
     text-shadow: -0.025em 0 0 white,
       -0.025em -0.025em 0 white,
       -0.025em -0.05em 0 white;
   }
 }
+
 .glitch1 {
   font-family: Arial, sans-serif;
   font-size: 32px;
@@ -878,26 +890,34 @@ animation: typing 3s steps(18, end), caret .5s step-end infinite;
   letter-spacing: 5px;
   margin-top: 5em;
   animation: glitch1 .6s ease infinite,
-             move .4s ease infinite;
+    move .4s ease infinite;
   position: relative;
 }
 
 @keyframes glitch1 {
-  23%, 49%, 74% {
+
+  23%,
+  49%,
+  74% {
     text-shadow: 0 0 0 #000;
   }
+
   0% {
     text-shadow: 5px 5px 1px #960378;
   }
+
   25% {
     text-shadow: 3px 8px 1px #077a8c;
   }
+
   50% {
     text-shadow: -4px -1px 1px #960378;
   }
+
   75% {
     text-shadow: 1px -5px 2px #077a8c;
   }
+
   100% {
     text-shadow: -5px -5px 1px #077a8c;
   }
@@ -905,37 +925,43 @@ animation: typing 3s steps(18, end), caret .5s step-end infinite;
 
 @keyframes move {
   0% {
-    top:1px;
-    left:-1px;
+    top: 1px;
+    left: -1px;
   }
+
   25% {
-    top:-1px;
-    left:1px;
+    top: -1px;
+    left: 1px;
   }
+
   50% {
-    top:-1px;
-    left:-1px;
+    top: -1px;
+    left: -1px;
   }
+
   75% {
-    top:1px;
-    left:-1px;
+    top: 1px;
+    left: -1px;
   }
+
   100% {
-    top:1px;
-    left:1px;
+    top: 1px;
+    left: 1px;
   }
 }
-.my-float{
-	position:fixed;
 
-	top:45px;
-	right:30px;
+.my-float {
+  position: fixed;
 
-	color:#FFF;
+  top: 45px;
+  right: 30px;
+
+  color: #FFF;
 
   z-index: 1000;
 }
-.bg{
+
+.bg {
   background-color: #000000;
 }
 
@@ -947,4 +973,19 @@ animation: typing 3s steps(18, end), caret .5s step-end infinite;
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
+}
+
+/* preloader css */
+ 
+
+#loading {
+  width: 100%;
+  height: 100vh;
+
+  background: #000 url('../img/103\ \(1\).gif') no-repeat center;
+  position: fixed;
+  z-index: 99999;
+}
+#footer > div.footer-top.bg-secondary > div > div > div.col-lg-8 > form > div > label{
+  color: #fff;
 }
