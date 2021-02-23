@@ -976,13 +976,16 @@ to {
 }
 
 /* preloader css */
- 
 
 #loading {
   width: 100%;
   height: 100vh;
-
-  background: #000 url('../img/103\ \(1\).gif') no-repeat center;
+  background: #000 url('../images/p.gif') no-repeat center;
   position: fixed;
   z-index: 99999;
+}
+@media (max-width:770px) {
+  #loading {
+    background: #000 url('../images/pre.gif') no-repeat center;
+  }
 }
