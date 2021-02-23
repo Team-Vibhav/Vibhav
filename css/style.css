@@ -1989,3 +1989,19 @@ padding-top: 20px;
     margin-bottom: 25px;
   }
 }
+
+#about > div > div > div.col-lg-7.col-md-6 > div > p
+{
+  text-align: justify;
+
+
+.vaishnavi{
+  text-align: justify;
+  margin: auto;
+  display: block;
+}
+.vaishnavi1{
+  font-size: 24px;
+  text-align: center;
+
+}
