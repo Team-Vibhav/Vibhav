@@ -21,7 +21,7 @@
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700"
     rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-  
+
 
   <!-- Bootstrap CSS File -->
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -46,8 +46,7 @@
   <!--==========================
   Header
   ============================-->
-  <header id="header">
-
+  <header id="header" class="aksh">
     <div id="topbar">
       <div class="container">
         <div class="social-links">
@@ -112,6 +111,23 @@
       <script type="text/javascript">
         function lm_function(){
           document.body.classList.toggle('dark-mode');
+          const aksh = document.body.classList;
+          if (aksh[0] == "dark-mode"){
+            ak.particles.color.value = '#314e52';
+            ak.particles.move.direction = 'bottom';
+            ak.particles.move.speed = '6';
+            ak.particles.number.value = '120';
+            console.log(aksh[0]);
+        }
+        else
+        {
+            if (ak.particles.color.value == '#314e52')
+            {
+              ak.particles.color.value = '#ffffff';
+            }
+        }
+        particlesJS('particles-js',ak);
+        console.log("ak is",ak);
       }
       </script>
     </div>
@@ -121,13 +137,20 @@
 
       <div onclick="change() ">
         <i  id="btn"class="fa fa-volume-up my-float"></i>
-
       </div>
-
-      <video id="media" autoplay img-fluid>
-        <source class="embed-responsive media" src="img/2.mp4" type="video/mp4">
+      <video id="media" autoplay muted="false">
+        <source class="embed-responsive media" src="img/2.ogg" type="video/ogg">
       </video>
-
+      <script type="text/javascript">
+        const vid = document.getElementById('media')
+        vid.onended = function(){
+          const x = window.innerHeight;
+          console.log(x);
+          if(window.scrollY < x){
+            window.scrollTo({top:x,behavior:"smooth"});
+          }
+        }
+      </script>
     </div>
   </header>
   <!--==========================
@@ -299,7 +322,7 @@
         </div>
 
       </div>
-    </section><!-- #services -->
+    </section>--><!-- #services -->
 
     <!--==========================
       Why Us Section

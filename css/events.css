@@ -56,28 +56,29 @@ section.project1 {
   }
 
 
-  .body1{
+  body1{
     background-color: #151320;
+    /* height: 100vh; */
     display: grid;
-    /* place-items: center center; */
+    place-items: center center;
     font-family: 'Poppins',sans-serif;
+    
 }
-
-.cardsa{
+.cards1{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
     padding: 30px;
-    grid-gap: 40px;
+    grid-gap: 50px;
+    margin: 30px 0px;
 }
 .carda{
-    height: 570px;
     background-color: #1c1b29;
     border-radius: 20px;
     box-shadow: 0 0 30px rgba(0,0,0,0.18);
 }
 .container1{
-    height: 60%;
     position: relative;
+    height: 60%;
     clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
 }
 img{
@@ -116,16 +117,16 @@ img{
         #f8501c
     );
 }
-.details{
+.details1{
     padding: 20px 10px;
 }
-.details>h3{
+.details1>h3{
     color: #ffffff;
     font-weight: 600;
     font-size: 18px;
     margin: 10px 0 15px 0;
 }
-.details>p{
+.details1>p{
     color: #a0a0a0;
     font-size: 15px;
     line-height: 30px;
@@ -142,55 +143,3 @@ img{
   }
 
 
-  /* model */
-
-  .final__button{
-    cursor: pointer;
-  }
-  .final__overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 99;
-    background-color: #333333;
-    pointer-events: none;
-    opacity: 0;
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
-    -webkit-transition: transform 0.5s ease, opacity 0.5s ease;
-    transition: transform 0.5s ease, opacity 0.5s ease;
-  }
-  input[type="checkbox"]:checked ~ .final__overlay {
-    pointer-events: auto;
-    opacity: 1;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  .final__modal{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    z-index: 100;
-    -webkit-transform: translate(-50%, -50%) scale(0.5);
-            transform: translate(-50%, -50%) scale(0.5);
-    width: 100%;
-    max-width: 640px;
-    pointer-events: none;
-    opacity: 0;
-    -webkit-transition: transform 0.5s ease, opacity 0.5s ease;
-    transition: transform 0.5s ease, opacity 0.5s ease;
-    transition-delay: 0.1s;
-  }
-  input[type="checkbox"]:checked ~ .final__modal {
-    pointer-events: auto;
-    opacity: 1;
-    -webkit-transform: translate(-50%, -50%) scale(1);
-            transform: translate(-50%, -50%) scale(1);
-  }
-  .final__modal__content{
-    display: block;
-    padding: 30px;
-    background-color: #ffffff;
-  }

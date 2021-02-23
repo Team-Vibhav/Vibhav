@@ -8,6 +8,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+.dark-mode .alumni-heading{
+  background-color: #f5f8fd;
+  color: #0b115a;
+}
+.dark-mode .card__collection{
+  background: none;
+}
+.dark-mode .alumni-heading:hover{
+  color: black;
+  background-color: #f5f8fd;
+}
 .alumni-heading{
   text-align: center;
   color: black;
@@ -16,13 +27,14 @@
   font-size: 46px;
   font-weight: 900;
   background-color: #808080;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .alumni-heading:hover{
   color: #ffffe0;
   background-color: #101010;
   border-bottom: 1px solid white;
-  box-shadow: 0 0 6px white;
+  border-radius: 0;
+  box-shadow: 0 3px white;
 }
 .clear-fix:after {
   display: block;
