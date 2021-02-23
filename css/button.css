@@ -986,3 +986,6 @@ to {
   position: fixed;
   z-index: 99999;
 }
+#footer > div.footer-top.bg-secondary > div > div > div.col-lg-8 > form > div > label{
+  color: #fff;
+}
