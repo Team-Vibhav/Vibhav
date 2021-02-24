@@ -8,7 +8,7 @@ const ak = {
       }
     },
     "color": {
-      "value": "#fff"
+      "value": "#ad6c80"
     },
     "shape": {
       "type": "circle",
