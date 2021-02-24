@@ -949,12 +949,7 @@ hr{
   width: 100%;
   -webkit-transform: scale(1.03);
   transform: scale(1.03);
-<<<<<<< HEAD
   border-bottom: 6px solid #00be85;
-=======
-  
->>>>>>> upstream/main
-
 }
 
 #about .about-img::before {
