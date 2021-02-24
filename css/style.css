@@ -2012,3 +2012,6 @@ padding-top: 20px;
   text-align: center;
 
 }
+#footer > div.footer-top{
+  background-color: #2d2b46;
+}
