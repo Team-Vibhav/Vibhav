@@ -982,10 +982,10 @@ to {
   width: 100%;
   height: 100vh;
 
-  background: #000 url('../img/103\ \(1\).gif') no-repeat center;
+  background: #000 url('../img/103\ \(4\).gif') no-repeat center;
   position: fixed;
   z-index: 99999;
 }
-#footer > div.footer-top.bg-secondary > div > div > div.col-lg-8 > form > div > label{
+#footer > div.footer-top > div > div > div.col-lg-8 > form > div > label{
   color: #fff;
 }

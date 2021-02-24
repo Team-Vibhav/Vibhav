@@ -67,6 +67,7 @@ body1{
   padding: 30px;
   grid-gap: 50px;
   margin: 30px 0px;
+ 
 }
 .carda{
   background-color: #1c1b29;
@@ -139,4 +140,6 @@ img{
   box-shadow: 10px 10px 8px #222222;;
 }
 
-
+body > section > div > p{
+  text-align: justify;
+}
