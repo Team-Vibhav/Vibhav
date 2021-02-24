@@ -309,7 +309,7 @@ body > section > div > div.container.h-100 > div > div > div > div > h3:hover{
     margin-bottom: 30px;
     transition: .5s;
     border: 0;
-    
+
     border-radius: .55rem;
     position: relative;
     height: 95%;
@@ -371,7 +371,7 @@ padding-top: 100px;
 
 }
 body {
-  background: rgb(22, 22, 22);
+  background-image: url('../img/bg.png');
   color: #444;
   font-family: "Open Sans", sans-serif;
 }
@@ -382,6 +382,7 @@ a {
 }
 #particles-js{
   height: 650px;
+  /* background-image: url('../img/bg.png'); */
 }
 a:hover,
 a:active,
@@ -912,7 +913,6 @@ hr{
   height: 92%;
   z-index: -1;
   content: '';
-  background-color: rgb(22, 22, 22);
   transition: .5s;
 }
 
@@ -924,7 +924,6 @@ hr{
   height: 92%;
   z-index: -1;
   content: '';
-  background-color:  rgb(22, 22, 22);
   transition: .5s;
 }
 
@@ -1044,7 +1043,6 @@ hr{
 --------------------------------*/
 
 #call-to-action {
-  background: #2d2b46;
   background-size: cover;
   padding: 40px 0;
 }
@@ -1593,12 +1591,10 @@ padding-top: 20px;
 #footer {
   padding: 0 0 30px 0;
   font-size: 14px;
-  background: #fff;
 }
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: #f5f8fd;
 }
 
 #footer .footer-top .footer-info {
