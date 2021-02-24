@@ -13,11 +13,11 @@ const ak = {
     "shape": {
       "type": "circle",
       "stroke": {
-        "width": 0,
-        "color": "#000000"
+        "width": 3,
+        "color": "8ac4d0"
       },
       "polygon": {
-        "nb_sides": 5
+        "nb_sides": 7
       },
       "image": {
         "src": "img/github.svg",
@@ -26,7 +26,7 @@ const ak = {
       }
     },
     "opacity": {
-      "value": 0.5,
+      "value": 1,
       "random": false,
       "anim": {
         "enable": false,
@@ -39,22 +39,22 @@ const ak = {
       "value": 5,
       "random": true,
       "anim": {
-        "enable": false,
-        "speed": 40,
-        "size_min": 0.1,
+        "enable": true,
+        "speed": 10,
+        "size_min": 3,
         "sync": false
       }
     },
     "line_linked": {
       "enable": true,
-      "distance": 150,
-      "color": "#ffffff",
-      "opacity": 0.4,
-      "width": 1
+      "distance": 125,
+      "color": "#a3ddcb",
+      "opacity": 0.7,
+      "width": 0.5
     },
     "move": {
       "enable": true,
-      "speed": 6,
+      "speed": 8,
       "direction": "none",
       "random": false,
       "straight": false,
@@ -71,7 +71,7 @@ const ak = {
     "events": {
       "onhover": {
         "enable": true,
-        "mode": "repulse"
+        "mode": ""
       },
       "onclick": {
         "enable": true,
@@ -94,7 +94,7 @@ const ak = {
         "speed": 3
       },
       "repulse": {
-        "distance": 200
+        "distance": 100
       },
       "push": {
         "particles_nb": 4

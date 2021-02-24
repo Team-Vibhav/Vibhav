@@ -431,12 +431,12 @@ A logic based puzzle will be given to solve
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
-  <script>
-    const preloader = document.getElementById('loading');
-
-    function myfunction() {
-      preloader.style.display = 'none';
-    }
+  <script type="text/javascript">
+    $(window).load(function() {
+      setTimeout(function(){
+        $('#loading').fadeOut('slow');
+      },800)
+    })
   </script>
 
 </body>
