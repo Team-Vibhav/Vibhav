@@ -1207,14 +1207,14 @@
         });
     </script>
 
-    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script>
-        const preloader = document.getElementById('loading');
-
-        function myfunction() {
-          preloader.style.display = 'none';
-        }
-      </script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript">
+      $(window).load(function() {
+        setTimeout(function(){
+          $('#loading').fadeOut('slow');
+        },800)
+      })
+    </script>
 
 </body>
 

@@ -528,12 +528,12 @@
       b_g.classList.toggle('dark-mode');
     }
   </script>
-  <script>
-    const preloader = document.getElementById('loading');
-
-    function myfunction() {
-      preloader.style.display = 'none';
-    }
+  <script type="text/javascript">
+    $(window).load(function() {
+      setTimeout(function(){
+        $('#loading').fadeOut('slow');
+      },800)
+    })
   </script>
 </body>
 
