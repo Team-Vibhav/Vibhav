@@ -13,8 +13,8 @@
 
 
   <!-- Favicons -->
-  <link href="img/vibhav_logo.jpg" rel="icon">
-  <link href="img/vibhav_logo.jpg" rel="apple-touch-icon">
+  <link href="img/vibhav_logo.png" rel="icon">
+  <link href="img/vibhav_logo.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link
@@ -69,7 +69,10 @@
   </style>
 </head>
 
-<body>
+<body onload="myfunction()">
+  <div id="loading">
+
+  </div>
   <!--==========================
   Header
   ============================-->
@@ -525,6 +528,13 @@
       b_g.classList.toggle('dark-mode');
     }
   </script>
+    <script>
+      const preloader = document.getElementById('loading');
+  
+      function myfunction() {
+        preloader.style.display = 'none';
+      }
+    </script>
 </body>
 
 </html>
