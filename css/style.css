@@ -81,7 +81,7 @@
 .dark-mode .text-light{
   color: #1c1b1b !important;
 }
-.dark-mode a.text-light:focus, a.text-light:hover {
+.dark-mode a.text-light:focus, .dark-mode a.text-light:hover {
     color: #0962af !important;
   }
 .dark-mode #call-to-action{
@@ -374,6 +374,8 @@ body {
   background-image: url('../img/bg.png');
   color: #444;
   font-family: "Open Sans", sans-serif;
+  background-image: url("../img/bg.png");
+  background-size: cover;
 }
 
 a {
@@ -901,7 +903,7 @@ hr{
   width: 100%;
   -webkit-transform: scale(1.03);
   transform: scale(1.03);
- border-bottom: 6px solid #00be85;
+ border-bottom: 5px solid #ffc75f;
 }
 
 
@@ -1607,7 +1609,7 @@ padding-top: 20px;
   padding: 2px 0 2px 0;
   line-height: 1;
   font-family: "Montserrat", sans-serif;
-  color: #413e66;
+  color: #60663e;
   font-weight: 400;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -1692,7 +1694,7 @@ padding-top: 20px;
   border: 0;
   padding: 6px 8px;
   width: 65%;
-  border: 1px solid #d9dde6;
+  border: 1px solid #f5f6f8;
 }
 
 #footer .footer-top .footer-newsletter input[type="submit"] {
@@ -1749,7 +1751,7 @@ padding-top: 20px;
 }
 
 #footer .footer-top .form label {
-  color: #413e66;
+  color: #f6f6f8;
   font-weight: 500;
 }
 

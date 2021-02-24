@@ -45,7 +45,7 @@
 
 <body onload="myfunction()">
     <div id="loading">
-  
+
     </div>
     <!--==========================
   Header
@@ -106,6 +106,12 @@
                         </ul>
                     </li>
                     <li><a  href="/index.html#footer">Contact Us</a></li>
+                    <!-- <li class="toggle-btn">Toggle Mode
+                        <label class="switch btn_d_m">
+                            <input type="checkbox" onclick="lm_function()">
+                            <span class="slider round"></span>
+                        </label>
+                    </li> -->
                 </ul>
             </nav><!-- .main-nav -->
 
@@ -121,7 +127,7 @@
 
     </header><!-- #header -->
 
-    <section id="team" class="bg">
+    <section id="team">
         <div class="container ">
             <div class="text-center">
                 <h4 class="display-4 text-white pt-5">Final Year Members</h4>
@@ -1204,7 +1210,7 @@
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script>
         const preloader = document.getElementById('loading');
-    
+
         function myfunction() {
           preloader.style.display = 'none';
         }
