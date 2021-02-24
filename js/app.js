@@ -1,14 +1,14 @@
 const ak = {
   "particles": {
     "number": {
-      "value": 120,
+      "value": 80,
       "density": {
         "enable": true,
         "value_area": 800
       }
     },
     "color": {
-      "value": "#ad6c80"
+      "value": "#fff"
     },
     "shape": {
       "type": "circle",
@@ -17,7 +17,7 @@ const ak = {
         "color": "8ac4d0"
       },
       "polygon": {
-        "nb_sides": 3
+        "nb_sides": 7
       },
       "image": {
         "src": "img/github.svg",
@@ -36,20 +36,20 @@ const ak = {
       }
     },
     "size": {
-      "value": 7,
+      "value": 5,
       "random": true,
       "anim": {
         "enable": true,
         "speed": 10,
-        "size_min": 5,
+        "size_min": 3,
         "sync": false
       }
     },
     "line_linked": {
       "enable": true,
-      "distance": 200,
+      "distance": 125,
       "color": "#a3ddcb",
-      "opacity": 0.6,
+      "opacity": 0.7,
       "width": 0.5
     },
     "move": {
