@@ -11,9 +11,8 @@
 
 
   <!-- Favicons -->
-
-  <link href="img/vibhav_logo.jpg" rel="icon">
-  <link href="img/vibhav_logo.jpg" rel="apple-touch-icon">
+  <link href="img/vibhav_logo.png" rel="icon">
+  <link href="img/vibhav_logo.png" rel="apple-touch-icon">
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
 
@@ -40,7 +39,10 @@
   <link rel="stylesheet" href="css/button.css">
 </head>
 
-<body class="">
+<body onload="myfunction()">
+  <div id="loading">
+
+  </div>
   <!--==========================
   Header
   ============================-->
@@ -551,6 +553,13 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+  <script>
+    const preloader = document.getElementById('loading');
+
+    function myfunction() {
+      preloader.style.display = 'none';
+    }
+  </script>
 
 </body>
 

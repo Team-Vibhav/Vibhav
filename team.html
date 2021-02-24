@@ -10,9 +10,8 @@
     <meta name="keywords" content="Projects,events,workshops">
 
     <!-- Favicons -->
-    <link href="img/vibhav_logo.jpg" rel="icon">
-    <link href="img/vibhav_logo.jpg" rel="apple-touch-icon">
-
+    <link href="img/vibhav_logo.png" rel="icon">
+    <link href="img/vibhav_logo.png" rel="apple-touch-icon">
     <!-- Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700"
@@ -44,7 +43,10 @@
 
 </head>
 
-<body>
+<body onload="myfunction()">
+    <div id="loading">
+  
+    </div>
     <!--==========================
   Header
   ============================-->
@@ -1200,6 +1202,13 @@
     </script>
 
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script>
+        const preloader = document.getElementById('loading');
+    
+        function myfunction() {
+          preloader.style.display = 'none';
+        }
+      </script>
 
 </body>
 

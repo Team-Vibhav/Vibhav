@@ -780,7 +780,7 @@ hr{
 
 .mobile-nav-toggle i {
   margin: 18px 18px 0 0;
-  color: #065e77;
+  color: #ffc75f;
 }
 
 .mobile-nav-overly {
@@ -900,9 +900,9 @@ hr{
   width: 100%;
   -webkit-transform: scale(1.03);
   transform: scale(1.03);
-  border-bottom: 6px solid #ffc75f;
-
+ border-bottom: 6px solid #00be85;
 }
+
 
 #about .about-img::before {
   position: absolute;
