@@ -43,7 +43,10 @@
 
 </head>
 
-<body>
+<body onload="myfunction()">
+    <div id="loading">
+  
+    </div>
     <!--==========================
   Header
   ============================-->
@@ -1205,6 +1208,13 @@
     </script>
 
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script>
+        const preloader = document.getElementById('loading');
+    
+        function myfunction() {
+          preloader.style.display = 'none';
+        }
+      </script>
 
 </body>
 
