@@ -42,9 +42,18 @@
   <link rel="stylesheet" href="css/button.css">
 </head>
 
-<body onload="myfunction()">
+<body>
   <div id="loading">
-
+    <div class="loading">
+    	<div class="loading-text">
+    		<span class="loading-text-words">V</span>
+    		<span class="loading-text-words">I</span>
+    		<span class="loading-text-words">B</span>
+    		<span class="loading-text-words">H</span>
+    		<span class="loading-text-words">A</span>
+    		<span class="loading-text-words">V</span>
+    	</div>
+    </div>
   </div>
   <!--==========================
   Header
@@ -69,32 +78,19 @@
 
       <div class="logo float-left ">
         <!-- Uncomment below if you prefer to use an image logo -->
-        <h1 class="text-success site-title"><a href="index.html" class="scrollto">VIBHAV</a></h1>
-
+        <h1 class="text-success site-title"><a href="#intro" class="scrollto">VIBHAV</a></h1>
         <!-- <a href="#header" class="scrollto"><img src="img/logo.png" alt="" class="img-fluid"></a> -->
       </div>
 
-
-
-
       <nav class="main-nav float-right d-none d-lg-block">
         <ul>
-          <li class="active"><a href="index.html">Home</a></li>
+          <li class="active"><a href="#particles-js">Home</a></li>
           <li><a href="#about">About Us</a></li>
-
-
-
-
-
           <li class="drop-down"><a href="team.html">Our Team</a>
             <ul>
-
-
               <li><a href="team.html">Our Team</a></li>
               <li><a href="internexperience.html">Intern Experiences</a></li>
               <li><a href="alumni.html">Alumni</a></li>
-
-
             </ul>
           </li>
           <li class="drop-down"><a href="projects.html">Our Work</a>
@@ -104,12 +100,12 @@
             </ul>
           </li>
           <li><a href="#footer">Contact Us</a></li>
-          <li class="toggle-btn">Toggle Mode
+          <!-- <li class="toggle-btn">Toggle Mode
             <label class="switch btn_d_m">
               <input type="checkbox" onclick="lm_function()">
               <span class="slider round"></span>
             </label>
-          </li>
+          </li> -->
         </ul>
       </nav><!-- .main-nav -->
 
@@ -133,18 +129,15 @@
           console.log("ak is", ak);
         }
         </script>
-      
+
     </div>
   </header><!-- #header -->
   <header>
-    <!-----
+    <!---
     <div class="mid">
 
       <div onclick="change() ">
-
-        <i id="btn" class="fa fa-volume-up my-float"></i>
-
-
+        <i id="btn"class="fa fa-volume-up my-float"></i>
       </div>
       <video id="media" autoplay muted="false">
         <source class="embed-responsive media" src="img/3.mp4" type="video/mp4">
@@ -172,7 +165,7 @@
   <!-- Welcome Area Start -->
   <section class="welcome-area">
     <!-- Single Slide -->
-    <div class="single-welcome-slide bg-img bg-overlay jarallax" style="z-index: 100;">
+    <div class="single-welcome-slide bg-img jarallax">
       <!-- <canvas style="position: absolute; width: 100%; height: 100%"></canvas> -->
       <div id="particles-js" style="position: absolute; width: 100%; height: 100%"></div>
 
@@ -221,13 +214,10 @@
 
           <div class="col-lg-5 col-md-6">
             <div class="about-img">
-<<<<<<< HEAD
+
               <img src="img/Yellow.png" alt="">
-=======
 
-              <img src="img/vibhav_logo1.png" alt="">
 
->>>>>>> upstream/main
             </div>
           </div>
 
@@ -439,6 +429,7 @@
     <!--==========================
       Call To Action Section
     ============================-->
+    <hr class="w-75" style="height:2px;border-width:0;color:gray;background-color:gray">
     <section id="call-to-action" class="wow fadeInUp">
       <div class="container">
         <div class="row">
@@ -453,10 +444,9 @@
               us!</a>
           </div>
         </div>
-
       </div>
     </section><!-- #call-to-action -->
-
+    <hr class="w-75" style="height:2px;border-width:0;color:gray;background-color:gray">
     <!--==========================
       Features Section
     ============================-->
@@ -575,7 +565,7 @@
                   <span>Core-Coordinator</span>
                   <div class="social">
 
-                    <!-------
+                    <!---
                     <a href="https://www.instagram.com/2_yash_8/"><i class="fab fa-instagram"></i></a>
                                     <a href="#"><i class="fab fa-facebook"></i></a>
                     -->
@@ -606,7 +596,7 @@
                   <div class="social">
 
                     <a href="https://www.instagram.com/cyberrtrron/"><i class="fab fa-instagram"></i></a>
-                    <!------
+                    <!--
                     <a href="#"><i class="fab fa-facebook"></i></a>
                     <a href="#"><i class="fab fa-github"></i></a>
                     -->
@@ -654,12 +644,13 @@
 
       </div>
     </section>-->
-    
+
     <!-- #clients -->
 
     <!--==========================
       Frequently Asked Questions Section
     ============================-->
+    <hr class="w-75" style="height:2px;border-width:0;color:gray;background-color:gray">
     <section id="faq">
       <div class="container">
         <header class="section-header">
@@ -773,7 +764,8 @@
   <!--==========================
     Footer
   ============================-->
-  <footer id="footer" class=" bg-dark">
+  <hr class="w-75" style="height:2px;border-width:0;color:gray;background-color:gray">
+  <footer id="footer">
     <div class="footer-top">
       <div class="container">
 
@@ -789,15 +781,15 @@
                 <a href="https://festnimbus.com" class="link mb-2">
                 <img src="img/nimbus_black.png" alt="" width="100px" height = "100px" class="vaishnavi" >
               </a>
-              <!-- <p class='vaishnavi'> Nimbus is the technical fest of NIT Hamirpur, in which Team Vibhav participates. 
+              <!-- <p class='vaishnavi'> Nimbus is the technical fest of NIT Hamirpur, in which Team Vibhav participates.
                 Moreover being the biggest tech festival of North India, it is something not worth to be missed.
                 To know more about fest Nimbus, visit <a href="https://festnimbus.com" class="link mb-2">Here</a> -->
-                
-                
+
+
               </p>
-              <h2 class='vaishnavi1 mt-3 text-light'>Visit Official Nimbus Site</h2> 
+              <h2 class='vaishnavi1 mt-3'>Visit Official Nimbus Site</h2>
               <!-- <div class="text-center">
-              <button class="btn btn-lg btn-success btncolor ">Here</button> --> 
+              <button class="btn btn-lg btn-success btncolor ">Here</button> -->
               <!-- </div> -->
                 <h3 class="text-center mt-3 text-light">Follow Us On</h3>
                 <div class="social-links text-center mb-3">
@@ -822,35 +814,23 @@
 
           <div class="col-lg-8">
             <h1 class="h3 mb-3 font-weight-normal text-center text-light">Contact Us</h1>
-
             <form action="https://formspree.io/f/mvovygen" class="form-signin" method="POST">
               <label for="inputEmail" class="sr-only">Email address</label>
               <input name="email" type="email" id="inputEmail" class="form-control mb-3" placeholder="Email address"
                 required>
-
               <div class="form-group">
-                <label for="exampleFormControlTextarea1 ">Message</label>
-                <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                <textarea name="message" placeholder="Message" class="form-control" id="exampleFormControlTextarea1" rows="3"
                   required></textarea>
               </div>
-
               <button class="btn btn-lg btn-success btncolor " type="submit">Send Message</button>
-
             </form>
-
           </div>
-
-
-
         </div>
 
       </div>
     </div>
 
-    <div class="container bg-dark">
-      <div class="copyright text-light">
-        &copy; Copyright <strong class="ayush3">VIBHAV</strong>. All Rights Reserved
-      </div>
+    <div class="container">
       <div class="credits text-light">
         Designed by <a href="#">Vibhav</a>
       </div>
@@ -878,12 +858,12 @@
   <script src="js/main.js"></script>
   <script src="js/particles.js"></script>
   <script src="js/app.js"></script>
-  <script>
-    const preloader = document.getElementById('loading');
-
-    function myfunction() {
-      preloader.style.display = 'none';
-    }
+  <script type="text/javascript">
+    $(window).load(function() {
+      setTimeout(function(){
+        $('#loading').fadeOut('slow');
+      },3600)
+    })
   </script>
 </body>
 

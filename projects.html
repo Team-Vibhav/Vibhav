@@ -42,8 +42,8 @@
     }
 
     body {
-      background-color: #ECEFF1;
-      color: #37474F;
+
+
       font-family: 'Raleway', sans-serif;
       font-weight: 300;
       font-size: 16px;
@@ -123,12 +123,12 @@
             </ul>
           </li>
           <li><a href="#footer">Contact Us</a></li>
-          <li class="toggle-btn">Toggle Mode
+          <!-- <li class="toggle-btn">Toggle Mode
             <label class="switch btn_d_m">
               <input type="checkbox" onclick="lm_function()">
               <span class="slider round"></span>
             </label>
-          </li>
+          </li> -->
         </ul>
       </nav><!-- .main-nav -->
 
@@ -144,7 +144,7 @@
   <!--==========================
       Portfolio Section
     ============================-->
-  <section id="portfolio" class="bg">
+  <section id="portfolio">
     <div class="container">
 
       <header class="section-header">
@@ -158,7 +158,7 @@
             <li data-filter=".filter-Ai-ml">AI-ML</li>
             <li data-filter=".filter-iot">IOT</li>
             <li data-filter=".filter-ar">AR</li>
-          
+
             <li data-filter=".filter-es">Embedded system</li>
 
           </ul>
@@ -528,13 +528,13 @@
       b_g.classList.toggle('dark-mode');
     }
   </script>
-    <script>
-      const preloader = document.getElementById('loading');
-  
-      function myfunction() {
-        preloader.style.display = 'none';
-      }
-    </script>
+  <script type="text/javascript">
+    $(window).load(function() {
+      setTimeout(function(){
+        $('#loading').fadeOut('slow');
+      },800)
+    })
+  </script>
 </body>
 
 </html>
