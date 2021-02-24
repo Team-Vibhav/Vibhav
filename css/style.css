@@ -309,7 +309,7 @@ body > section > div > div.container.h-100 > div > div > div > div > h3:hover{
     margin-bottom: 30px;
     transition: .5s;
     border: 0;
-    
+
     border-radius: .55rem;
     position: relative;
     height: 95%;
@@ -371,9 +371,7 @@ padding-top: 100px;
 
 }
 body {
-  /*--------
-  background: rgb(22, 22, 22);
-  */
+  background-image: url('../img/bg.png');
   color: #444;
   font-family: "Open Sans", sans-serif;
   background-image: url("../img/bg.png");
@@ -386,6 +384,7 @@ a {
 }
 #particles-js{
   height: 650px;
+  /* background-image: url('../img/bg.png'); */
 }
 a:hover,
 a:active,
@@ -446,55 +445,6 @@ h6 {
 
 #intro>div>div>div.col-md-6.intro-info.order-md-first.order-last>h2>span:hover {
   color: #10efff;
-}
-
-#preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 9999;
-  overflow: hidden;
-  background: #fff;
-}
-
-#preloader:before {
-  content: "";
-  position: fixed;
-  top: calc(50% - 30px);
-  left: calc(50% - 30px);
-  border: 6px solid #f2f2f2;
-  border-top: 6px solid #1bb1dc;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  -webkit-animation: animate-preloader 1s linear infinite;
-  animation: animate-preloader 1s linear infinite;
-}
-
-@-webkit-keyframes animate-preloader {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes animate-preloader {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
 }
 
 /*--------------------------------------------------------------
@@ -953,7 +903,6 @@ hr{
   width: 100%;
   -webkit-transform: scale(1.03);
   transform: scale(1.03);
- border-bottom: 5px solid #ffc75f;
 }
 
 
@@ -975,7 +924,7 @@ hr{
   width: 90%;
   height: 92%;
   z-index: -1;
-  content: ''; 
+  content: '';
   transition: .5s;
 }
 
@@ -1095,7 +1044,6 @@ hr{
 --------------------------------*/
 
 #call-to-action {
-  background: #2d2b46;
   background-size: cover;
   padding: 40px 0;
 }
@@ -1644,12 +1592,10 @@ padding-top: 20px;
 #footer {
   padding: 0 0 30px 0;
   font-size: 14px;
-  background: #fff;
 }
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: #2d2b46;
 }
 
 #footer .footer-top .footer-info {
@@ -2008,5 +1954,5 @@ padding-top: 20px;
 .vaishnavi1{
   font-size: 24px;
   text-align: center;
-
+  color: #0A98C0;
 }
