@@ -1,12 +1,14 @@
 (function ($) {
-  "use strict";
+  'use strict';
 
   // Preloader (if the #preloader div exists)
   $(window).on('load', function () {
     if ($('#preloader').length) {
-      $('#preloader').delay(100).fadeOut('slow', function () {
-        $(this).remove();
-      });
+      $('#preloader')
+        .delay(100)
+        .fadeOut('slow', function () {
+          $(this).remove();
+        });
     }
   });
 
@@ -19,9 +21,13 @@
     }
   });
   $('.back-to-top').click(function () {
-    $('html, body').animate({
-      scrollTop: 0
-    }, 1500, 'easeInOutExpo');
+    $('html, body').animate(
+      {
+        scrollTop: 0,
+      },
+      1500,
+      'easeInOutExpo'
+    );
     return false;
   });
 
@@ -45,7 +51,11 @@
 
   // Smooth scroll for the navigation and links with .scrollto classes
   $('.main-nav a, .mobile-nav a, .scrollto').on('click', function () {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+    if (
+      location.pathname.replace(/^\//, '') ==
+        this.pathname.replace(/^\//, '') &&
+      location.hostname == this.hostname
+    ) {
       var target = $(this.hash);
       if (target.length) {
         var top_space = 0;
@@ -58,9 +68,13 @@
           }
         }
 
-        $('html, body').animate({
-          scrollTop: target.offset().top - top_space
-        }, 1500, 'easeInOutExpo');
+        $('html, body').animate(
+          {
+            scrollTop: target.offset().top - top_space,
+          },
+          1500,
+          'easeInOutExpo'
+        );
 
         if ($(this).parents('.main-nav, .mobile-nav').length) {
           $('.main-nav .active, .mobile-nav .active').removeClass('active');
@@ -91,7 +105,10 @@
 
       if (cur_pos >= top && cur_pos <= bottom) {
         main_nav.find('li').removeClass('active');
-        main_nav.find('a[href="#' + $(this).attr('id') + '"]').parent('li').addClass('active');
+        main_nav
+          .find('a[href="#' + $(this).attr('id') + '"]')
+          .parent('li')
+          .addClass('active');
       }
     });
   });
@@ -99,69 +116,65 @@
   // jQuery counterUp (used in Whu Us section)
   $('[data-toggle="counter-up"]').counterUp({
     delay: 10,
-    time: 1000
+    time: 1000,
   });
 
   // Porfolio isotope and filter
   $(window).on('load', function () {
     var portfolioIsotope = $('.portfolio-container').isotope({
-      itemSelector: '.portfolio-item'
+      itemSelector: '.portfolio-item',
     });
-    $('#portfolio-flters li').on('click', function () {
-      $("#portfolio-flters li").removeClass('filter-active');
+    $('#portfolio-flters li').on('click', function (e) {
+      e.preventDefault();
+      $('#portfolio-flters li').removeClass('filter-active');
       $(this).addClass('filter-active');
 
       portfolioIsotope.isotope({
-        filter: $(this).data('filter')
+        filter: $(this).data('filter'),
       });
     });
   });
 
   // Testimonials carousel (uses the Owl Carousel library)
-  $(".testimonials-carousel").owlCarousel({
+  $('.testimonials-carousel').owlCarousel({
     autoplay: true,
     dots: true,
     loop: true,
-    items: 1
+    items: 1,
   });
 
   // Clients carousel (uses the Owl Carousel library)
-  $(".clients-carousel").owlCarousel({
+  $('.clients-carousel').owlCarousel({
     autoplay: true,
     dots: true,
     loop: true,
     responsive: {
       0: {
-        items: 2
+        items: 2,
       },
       768: {
-        items: 4
+        items: 4,
       },
       900: {
-        items: 6
-      }
-    }
+        items: 6,
+      },
+    },
   });
-
 })(jQuery);
 
 function change() {
-  var element = document.getElementById("media");
-  var btn = document.getElementById("btn");
-  if (btn.classList.contains("fa-volume-off")) {
-    btn.classList.remove("fa-volume-off");
-    btn.classList.add("fa-volume-up");
-
+  var element = document.getElementById('media');
+  var btn = document.getElementById('btn');
+  if (btn.classList.contains('fa-volume-off')) {
+    btn.classList.remove('fa-volume-off');
+    btn.classList.add('fa-volume-up');
   } else {
-    btn.classList.remove("fa-volume-up");
-    btn.classList.add("fa-volume-off");
-
+    btn.classList.remove('fa-volume-up');
+    btn.classList.add('fa-volume-off');
   }
-  if ( element.muted) {
+  if (element.muted) {
     element.muted = false;
-
   } else {
     element.muted = true;
   }
-
 }
