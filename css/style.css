@@ -1952,17 +1952,15 @@ padding-top: 20px;
   display: block;
   
 }
-#nimbus img:hover{
+/* #nimbus img:hover{
   filter: invert(95%) sepia(27%) saturate(3658%) hue-rotate(312deg) brightness(102%) contrast(101%);
-}
+} */
 .vaishnavi1{
   font-size: 24px;
   text-align: center;
   color: #0A98C0;
 }
-#footer > div.footer-top{
-  background-color: #2d2b46;
-}
+
 
 #workshop{
   /* width: 50%; */
