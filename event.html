@@ -7,12 +7,12 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="Team Vibhav is the Departmental team of Electronics & Communications Engineering Department which works
   for Nimbus Annual Technical Festival of National Institute of Technology, Hamirpur." name="description">
-  <meta  name="keywords" content="Projects,events,workshops">
+  <meta name="keywords" content="Projects,events,workshops">
 
 
   <!-- Favicons -->
-  <link href="img/vibhav_logo.png" rel="icon">
-  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="img/Yellow.png" rel="icon">
+  <link href="img/Yellow.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link
@@ -39,6 +39,9 @@
 </head>
 
 <body>
+  <div id="loading">
+
+  </div>
   <!--==========================
   Header
   ============================-->
@@ -47,13 +50,13 @@
     <div id="topbar">
       <div class="container">
         <div class="social-links">
-          <a href="https://www.instagram.com/team_vibhav/" class="instagram"><i
-            class="fab fa-instagram"></i></a>
-        <a href="https://www.facebook.com/teamvibhavece" class="facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/team_vibhav/" class="instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/teamvibhavece" class="facebook"><i class="fab fa-facebook"></i></a>
 
-        <a href="https://www.linkedin.com/in/team-vibhav-6643b4206/" class="linkedin"><i class="fab fa-linkedin"></i></a>
-        <a href="https://youtube.com/channel/UCt8W-_urFuy3dqulfQvk8fQ" class="instagram"><i
-            class="fab fa-youtube"></i></a>
+          <a href="https://www.linkedin.com/in/team-vibhav-6643b4206/" class="linkedin"><i
+              class="fab fa-linkedin"></i></a>
+          <a href="https://youtube.com/channel/UCt8W-_urFuy3dqulfQvk8fQ" class="instagram"><i
+              class="fab fa-youtube"></i></a>
         </div>
       </div>
     </div>
@@ -71,7 +74,7 @@
 
       <nav class="main-nav float-right d-none d-lg-block">
         <ul>
-          <li class="active"><a href="index.html">Home</a></li>
+          <li class="active"><a href="index.html#intro">Home</a></li>
           <li><a href="index.html#about">About Us</a></li>
 
 
@@ -91,138 +94,383 @@
           </li>
           <li class="drop-down"><a href="#">Our Work</a>
             <ul>
-
-
               <li><a href="projects.html">Projects</a></li>
-              <li><a href="event.html">Events / Workshop</a></li>
-
+              <li><a href="event.html">Events </a></li>
+              <li><a href="workshop.html">Workshops </a></li>
             </ul>
           </li>
           <li><a href="index.html#footer">Contact Us</a></li>
-
+          <!-- <li class="toggle-btn">Toggle Mode
+            <label class="switch btn_d_m">
+              <input type="checkbox" onclick="lm_function()">
+              <span class="slider round"></span>
+            </label>
+          </li> -->
         </ul>
       </nav><!-- .main-nav -->
 
+      <script type="text/javascript">
+        function lm_function() {
+          const bg = document.getElementById('event-bg')
+          document.body.classList.toggle('dark-mode');
+          bg.classList.toggle('dark-mode');
+          bg.classList.toggle('section-bg');
+        }
+      </script>
     </div>
   </header><!-- #header -->
 
 
-     <!-- event page start -->
-    <div class="section-bg">
 
-      <section class="project1">
-        <div class="text1">
-            <h2>Events</h2>
-            <h4>Proposed by Team Vibhav</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
-        </div>
-        <div class="cards1 ">
-            <div class="carda card1 col-sm-12 vibhav-zoom wow bounceInUp " data-wow-duration="1.4s">
-                <div class="container container1">
-                    <img src="img/event image/vr-bot-maze.jpeg" alt="las vegas">
-                </div>
-                <div class="details1">
-                    <h3>Event 1</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus aperiam
-                        adipisci exercitationem.</p>
-                </div>
-            </div>
-            <div class="carda card2 col-sm-12 vibhav-zoom wow bounceInUp " data-wow-duration="1.4s">
-                <div class="container container1">
-                    <img src="img/event image/vr-bot-maze.jpeg" alt="New York">
-                </div>
-                <div class="details1">
-                    <h3>Event 2</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus aperiam
-                        adipisci exercitationem.</p>
-                </div>
-            </div>
-            <div class="carda card3 col-sm-12 vibhav-zoom wow bounceInUp " data-wow-duration="1.4s">
-                <div class="container container1">
-                    <img src="img/event image/vr-bot-maze.jpeg" alt="Singapore">
-                </div>
-                <div class="details1">
-                    <h3>Event 3</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus aperiam
-                        adipisci exercitationem.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="project1">
-        <hr>
-        <div class="text1">
-            <h2>Workshops</h2>
-            <h4>Organised by Team Vibhav</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
-        </div>
-        <div class="cards1 fix1">
-            <div class="carda card1 mx-auto col-sm-12 fix11 vibhav-zoom wow bounceInUp " data-wow-duration="1.4s">
-                <div class="container container1">
-                    <img src="img/event image/vr-bot-maze.jpeg" alt="las vegas">
-                </div>
-                <div class="details1">
-                    <h3>Event 1</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus aperiam
-                        adipisci exercitationem.</p>
-                </div>
-            </div>
-            <div class="carda card2 mx-auto col-sm-12 fix11 vibhav-zoom wow bounceInUp " data-wow-duration="1.4s">
-                <div class="container container1">
-                    <img src="img/event image/vr-bot-maze.jpeg" alt="New York">
-                </div>
-                <div class="details1">
-                    <h3>Event 2</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus aperiam
-                        adipisci exercitationem.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
+  <!-- event page start -->
+
+
+  <!-- <section class="project1">
+      <div class="text1">
+        <h2>Events</h2>
+        <h4>Proposed by Team Vibhav</h4>
+        <p>Team Vibhav organises various fun and technical events which are enjoyed by everyone, each year at fest Nimbus. Like previous years  </p>
+      </div>
+      <div class="cards1 ">
+        <div class="carda card1 col-sm-12 vibhav-zoom wow bounceInUp "  data-wow-duration="1.4s">
+          <div class="container container1">
+            <img src="img/event image/electrovision.jpg" height="450px"  width="300px" alt="las vegas">
+          </div>
+          <div class="details1">
+            <h3>Electrovision</h3>
+            <p>Channelize your inner Sherlock Homes and find clues hidden all over our  social media outlets 
+              starting from YouTube to all the way over to Instagram and also enjoy many electronics based competitions 
+              and win huge prizes. See you there!...&emsp;
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mymodel">Read More</button>
+            </p>
+          </div>
+        </div>
+        <div class="carda card2 col-sm-12 vibhav-zoom wow bounceInUp " data-wow-duration="1.4s">
+          <div class="container container1">
+            <img src="img/event image/cybercircuits.jpg" height="450px"  width="300px" alt="New York">
+          </div>
+          <div class="details1">
+            <h3>CyberCircuits</h3>
+            <p>Channelize your inner Sherlock Homes and find clues hidden all over our  social media outlets 
+              starting from YouTube to all the way over to Instagram and also enjoy many electronics based competitions 
+              and win huge prizes. See you there!&emsp;
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mymodel1">Read More</button>
+            </p>
+          </div>
+        </div>
+        <div class="carda card3 col-sm-12 vibhav-zoom wow bounceInUp " data-wow-duration="1.4s">
+          <div class="container container1">
+            <img src="img/event image/vr-bot-maze.jpeg" alt="Singapore">
+          </div>
+          <div class="details1">
+            <h3>QuARenTeams Titans</h3>
+            <p>Walk through 
+              the breath-taking virtual campus of NitH, solve mind boggling puzzles and 
+              emerge as the champion! Join the mega hunt to win amazing prizes.&emsp;
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mymodel2">Read More</button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- <section class="project1">
+      <hr>
+      <div class="text1">
+        <h2>Workshops</h2>
+        <h4>Organised by Team Vibhav</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus aperiam adipisci
+          exercitationem ...&emsp;
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mymodel"> Read More</button>
+        </p>
+      </div>
+      <div class="cards1 fix1">
+        <div class="carda card1 mx-auto col-sm-12 fix11 vibhav-zoom wow bounceInUp " data-wow-duration="1.4s">
+          <div class="container container1">
+            <img src="img/event image/vr-bot-maze.jpeg" alt="las vegas">
+          </div>
+          <div class="details1">
+            <h3>Event 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus aperiam adipisci
+              exercitationem ...&emsp;
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mymodel"> Read More</button>
+            </p>
+          </div>
+        </div>
+        <div class="carda card2 mx-auto col-sm-12 fix11 vibhav-zoom wow bounceInUp " data-wow-duration="1.4s">
+          <div class="container container1">
+            <img src="img/event image/vr-bot-maze.jpeg" alt="New York">
+          </div>
+          <div class="details1">
+            <h3>Event 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dignissimos, minus aperiam adipisci
+              exercitationem ...&emsp;
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mymode2">Read More</button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+
+
+  <!-- New event page -->
+
+
+  <section class="project1">
+    <div class="text1">
+      <h2>Events</h2>
+      <h4>Proposed by Team Vibhav</h4>
+      <p>Team Vibhav organises various fun and technical events which are enjoyed by everyone, each year at fest Nimbus.
+         This Nimbus too, Team Vibhav is back with another set of mind boggling events which are filled with
+         amusement and at the same time challenges your brain to go on a tricky journey. 
+         Participate in the events and stand a chance to win exciting rewards.</p>
     </div>
+  </section>
+   <div class="cards1 body1">
+    <!-- <div class="carda card1 vibhav-zoom wow bounceInUp">
+      <div class="container1">
+        <img src="img/event image/electrovision.jpg" alt="las vegas">
+      </div>
+      <div class="details1">
+        <h3>Electrovision</h3>
+        <p>Hey ECE geeks come and test your knowledge in this fun event. 
+          Play with everything from basic circuits to computers. 
+          Make the computer ...&emsp;
+          <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#mymodel">Read
+            More</button>
+        </p>
+      </div>
+    </div>  -->
+    <div class="carda card1 vibhav-zoom wow bounceInUp">
+      <div class="container1">
+        <img src="img/event image/vr-bot-maze.jpeg" alt="Singapore">
+      </div>
+      <div class="details1">
+        <h3>Electrovision</h3>
+        <p>Hey ECE geeks come and test your knowledge in this fun event. 
+          Play with everything from basic circuits to computers. 
+          Make the computer...&emsp;
+          <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#mymodel">Read
+            More</button>
+        </p>
+      </div>
+    </div>
+    <!-- <div class="carda card2 vibhav-zoom wow bounceInUp">
+      <div class="container1">
+        <img src="img/event image/cybercircuits.jpg" alt="New York">
+      </div>
+      <div class="details1">
+        <h3>CyberCircuits</h3>
+        <p>Channelize your inner Sherlock Homes and find clues hidden all over our  social media outlets 
+          starting from YouTube ...
+      !&emsp;
+          <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#mymodel1">Read
+            More</button>
+        </p>
+      </div>
+    </div> -->
+    <div class="carda card2 vibhav-zoom wow bounceInUp">
+      <div class="container1">
+        <img src="img/event image/vr-bot-maze.jpeg" alt="Singapore">
+      </div>
+      <div class="details1">
+        <h3>CyberCircuits</h3>
+        <p>Channelize your inner Sherlock Homes and find clues hidden all over our  social media outlets 
+          starting from YouTube ....&emsp;
+          <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#mymodel1">Read
+            More</button>
+        </p>
+      </div>
+    </div>
+    <div class="carda card3 vibhav-zoom wow bounceInUp">
+      <div class="container1">
+        <img src="img/event image/vr-bot-maze.jpeg" alt="Singapore">
+      </div>
+      <div class="details1">
+        <h3>QuARenteam Titans</h3>
+        <p>Walk through 
+          the breath-taking virtual campus of NitH, solve mind boggling puzzles and 
+          emerge as the champion! Join the mega hunt to win amazing prizes. ...&emsp;
+          <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#mymodel2">Read
+            More</button>
+        </p>
+      </div>
+    </div>
+  </div>
 
 
 
-    
 
-    <footer id="footer" class="section-bg bg-dark">
-        <div class="container bg-dark">
-            <div class="copyright text-light">
-                &copy; Copyright <strong class="ayush3">VIBHAV</strong>. All Rights Reserved
-            </div>
-            <div class="credits text-light">
-                Designed by <a href="#">Vibhav</a>
-            </div>
+
+  <script>
+    $('#mymodal').modal(options)
+  </script>
+  <script>
+    $('#mymodal1').modal(options)
+  </script>
+  <script>
+    $('#mymodal2').modal(options)
+  </script>
+
+  <div class="modal fade bd-example-modal-lg" id="mymodel" tabindex="-1" role="dialog"
+    aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Electrovision</h5>
+          <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"> -->
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-    </footer><!-- #footer -->
+        <div class="modal-body">
+          <p>
+            <ul>
+              
+                Hey ECE geeks come and test your knowledge in this fun event. 
+                Play with everything from basic circuits to computers. 
+                Make the computer of your dreams and compete with others may the best PC win
+                <br>
+                <li>
+                 Round 1:Website Based Game <br>
+                A binary number-based game that would be available on Vibhav's official
+                website to play.</li>
+                <li>
+                  Round 2: Circuit Designing<br>
+            Participants will have to design circuits with the help of given logic gates to
+            get the required outputs.
+                </li>
+                <li>
+                  Round 3: PC Building
+            In this round, participants have to build a PC from scratch with a simulator.
+            Tie Breaker: Logic Based Puzzle
+A logic based puzzle will be given to solve
+                </li>
+            </ul>
+           
+            
+            
+            </p>
+        </div>
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Small modal -->
+
+
+  <div class="modal fade bd-example-modal-lg" id="mymodel1" tabindex="-1" role="dialog"
+    aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">CyberCircuits</h5>
+          <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"> -->
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>
+            <ul>
+              Channelize your inner Sherlock Homes and find clues hidden all over our  social media outlets 
+          starting from YouTube to all the way over to Instagram and also enjoy many electronics based competitions 
+          and win huge prizes. See you there.
+          <br>
+              <li>Round 1: Puzzle Round<br>
+                This round involves solving a word sleuth related to electronics.</li>
+              <li>
+                Round 2: Circuit Debugging <br>
+            A complicated non-functional circuit will be provided to debug.
+              </li>
+              <li>
+                Round 3: Social Media Hunt<br>
+            Participants will have to find components on social media using the hints
+            provided and perform the given task in the minimum time.
+              </li>
+            </ul> 
+            
+            </p>
+        </div>
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade bd-example-modal-lg" id="mymodel2" tabindex="-1" role="dialog"
+    aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Event 3</h5>
+          <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"> -->
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet tempora dicta, esse praesentium facilis ab
+            sed modi dolorem est, quos minus cupiditate. Aut, numquam! Ipsa corrupti vel dolore omnis soluta reiciendis
+            repellendus. Suscipit quisquam enim, pariatur velit nisi eligendi blanditiis!</p>
+        </div>
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
 
-    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
-    <!-- Uncomment below i you want to use a preloader -->
-    <!-- <div id="preloader"></div> -->
 
-    <!-- JavaScript Libraries -->
-    <script src="lib/jquery/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
-        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
-        crossorigin="anonymous"></script>
-    <script src="lib/jquery/jquery-migrate.min.js"></script>
-    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/mobile-nav/mobile-nav.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <hr class="w-75" style="height:2px;border-width:0;color:gray;background-color:gray">
+  <footer id="footer" class="">
+    <div class="container">
+      <div class="credits text-light">
+        Designed by <a href="#">Vibhav</a>
+      </div>
+    </div>
+  </footer><!-- #footer -->
 
-    <!-- Template Main Javascript File -->
-    <script src="js/main.js"></script>
+
+
+
+  <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+  <!-- Uncomment below i you want to use a preloader -->
+  <!-- <div id="preloader"></div> -->
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/mobile-nav/mobile-nav.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+  <script type="text/javascript">
+    $(window).load(function() {
+      setTimeout(function(){
+        $('#loading').fadeOut('slow');
+      },800)
+    })
+  </script>
 
 </body>
 

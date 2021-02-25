@@ -7,14 +7,12 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="Team Vibhav is the Departmental team of Electronics & Communications Engineering Department which works
   for Nimbus Annual Technical Festival of National Institute of Technology, Hamirpur." name="description">
-  <meta  name="keywords" content="Projects,events,workshops">
- 
+  <meta name="keywords" content="Projects,events,workshops">
+
 
   <!-- Favicons -->
-
-
-  <link href="img/vibhav_logo.png" rel="icon">
-  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="img/Yellow.png" rel="icon">
+  <link href="img/Yellow.png" rel="apple-touch-icon">
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
 
@@ -28,8 +26,8 @@
 
   <!-- Libraries CSS Files -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-  integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
-  crossorigin="anonymous" />
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+    crossorigin="anonymous" />
   <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="lib/animate/animate.min.css" rel="stylesheet">
   <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
@@ -41,7 +39,10 @@
   <link rel="stylesheet" href="css/button.css">
 </head>
 
-<body>
+<body onload="myfunction()">
+  <div id="loading">
+
+  </div>
   <!--==========================
   Header
   ============================-->
@@ -50,13 +51,15 @@
     <div id="topbar">
       <div class="container">
         <div class="social-links">
-          <a href="https://www.instagram.com/team_vibhav/" class="instagram"><i
-            class="fab fa-instagram"></i></a>
-        <a href="https://www.facebook.com/teamvibhavece" class="facebook"><i class="fab fa-facebook"></i></a>
+          <a target="_blank" href="https://www.instagram.com/team_vibhav/" class="instagram"><i
+              class="fab fa-instagram"></i></a>
+          <a target="_blank" href="https://www.facebook.com/teamvibhavece" class="facebook"><i
+              class="fab fa-facebook"></i></a>
 
-        <a href="https://www.linkedin.com/in/team-vibhav-6643b4206/" class="linkedin"><i class="fab fa-linkedin"></i></a>
-        <a href="https://youtube.com/channel/UCt8W-_urFuy3dqulfQvk8fQ" class="instagram"><i
-            class="fab fa-youtube"></i></a>
+          <a target="_blank" href="https://www.linkedin.com/in/team-vibhav-6643b4206/" class="linkedin"><i
+              class="fab fa-linkedin"></i></a>
+          <a target="_blank" href="https://youtube.com/channel/UCt8W-_urFuy3dqulfQvk8fQ" class="instagram"><i
+              class="fab fa-youtube"></i></a>
         </div>
       </div>
     </div>
@@ -71,7 +74,7 @@
 
       <nav class="main-nav float-right d-none d-lg-block">
         <ul>
-          <li class="active"><a href="index.html">Home</a></li>
+          <li class="active"><a href="index.html#intro">Home</a></li>
           <li><a href="/index.html#about">About Us</a></li>
 
 
@@ -92,20 +95,32 @@
 
 
               <li><a href="projects.html">Projects</a></li>
-              <li><a href="event.html">Events / Workshop</a></li>
+              <li><a href="event.html">Events </a></li>
+              <li><a href="workshop.html">Workshops </a></li>
 
             </ul>
           </li>
           <li><a href="/index.html#footer">Contact Us</a></li>
 
+          <!-- <li class="toggle-btn">Toggle Mode
+            <label class="switch btn_d_m">
+              <input type="checkbox" onclick="lm_function()">
+              <span class="slider round"></span>
+            </label>
+          </li> -->
         </ul>
       </nav><!-- .main-nav -->
 
+      <script type="text/javascript">
+        function lm_function() {
+          document.body.classList.toggle('dark-mode');
+        }
+      </script>
     </div>
   </header><!-- #header -->
 
   <section class="intern aditya">
-    
+
     <p class="typing-text mx-auto">Intern Experiences</p>
     <div class="container blog-page pt-3">
       <div class="row clearfix">
@@ -115,28 +130,29 @@
 
             </div>
             <div class="body">
-              <h3 class="m-t-0 m-b-5"><a href="blog-details.html">Machine Learning Internship</a></h3>
+              <h3 class="m-t-0 m-b-5"><a href="blog-details.html">Research Internship</a></h3>
               <ul class="meta">
-                <li><a href="javascript:void(0);"><i class="zmdi zmdi-account col-blue"></i> By: John Smith</a></li>
+                <li><a href="javascript:void(0);"><i class="zmdi zmdi-account col-blue"></i> Royal Sethi</a></li>
 
 
               </ul>
             </div>
             <div class="body">
               <div class="img-post m-b-15">
-                <img src="https://bootdey.com/img/Content/avatar/avatar5.png" alt="Awesome Image">
+                <img src="img/sethi.jfif" alt="Awesome Image">
                 <div class="social_share">
-                  <button class="btn btn-primary btn-icon btn-icon-mini btn-round"><i
-                      class="zmdi zmdi-facebook"></i></button>
-                  <button class="btn btn-primary btn-icon btn-icon-mini btn-round"><i
-                      class="zmdi zmdi-twitter"></i></button>
-                  <button class="btn btn-primary btn-icon btn-icon-mini btn-round"><i
-                      class="zmdi zmdi-instagram"></i></button>
+                  <button class="btn btn-outline-warning btn-icon btn-icon-mini btn-round"><i
+                      class="fab fa-facebook"></i></button>
+
+
+                  <button class="btn btn-outline-warning btn-icon btn-icon-mini btn-round"><i
+                      class="fab fa-linkedin"></i></button>
+                  <button class="btn btn-outline-warning btn-icon btn-icon-mini btn-round"><i
+                      class="fab fa-instagram"></i></button>
                 </div>
               </div>
-              <p>It is a long established fact that a reader will be distracted by the readable content of a page when
-                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal</p>
-              <a href="blog-details.html" title="read more" class="btn btn-round btn-info">Read More</a>
+              <p>  DAAD Germany Scholar from University of Lubek</p>
+                <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#mymodel1">Read More</button>
             </div>
           </div>
         </div>
@@ -146,26 +162,25 @@
 
             </div>
             <div class="body">
-              <h3 class="m-t-0 m-b-5"><a href="blog-details.html">Web Development Internship</a></h3>
+              <h3 class="m-t-0 m-b-5"><a href="blog-details.html">IOT Internship</a></h3>
               <ul class="meta">
-                <li><a href="javascript:void(0);"><i class="zmdi zmdi-account col-blue"></i> By: Narendra Modi</a></li>
+                <li><a href="javascript:void(0);"><i class="zmdi zmdi-account col-blue"></i> Hitesh Monga</a></li>
               </ul>
             </div>
             <div class="body">
               <div class="img-post m-b-15">
-                <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Awesome Image">
+                <img src="img/monga.jfif" alt="Awesome Image">
                 <div class="social_share">
-                  <button class="btn btn-primary btn-icon btn-icon-mini btn-round"><i
-                      class="zmdi zmdi-facebook"></i></button>
-                  <button class="btn btn-primary btn-icon btn-icon-mini btn-round"><i
-                      class="zmdi zmdi-twitter"></i></button>
-                  <button class="btn btn-primary btn-icon btn-icon-mini btn-round"><i
-                      class="zmdi zmdi-instagram"></i></button>
+                  <button class="btn btn-outline-warning btn-icon btn-icon-mini btn-round"><i
+                      class="fab fa-facebook"></i></button>
+                  <button class="btn btn-outline-warning btn-icon btn-icon-mini btn-round"><i
+                      class="fab fa-linkedin"></i></button>
+                  <button class="btn btn-outline-warning btn-icon btn-icon-mini btn-round"><i
+                      class="fab fa-instagram"></i></button>
                 </div>
               </div>
-              <p>It is a long established fact that a reader will be distracted by the readable content of a page when
-                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal</p>
-              <a href="blog-details.html" title="read more" class="btn btn-round btn-info">Read More</a>
+              <p>Internship at IIT indore in First Year, Grenoble University(France) in second year  and Aalto university(Finland)</p>
+                <button type="button" class="btn btn-outline-warning " data-toggle="modal" data-target="#mymodel2">Read More</button>
             </div>
           </div>
         </div>
@@ -175,26 +190,25 @@
 
             </div>
             <div class="body">
-              <h3 class="m-t-0 m-b-5"><a href="blog-details.html">Web Development Internship</a></h3>
+              <h3 class="m-t-0 m-b-5"><a href="blog-details.html">Research Internship</a></h3>
               <ul class="meta">
-                <li><a href="javascript:void(0);"><i class="zmdi zmdi-account col-blue"></i> By: Narendra Modi</a></li>
+                <li><a href="javascript:void(0);"><i class="zmdi zmdi-account col-blue"></i> Aradhita Sharma</a></li>
               </ul>
             </div>
             <div class="body">
               <div class="img-post m-b-15">
-                <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Awesome Image">
+                <img src="img/aradhita.jfif" alt="Awesome Image">
                 <div class="social_share">
-                  <button class="btn btn-primary btn-icon btn-icon-mini btn-round"><i
-                      class="zmdi zmdi-facebook"></i></button>
-                  <button class="btn btn-primary btn-icon btn-icon-mini btn-round"><i
-                      class="zmdi zmdi-twitter"></i></button>
-                  <button class="btn btn-primary btn-icon btn-icon-mini btn-round"><i
-                      class="zmdi zmdi-instagram"></i></button>
+                  <button class="btn btn-outline-warning btn-icon btn-icon-mini btn-round"><i
+                      class="fab fa-facebook"></i></button>
+                  <button class="btn btn-outline-warning btn-icon btn-icon-mini btn-round"><i
+                      class="fab fa-linkedin"></i></button>
+                  <button class="btn btn-outline-warning btn-icon btn-icon-mini btn-round"><i
+                      class="fab fa-instagram"></i></button>
                 </div>
               </div>
-              <p>It is a long established fact that a reader will be distracted by the readable content of a page when
-                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal</p>
-              <a href="blog-details.html" title="read more" class="btn btn-round btn-info">Read More</a>
+              <p> Summer internship at IIT Kanpur</p>
+                <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#mymodel3">Read More</button>
             </div>
           </div>
         </div>
@@ -204,29 +218,29 @@
 
             </div>
             <div class="body">
-              <h3 class="m-t-0 m-b-5"><a href="blog-details.html">Web Development Internship</a></h3>
+              <h3 class="m-t-0 m-b-5"><a href="blog-details.html">Industry Internship</a></h3>
               <ul class="meta">
-                <li><a href="javascript:void(0);"><i class="zmdi zmdi-account col-blue"></i> By: Narendra Modi</a></li>
+                <li><a href="javascript:void(0);"><i class="zmdi zmdi-account col-blue"></i> Simble Chaudhary</a></li>
               </ul>
             </div>
             <div class="body">
               <div class="img-post m-b-15">
-                <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Awesome Image">
+                <img src="img/simble.jfif" alt="Awesome Image">
                 <div class="social_share">
-                  <button class="btn btn-primary btn-icon btn-icon-mini btn-round"><i
-                      class="zmdi zmdi-facebook"></i></button>
-                  <button class="btn btn-primary btn-icon btn-icon-mini btn-round"><i
-                      class="zmdi zmdi-twitter"></i></button>
-                  <button class="btn btn-primary btn-icon btn-icon-mini btn-round"><i
-                      class="zmdi zmdi-instagram"></i></button>
+                  <button class="btn btn-outline-warning btn-icon btn-icon-mini btn-round"><i
+                      class="fab fa-facebook"></i></button>
+                  <button class="btn btn-outline-warning btn-icon btn-icon-mini btn-round"><i
+                      class="fab fa-linkedinr"></i></button>
+                  <button class="btn btn-outline-warning btn-icon btn-icon-mini btn-round"><i
+                      class="fab fa-instagram"></i></button>
                 </div>
               </div>
-              <p>It is a long established fact that a reader will be distracted by the readable content of a page when
-                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal</p>
-              <a href="blog-details.html" title="read more" class="btn btn-round btn-info">Read More</a>
+              <p>Internship at BNY Mellon(Financial Corporation) .</p>
+                <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#mymodel4">Read More</button>
             </div>
           </div>
         </div>
+        <!-------
         <div class="col-lg-4 col-md-12">
           <div class="card single_post">
             <div class="header">
@@ -235,24 +249,24 @@
             <div class="body">
               <h3 class="m-t-0 m-b-5"><a href="blog-details.html">Web Development Internship</a></h3>
               <ul class="meta">
-                <li><a href="javascript:void(0);"><i class="zmdi zmdi-account col-blue"></i> By: Narendra Modi</a></li>
+                <li><a href="javascript:void(0);"><i class="zmdi zmdi-account col-blue"></i> By:</a></li>
               </ul>
             </div>
             <div class="body">
               <div class="img-post m-b-15">
                 <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Awesome Image">
                 <div class="social_share">
-                  <button class="btn btn-primary btn-icon btn-icon-mini btn-round"><i
-                      class="zmdi zmdi-facebook"></i></button>
-                  <button class="btn btn-primary btn-icon btn-icon-mini btn-round"><i
-                      class="zmdi zmdi-twitter"></i></button>
-                  <button class="btn btn-primary btn-icon btn-icon-mini btn-round"><i
-                      class="zmdi zmdi-instagram"></i></button>
+                  <button class="btn btn-outline-warning btn-icon btn-icon-mini btn-round"><i
+                      class="fab fa-facebook"></i></button>
+                  <button class="btn btn-outline-warning btn-icon btn-icon-mini btn-round"><i
+                      class="fab fa-linkedin"></i></button>
+                  <button class="btn btn-outline-warning btn-icon btn-icon-mini btn-round"><i
+                      class="fab fa-instagram"></i></button>
                 </div>
               </div>
               <p>It is a long established fact that a reader will be distracted by the readable content of a page when
                 looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal</p>
-              <a href="blog-details.html" title="read more" class="btn btn-round btn-info">Read More</a>
+                <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#mymodel5">Read More</button>
             </div>
           </div>
         </div>
@@ -265,43 +279,261 @@
             <div class="body">
               <h3 class="m-t-0 m-b-5"><a href="blog-details.html">Data Science Internship</a></h3>
               <ul class="meta">
-                <li><a href="javascript:void(0);"><i class="zmdi zmdi-account col-blue"></i> By: Rahul Gandhi</a></li>
+                <li><a href="javascript:void(0);"><i class="zmdi zmdi-account col-blue"></i> By: </a></li>
               </ul>
             </div>
             <div class="body">
               <div class="img-post m-b-15">
                 <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="Awesome Image">
                 <div class="social_share">
-                  <button class="btn btn-primary btn-icon btn-icon-mini btn-round"><i
-                      class="zmdi zmdi-facebook"></i></button>
-                  <button class="btn btn-primary btn-icon btn-icon-mini btn-round"><i
-                      class="zmdi zmdi-twitter"></i></button>
-                  <button class="btn btn-primary btn-icon btn-icon-mini btn-round"><i
-                      class="zmdi zmdi-instagram"></i></button>
+                  <button class="btn btn-outline-warning btn-icon btn-icon-mini btn-round"><i
+                      class="fab fa-facebook"></i></button>
+                  <button class="btn btn-outline-warning btn-icon btn-icon-mini btn-round"><i
+                      class="fab fa-linkedin"></i></button>
+                  <button class="btn btn-outline-warning btn-icon btn-icon-mini btn-round"><i
+                      class="fab fa-instagram"></i></button>
                 </div>
               </div>
               <p>It is a long established fact that a reader will be distracted by the readable content of a page when
                 looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal</p>
-              <a href="blog-details.html" title="read more" class="btn btn-round btn-info">Read More</a>
+                <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#mymodel6">Read More</button>
             </div>
           </div>
         </div>
+        ---->
       </div>
     </div>
   </section>
-  <footer id="footer" class="section-bg bg-dark">
+  <script>
+    $('#mymodal1').modal(options)
+  </script>
+  <script>
+    $('#mymodal2').modal(options)
+  </script>
+  <script>
+    $('#mymodal3').modal(options)
+  </script>
+   <script>
+    $('#mymodal4').modal(options)
+  </script>
+  <script>
+    $('#mymodal5').modal(options)
+  </script>
+  <script>
+    $('#mymodal6').modal(options)
+  </script>
 
-    <div class="container bg-dark">
-      <div class="copyright text-light">
-        &copy; Copyright <strong class="ayush3">VIBHAV</strong>. All Rights Reserved
+  <div class="modal fade bd-example-modal-lg" id="mymodel1" tabindex="-1" role="dialog"
+    aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Research Internship</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>He is  a DAT Germany scholar from university of LUEBERK . 
+            He worked on the implementation of  simultaneous working of CPU and GPU(GPU accelerated databases ).  </p>
+          <a href="https://youtu.be/6ma1RegppB8?t=86" class="instagram"><i
+            class="fab fa-youtube"></i>&emsp;watch video</a>
+
+        </div>
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
       </div>
+    </div>
+  </div>
+  <div class="modal fade bd-example-modal-lg" id="mymodel2" tabindex="-1" role="dialog"
+    aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">IoT Internship</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>He was a intern at IIT indore in first Year and in second year at Grenoble University ,
+             France and Aalto university, Finland and selected as AScl intern at Aalto University, during which he worked in the domain of IoT.
+             He also mentioned that CGPA is not a major factor for applying for internships, projects and
+              experience plays a major role in that. He also gave tips on how to make an impressive CV
+             . He also guided students about various internships and how to apply for them.
+             For more details you can check his full intern talk on youtube.
+          </p>
+          <a href="https://youtu.be/6ma1RegppB8?t=807" class="instagram"><i
+            class="fab fa-youtube"></i>&emsp;watch video</a>
+
+        </div>
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade bd-example-modal-lg" id="mymodel3" tabindex="-1" role="dialog"
+    aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Research Internship</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>She was a Summer intern at IIT Kanpur, her project was  
+            beforcing JavaScript which included the development of a video conferencing solution .
+            She completed her Summer internship under Summer Research Fellowship Program conducted by Indian Academy of Sciences Bengaluru  in the field of robotics and automation.
+            She also guided students on how they can get internships like. She
+             guided them how to write an impressive application form. She talked about the work culture in IITs and the letter of recommendation and how it can help in further placements.
+            For more details you can see the following video on youtube.
+          </p>
+          <a href="https://youtu.be/6ma1RegppB8?t=1629" class="instagram"><i
+            class="fab fa-youtube"></i>&emsp;watch video</a>
+
+        </div>
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade bd-example-modal-lg" id="mymodel4" tabindex="-1" role="dialog"
+    aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Industry Internship</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>She is an intern at BNY Mellon which is a financial organization. She discussed various mistakes students do during 
+            their college years which results in rejections in application for the internship.
+            She discussed about the work culture of her organization and how interns can help in placements.
+          For more details you can refer to the youtube video given below: </p>
+        </div>
+        <a href="https://youtu.be/6ma1RegppB8?t=2472" class="instagram"><i
+          class="fab fa-youtube"></i>&emsp;watch video</a>
+
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade bd-example-modal-lg" id="mymodel5" tabindex="-1" role="dialog"
+    aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Event 1</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium cum tempore officiis quas sint minus
+            nihil, repudiandae impedit eveniet eligendi doloremque? Eveniet inventore non maxime cumque repellat!
+            Similique reiciendis officiis cum. Voluptatibus quibusdam minima distinctio dolorem eius nesciunt, iure
+            placeat!</p>
+        </div>
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade bd-example-modal-lg" id="mymodel6" tabindex="-1" role="dialog"
+    aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Event 1</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium cum tempore officiis quas sint minus
+            nihil, repudiandae impedit eveniet eligendi doloremque? Eveniet inventore non maxime cumque repellat!
+            Similique reiciendis officiis cum. Voluptatibus quibusdam minima distinctio dolorem eius nesciunt, iure
+            placeat!</p>
+        </div>
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Small modal -->
+
+
+  <div class="modal fade bd-example-modal-sm" id="mymodel1" tabindex="-1" role="dialog"
+    aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Event 2</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea saepe numquam expedita minus. Recusandae
+            dolorum at eum impedit maxime necessitatibus molestiae fugiat tempora facilis, unde quia! Maiores atque
+            tenetur aut impedit laudantium perspiciatis hic ducimus nulla, culpa qui beatae nisi eos suscipit veritatis
+            numquam deserunt. Veniam, nam dolorum corporis fugit ex aut omnis hic debitis nemo, excepturi atque,
+            nesciunt similique?</p>
+        </div>
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade bd-example-modal-sm" id="mymodel2" tabindex="-1" role="dialog"
+    aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Event 3</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet tempora dicta, esse praesentium facilis ab
+            sed modi dolorem est, quos minus cupiditate. Aut, numquam! Ipsa corrupti vel dolore omnis soluta reiciendis
+            repellendus. Suscipit quisquam enim, pariatur velit nisi eligendi blanditiis!</p>
+        </div>
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="w-75" style="height:2px;border-width:0;color:gray;background-color:gray">
+  <footer id="footer" class="">
+    <div class="container">
       <div class="credits text-light">
-        <!--
-          All the links in the footer should remain intact.
-          You can delete the links only if you purchased the pro version.
-          Licensing information: https://bootstrapmade.com/license/
-          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Rapid
-        -->
         Designed by <a href="#">Vibhav</a>
       </div>
     </div>
@@ -329,6 +561,13 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+  <script type="text/javascript">
+    $(window).load(function() {
+      setTimeout(function(){
+        $('#loading').fadeOut('slow');
+      },800)
+    })
+  </script>
 
 </body>
 

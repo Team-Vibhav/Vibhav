@@ -1,27 +1,15 @@
-/* * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body{
-  height: 100vh;
-  background-color: #151320;
-  display: grid;
-  place-items: center center;
-  font-family: 'Poppins',sans-serif;
-} */
-
 section.project1 {
-  /* margin-bottom: 50px; */
   padding-top: 110px;
 }
 
 
 section>.text1 {
-  margin: 60px auto;
+  display: flex;
+  flex-direction: column;
   max-width: 555px;
   text-align: center;
+  margin: 0 auto;
+  padding: 50px 10px;
 }
 
 section.project1 .text1 h2 {
@@ -65,16 +53,21 @@ hr{
 }
 
 
-/* grid */
-
-
+body1{
+  background-color: #151320;
+  /* height: 100vh; */
+  display: grid;
+  place-items: center center;
+  font-family: 'Poppins',sans-serif;
+  
+}
 .cards1{
   display: grid;
-  cursor: pointer;
-  grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
-  padding: 40px 100px;
-  grid-gap: 40px;
-  justify-content: center;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  padding: 30px;
+  grid-gap: 50px;
+  margin: 30px 0px;
+ 
 }
 .carda{
   background-color: #1c1b29;
@@ -82,8 +75,8 @@ hr{
   box-shadow: 0 0 30px rgba(0,0,0,0.18);
 }
 .container1{
-  height: 300px;
   position: relative;
+  height: 60%;
   clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
 }
 img{
@@ -128,7 +121,7 @@ img{
 .details1>h3{
   color: #ffffff;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
   margin: 10px 0 15px 0;
 }
 .details1>p{
@@ -143,10 +136,10 @@ img{
 }
 
 .vibhav-zoom:hover {
-  transform: scale(1.07);
-  box-shadow: 10px 10px 8px #272727;;
+  transform: scale(1.02);
+  box-shadow: 10px 10px 8px #222222;;
 }
 
-.fix11 {
-  width: 400px;
+body > section > div > p{
+  text-align: justify;
 }

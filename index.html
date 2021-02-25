@@ -13,13 +13,15 @@
 
 
   <!-- Favicons -->
-  <link href="img/vibhav_logo.png" rel="icon">
-  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="img/Yellow.png" rel="icon">
+  <link href="img/Yellow.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700"
     rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+
 
   <!-- Bootstrap CSS File -->
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -34,25 +36,39 @@
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
+
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="css/button.css">
 </head>
 
 <body>
+  <div id="loading">
+    <div class="loading">
+    	<div class="loading-text">
+    		<span class="loading-text-words">V</span>
+    		<span class="loading-text-words">I</span>
+    		<span class="loading-text-words">B</span>
+    		<span class="loading-text-words">H</span>
+    		<span class="loading-text-words">A</span>
+    		<span class="loading-text-words">V</span>
+    	</div>
+    </div>
+  </div>
   <!--==========================
   Header
   ============================-->
-  <header id="header">
-
+  <header id="header" class="aksh">
     <div id="topbar">
       <div class="container">
         <div class="social-links">
-          <a href="https://www.instagram.com/team_vibhav/" class="instagram"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.facebook.com/teamvibhavece" class="facebook"><i class="fab fa-facebook"></i></a>
-          <a href="https://www.linkedin.com/in/team-vibhav-6643b4206/" class="linkedin"><i
+          <a href="https://www.instagram.com/team_vibhav/" target="_blank" class="instagram"><i
+              class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/teamvibhavece" target="_blank" class="facebook"><i
+              class="fab fa-facebook"></i></a>
+          <a href="https://www.linkedin.com/company/team-vibhav/" target="_blank" class="linkedin"><i
               class="fab fa-linkedin"></i></a>
-          <a href="https://youtube.com/channel/UCt8W-_urFuy3dqulfQvk8fQ" class="instagram"><i
+          <a href="https://youtube.com/channel/UCt8W-_urFuy3dqulfQvk8fQ" target="_blank" class="instagram"><i
               class="fab fa-youtube"></i></a>
         </div>
       </div>
@@ -63,52 +79,85 @@
       <div class="logo float-left ">
         <!-- Uncomment below if you prefer to use an image logo -->
         <h1 class="text-success site-title"><a href="#intro" class="scrollto">VIBHAV</a></h1>
-
         <!-- <a href="#header" class="scrollto"><img src="img/logo.png" alt="" class="img-fluid"></a> -->
       </div>
 
-
-
-
       <nav class="main-nav float-right d-none d-lg-block">
         <ul>
-          <li class="active"><a href="#intro">Home</a></li>
+          <li class="active"><a href="#particles-js">Home</a></li>
           <li><a href="#about">About Us</a></li>
-
-
-
-
-
           <li class="drop-down"><a href="team.html">Our Team</a>
             <ul>
-
-
               <li><a href="team.html">Our Team</a></li>
               <li><a href="internexperience.html">Intern Experiences</a></li>
               <li><a href="alumni.html">Alumni</a></li>
-
-
             </ul>
           </li>
           <li class="drop-down"><a href="projects.html">Our Work</a>
             <ul>
               <li><a href="projects.html">Projects</a></li>
-              <li><a href="event.html">Events / Workshop</a></li>
+              <li><a href="event.html">Events </a></li>
+              <li><a href="workshop.html">Workshops </a></li>
             </ul>
           </li>
           <li><a href="#footer">Contact Us</a></li>
-
+          <!-- <li class="toggle-btn">Toggle Mode
+            <label class="switch btn_d_m">
+              <input type="checkbox" onclick="lm_function()">
+              <span class="slider round"></span>
+            </label>
+          </li> -->
         </ul>
       </nav><!-- .main-nav -->
+
+      <script type="text/javascript">
+        function lm_function() {
+          document.body.classList.toggle('dark-mode');
+
+          const aksh = document.body.classList;
+          if (aksh[0] == "dark-mode") {
+            ak.particles.color.value = '#314e52';
+            ak.particles.move.direction = 'bottom';
+            ak.particles.move.speed = '6';
+            ak.particles.number.value = '120';
+            console.log(aksh[0]);
+          } else {
+            if (ak.particles.color.value == '#314e52') {
+              ak.particles.color.value = '#ffffff';
+            }
+          }
+          particlesJS('particles-js', ak);
+          console.log("ak is", ak);
+        }
+        </script>
 
     </div>
   </header><!-- #header -->
   <header>
+    <!---
     <div class="mid">
-      <video autoplay muted loop>
-        <source class="embed-responsive" src="img/2.mp4" type="video/mp4">
+
+      <div onclick="change() ">
+        <i id="btn"class="fa fa-volume-up my-float"></i>
+      </div>
+      <video id="media" autoplay muted="false">
+        <source class="embed-responsive media" src="img/3.mp4" type="video/mp4">
       </video>
-    </div>
+      <script type="text/javascript">
+        const vid = document.getElementById('media')
+        vid.onended = function () {
+          const x = window.innerHeight;
+          console.log(x);
+          if (window.scrollY < x) {
+            window.scrollTo({
+              top: x,
+              behavior: "smooth"
+            });
+          }
+        }
+      </script>
+    </div>fa
+  -->
   </header>
   <!--==========================
     Intro Section
@@ -117,7 +166,7 @@
   <!-- Welcome Area Start -->
   <section class="welcome-area">
     <!-- Single Slide -->
-    <div class="single-welcome-slide bg-img bg-overlay jarallax" style="z-index: 100;">
+    <div class="single-welcome-slide bg-img jarallax">
       <!-- <canvas style="position: absolute; width: 100%; height: 100%"></canvas> -->
       <div id="particles-js" style="position: absolute; width: 100%; height: 100%"></div>
 
@@ -137,7 +186,7 @@
                   <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
                     <rect class="shape" height="60" width="320" />
                   </svg>
-                  <a href="https://discord.gg/9pjW2DQ4">
+                  <a target="_blank" href="https://discord.gg/9pjW2DQ4">
                     <div class="text  "><i class="fab fa-discord mr-3 "></i>Join Our
                       Community</div>
                   </a>
@@ -166,7 +215,10 @@
 
           <div class="col-lg-5 col-md-6">
             <div class="about-img">
-              <img src="img/vibhav_logo.png" alt="">
+
+              <img src="img/Yellow.png" alt="">
+
+
             </div>
           </div>
 
@@ -185,15 +237,6 @@
                 constantly trying to innovate and push the boundaries.
                 We at Team Vibhav believe that technology can provide optimum solutions to the problems faced by the
                 society. We make projects which are challenging and aim to tackle one social problem at a time.</p>
-              <!-- <ul>
-                <h4 class="text-light effect">The roles and responsibilities of our team include:</h4>
-                <li><i class="ion-android-checkmark-circle"></i> Assuring that local context is defined and integrated
-                  into the project.</li>
-                <li><i class="ion-android-checkmark-circle"></i> Recommending and guiding methodologies involving data
-                  collection, criteria, and analysis.</li>
-                <li><i class="ion-android-checkmark-circle"></i> Preparing and reviewing technical project reports. </li>
-                <li><i class="ion-android-checkmark-circle"></i>Supporting and providing insight with respect to community and agency issues and regulations.</li>
-              </ul> -->
             </div>
           </div>
         </div>
@@ -279,7 +322,8 @@
         </div>
 
       </div>
-    </section><!-- #services -->
+    </section>-->
+    <!-- #services -->
 
     <!--==========================
       Why Us Section
@@ -377,6 +421,7 @@
     <!--==========================
       Call To Action Section
     ============================-->
+    <hr class="w-75" style="height:2px;border-width:0;color:gray;background-color:gray">
     <section id="call-to-action" class="wow fadeInUp">
       <div class="container">
         <div class="row">
@@ -386,64 +431,39 @@
               heights of knowledge and technology. Click on the button to fill the required google form.</p>
           </div>
           <div class="col-lg-3 cta-btn-container text-center">
-            <a class="align-middle prob-state "
+            <a class="align-middle prob-state " target="_blank"
               href="https://docs.google.com/forms/d/e/1FAIpQLSfiKtu2oTvvLl62nBuF87P-qg_eu0eihKi34zT6n1XNohz-Ow/viewform?usp=sf_link"><span></span><span></span><span></span><span></span>Join
               us!</a>
           </div>
         </div>
-
       </div>
     </section><!-- #call-to-action -->
-
+    <hr class="w-75" style="height:2px;border-width:0;color:gray;background-color:gray">
     <!--==========================
       Features Section
     ============================-->
-    <section id="features">
+    <!-- <section id="features">
       <div class="container">
-
+        <p class="glitch text-center">
+          Timeline
+        </p>
+        <div class="glitch1 mt-0">Coming Soon</div>
+        <div class="scanlines"></div>
         <div class="row feature-item">
-          <div class="col-lg-6 wow fadeInUp">
-            <img src="img/features-1.svg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0">
-            <h4>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h4>
-            <p>
-              Ipsum in aspernatur ut possimus sint. Quia omnis est occaecati possimus ea. Quas molestiae perspiciatis
-              occaecati qui rerum. Deleniti quod porro sed quisquam saepe. Numquam mollitia recusandae non ad at et a.
-            </p>
-            <p>
-              Ad vitae recusandae odit possimus. Quaerat cum ipsum corrupti. Odit qui asperiores ea corporis deserunt
-              veritatis quidem expedita perferendis. Qui rerum eligendi ex doloribus quia sit. Porro rerum eum eum.
-            </p>
-          </div>
-        </div>
 
-        <div class="row feature-item mt-5 pt-5">
-          <div class="col-lg-6 wow fadeInUp order-1 order-lg-2">
-            <img src="img/features-2.svg" class="img-fluid" alt="">
-          </div>
 
-          <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
-            <h4>Neque saepe temporibus repellat ea ipsum et. Id vel et quia tempora facere reprehenderit.</h4>
-            <p>
-              Delectus alias ut incidunt delectus nam placeat in consequatur. Sed cupiditate quia ea quis. Voluptas nemo
-              qui aut distinctio. Cumque fugit earum est quam officiis numquam. Ducimus corporis autem at blanditiis
-              beatae incidunt sunt.
-            </p>
-            <p>
-              Voluptas saepe natus quidem blanditiis. Non sunt impedit voluptas mollitia beatae. Qui esse molestias.
-              Laudantium libero nisi vitae debitis. Dolorem cupiditate est perferendis iusto.
-            </p>
-            <p>
-              Eum quia in. Magni quas ipsum a. Quis ex voluptatem inventore sint quia modi. Numquam est aut fuga
-              mollitia exercitationem nam accusantium provident quia.
-            </p>
+
+          <div class="row feature-item mt-5 pt-5">
+
+
+            <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
+
+            </div>
+
           </div>
 
         </div>
-
-      </div>
-    </section><!-- #about -->
+    </section> -->
 
 
 
@@ -509,16 +529,17 @@
 
 
       </div>
-    </section><!-- #testimonials -->
+    </section>-->
+    <!-- #testimonials -->
 
     <!--==========================
       Team Section
     ============================-->
-    <section id="team" class="section-bg bg-secondary">
+    <section id="team">
       <div class="container">
         <div class="section-header">
-          <h3>Core-Coordinators</h3>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+          <h3 class="text-light"> Core-Coordinators</h3>
+          <!-- <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p> -->
         </div>
 
         <div class="row justify-content-center ">
@@ -535,10 +556,14 @@
                   <h4>Yash Prakash Gupta</h4>
                   <span>Core-Coordinator</span>
                   <div class="social">
-                    <a href=""><i class="fab fa-twitter"></i></a>
-                    <a href=""><i class="fab fa-facebook"></i></a>
-                    <a href=""><i class="fab fa-google-plus"></i></a>
-                    <a href=""><i class="fab fa-linkedin"></i></a>
+
+                    
+                    <a href="https://instagram.com/2_yash_8?igshid=acmstdh7483s"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/yash.p.gupta.1"><i class="fab fa-facebook"></i></a>
+                    <a target="_blank" href="https://github.com/yashprakash28"><i class="fab fa-github"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/yash-prakash-gupta/"><i
+                        class="fab fa-linkedin"></i></a>
+
                   </div>
                 </div>
               </div>
@@ -554,10 +579,16 @@
                   <h4>Aniket Srivastava</h4>
                   <span>Core-Coordinator</span>
                   <div class="social">
-                    <a href=""><i class="fab fa-twitter"></i></a>
-                    <a href=""><i class="fab fa-facebook"></i></a>
-                    <a href=""><i class="fab fa-google-plus"></i></a>
-                    <a href=""><i class="fab fa-linkedin"></i></a>
+
+                    
+
+                    <a target="_blank" href="https://www.instagram.com/cyberrtrron/"><i
+                        class="fab fa-instagram"></i></a>
+                    <a target="_blank"href="https://www.facebook.com/aniket.srivastava.3572846"><i class="fab fa-facebook"></i></a>
+                    <a target="_blank"href="https://github.com/aniketsriv"><i class="fab fa-github"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/aniket-srivastava-63544b171/"><i
+                        class="fab fa-linkedin"></i></a>
+
                   </div>
                 </div>
               </div>
@@ -591,18 +622,20 @@
         </div>
 
       </div>
-    </section><!-- #clients -->
+    </section>-->
 
+    <!-- #clients -->
 
     <!--==========================
       Frequently Asked Questions Section
     ============================-->
+    <hr class="w-75" style="height:2px;border-width:0;color:gray;background-color:gray">
     <section id="faq">
       <div class="container">
         <header class="section-header">
           <h3 class="text-light">Frequently Asked Questions</h3>
-          <p class="text-light">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-          </p>
+          <!-- <p class="text-light">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+          </p> -->
         </header>
 
         <ul id="faq-list" class="wow fadeInUp">
@@ -710,7 +743,8 @@
   <!--==========================
     Footer
   ============================-->
-  <footer id="footer" class="section-bg bg-dark">
+  <hr class="w-100" style="height:2px;border-width:0;color:gray;background-color:gray">
+  <footer id="footer">
     <div class="footer-top">
       <div class="container">
 
@@ -722,18 +756,32 @@
 
 
 
-              <div class=" col-sm-12 mt-5 ">
-                <h2 class="text-center">Follow Us On</h2>
+              <div class=" col-sm-12  ">
+                <a href="https://festnimbus.com" class="link  mx-auto " id="nimbus" target="_blank">
+                <img src="img/n_white.png" alt="" width="100px" height = "100px" class="vaishnavi" >
+              </a>
+              <!-- <p class='vaishnavi'> Nimbus is the technical fest of NIT Hamirpur, in which Team Vibhav participates.
+                Moreover being the biggest tech festival of North India, it is something not worth to be missed.
+                To know more about fest Nimbus, visit <a href="https://festnimbus.com" class="link mb-2">Here</a> -->
+
+
+              </p>
+              <h2 class='vaishnavi1 mt-3'>Visit Official Nimbus Site</h2>
+              <!-- <div class="text-center">
+              <button class="btn btn-lg btn-success btncolor ">Here</button> -->
+              <!-- </div> -->
+                <h3 class="text-center mt-3 text-light">Follow Us On</h3>
                 <div class="social-links text-center mb-3">
 
 
-                  <a href="https://www.instagram.com/team_vibhav/" class="instagram"><i
+                  <a href="https://www.instagram.com/team_vibhav/" target="_blank" class="instagram"><i
                       class="fab fa-instagram"></i></a>
-                  <a href="https://www.facebook.com/teamvibhavece" class="facebook"><i class="fab fa-facebook"></i></a>
+                  <a href="https://www.facebook.com/teamvibhavece" target="_blank" class="facebook"><i
+                      class="fab fa-facebook"></i></a>
 
-                  <a href="https://www.linkedin.com/in/team-vibhav-6643b4206/" class="linkedin"><i
+                  <a href="https://www.linkedin.com/company/team-vibhav/" target="_blank" class="linkedin"><i
                       class="fab fa-linkedin"></i></a>
-                  <a href="https://youtube.com/channel/UCt8W-_urFuy3dqulfQvk8fQ" class="instagram"><i
+                  <a href="https://youtube.com/channel/UCt8W-_urFuy3dqulfQvk8fQ" target="_blank" class="instagram"><i
                       class="fab fa-youtube"></i></a>
                 </div>
 
@@ -744,34 +792,26 @@
           </div>
 
           <div class="col-lg-8">
-            <h1 class="h3 mb-3 font-weight-normal text-center">Contact Us</h1>
-
+            <h1 class="h3 mb-3 font-weight-normal text-center text-light">Contact Us</h1>
             <form action="https://formspree.io/f/mvovygen" class="form-signin" method="POST">
               <label for="inputEmail" class="sr-only">Email address</label>
-              <input name="email" type="email" id="inputEmail" class="form-control mb-3" placeholder="Email address" required>
-
+              <input name="email" type="email" id="inputEmail" class="form-control mb-3" placeholder="Email address"
+                required>
               <div class="form-group">
-                <label for="exampleFormControlTextarea1">Message</label>
-                <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                <textarea name="message" placeholder="Message" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                  required></textarea>
               </div>
-
               <button class="btn btn-lg btn-success btncolor " type="submit">Send Message</button>
-
             </form>
-
           </div>
-
-
-
         </div>
 
       </div>
     </div>
 
-    <div class="container bg-dark">
-      <div class="copyright text-light">
-        &copy; Copyright <strong class="ayush3">VIBHAV</strong>. All Rights Reserved
-      </div>
+    <hr class="w-75" style="height:2px;border-width:0;color:gray;background-color:gray">
+
+    <div class="container mx-auto">
       <div class="credits text-light">
         Designed by <a href="#">Vibhav</a>
       </div>
@@ -799,6 +839,13 @@
   <script src="js/main.js"></script>
   <script src="js/particles.js"></script>
   <script src="js/app.js"></script>
+  <script type="text/javascript">
+    $(window).load(function() {
+      setTimeout(function(){
+        $('#loading').fadeOut('slow');
+      },3600)
+    })
+  </script>
 </body>
 
 </html>
