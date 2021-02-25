@@ -371,10 +371,9 @@ padding-top: 100px;
 
 }
 body {
-  background-image: url('../img/bg.png');
+  background-image: url('../img/bg.jpg');
   color: #444;
   font-family: "Open Sans", sans-serif;
-  background-image: url("../img/bg.png");
   background-size: cover;
 }
 
@@ -384,7 +383,7 @@ a {
 }
 #particles-js{
   height: 650px;
-  /* background-image: url('../img/bg.png'); */
+  /* background-image: url('../img/bg.jpg'); */
 }
 a:hover,
 a:active,
