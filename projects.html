@@ -13,8 +13,8 @@
 
 
   <!-- Favicons -->
-  <link href="img/vibhav_logo.jpg" rel="icon">
-  <link href="img/vibhav_logo.jpg" rel="apple-touch-icon">
+  <link href="img/Yellow.png" rel="icon">
+  <link href="img/Yellow.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link
@@ -42,8 +42,8 @@
     }
 
     body {
-      background-color: #ECEFF1;
-      color: #37474F;
+
+
       font-family: 'Raleway', sans-serif;
       font-weight: 300;
       font-size: 16px;
@@ -70,6 +70,9 @@
 </head>
 
 <body>
+  <div id="loading">
+
+  </div>
   <!--==========================
   Header
   ============================-->
@@ -116,16 +119,17 @@
           <li class="drop-down"><a href="projects.html">Our Work</a>
             <ul>
               <li><a href="#">Projects</a></li>
-              <li><a href="event.html">Events / Workshop</a></li>
+              <li><a href="event.html">Events </a></li>
+              <li><a href="workshop.html">Workshops </a></li>
             </ul>
           </li>
-          <li><a href="#footer">Contact Us</a></li>
-          <li class="toggle-btn">Toggle Mode
+          <li><a href="/index.html#footer">Contact Us</a></li>
+          <!-- <li class="toggle-btn">Toggle Mode
             <label class="switch btn_d_m">
               <input type="checkbox" onclick="lm_function()">
               <span class="slider round"></span>
             </label>
-          </li>
+          </li> -->
         </ul>
       </nav><!-- .main-nav -->
 
@@ -141,7 +145,7 @@
   <!--==========================
       Portfolio Section
     ============================-->
-  <section id="portfolio" class="bg">
+  <section id="portfolio">
     <div class="container">
 
       <header class="section-header">
@@ -155,7 +159,7 @@
             <li data-filter=".filter-Ai-ml">AI-ML</li>
             <li data-filter=".filter-iot">IOT</li>
             <li data-filter=".filter-ar">AR</li>
-          
+
             <li data-filter=".filter-es">Embedded system</li>
 
           </ul>
@@ -164,7 +168,7 @@
 
       <div class="row portfolio-container">
 
-        <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item filter-Ai-ml">
+        <div class="col-md-6 col-lg-4 col-sm-12 col-xs-12 portfolio-item filter-Ai-ml">
           <div class="material-card Blue-Grey">
             <h2>
               <span>Braille OCR</span>
@@ -194,7 +198,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item filter-ar">
+        <div class="col-md-6 col-lg-4 col-sm-12 col-xs-12 portfolio-item filter-ar">
           <article class="itembox material-card Grey">
             <h2>
               <span>AR Newsletter</span>
@@ -225,7 +229,7 @@
           </article>
         </div>
 
-        <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item filter-es">
+        <div class="col-md-6 col-lg-4 col-sm-12 col-xs-12 portfolio-item filter-es">
           <article class="itembox material-card Brown">
             <h2>
               <span>Smart Solar</span>
@@ -254,7 +258,7 @@
             </div>
           </article>
         </div>
-        <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item filter-es">
+        <div class="col-md-6 col-lg-4 col-sm-12 col-xs-12 portfolio-item filter-es">
           <article class="itembox material-card Brown">
             <h2>
               <span>Smart Entry System</span>
@@ -286,7 +290,7 @@
           </article>
         </div>
 
-        <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item filter-Ai-ml">
+        <div class="col-md-6 col-lg-4 col-sm-12 col-xs-12 portfolio-item filter-Ai-ml">
           <article class="itembox material-card Teal">
             <h2>
               <span>Swarm Bot</span>
@@ -317,7 +321,7 @@
           </article>
         </div>
 
-        <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item filter-Ai-ml">
+        <div class="col-md-6 col-lg-4 col-sm-12 col-xs-12 portfolio-item filter-Ai-ml">
           <article class="itembox material-card Blue-Grey">
             <h2>
               <span>Anti-Depression Bot</span>
@@ -347,7 +351,7 @@
             </div>
           </article>
         </div>
-        <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item filter-Ai-ml">
+        <div class="col-md-6 col-lg-4 col-sm-12 col-xs-12 portfolio-item filter-Ai-ml">
           <article class="itembox material-card Blue-Grey">
             <h2>
               <span>Top-Crop Farm Bot</span>
@@ -377,7 +381,7 @@
             </div>
           </article>
         </div>
-        <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item filter-ar">
+        <div class="col-md-6 col-lg-4 col-sm-12 col-xs-12 portfolio-item filter-ar">
           <article class="itembox material-card Grey">
             <h2>
               <span>Ar maths Visualizer</span>
@@ -407,7 +411,7 @@
             </div>
           </article>
         </div>
-        <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item filter-iot">
+        <div class="col-md-6 col-lg-4 col-sm-12 col-xs-12 portfolio-item filter-iot">
           <article class="itembox material-card Blue-Grey">
             <h2>
               <span>Li-Fi</span>
@@ -448,20 +452,10 @@
 
 
   <!--material layout cards-->
-
-  <footer id="footer" class="section-bg bg-dark">
-
-    <div class="container bg-dark">
-      <div class="copyright text-light">
-        &copy; Copyright <strong class="ayush3">VIBHAV</strong>. All Rights Reserved
-      </div>
+  <hr class="w-75" style="height:2px;border-width:0;color:gray;background-color:gray">
+  <footer id="footer" class="">
+    <div class="container">
       <div class="credits text-light">
-        <!--
-          All the links in the footer should remain intact.
-          You can delete the links only if you purchased the pro version.
-          Licensing information: https://bootstrapmade.com/license/
-          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Rapid
-        -->
         Designed by <a href="#">Vibhav</a>
       </div>
     </div>
@@ -524,6 +518,13 @@
       b_g.classList.toggle('bg');
       b_g.classList.toggle('dark-mode');
     }
+  </script>
+  <script type="text/javascript">
+    $(window).load(function() {
+      setTimeout(function(){
+        $('#loading').fadeOut('slow');
+      },800)
+    })
   </script>
 </body>
 

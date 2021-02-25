@@ -11,8 +11,8 @@
 
 
   <!-- Favicons -->
-  <link href="img/vibhav_logo.jpg" rel="icon">
-  <link href="img/vibhav_logo.jpg" rel="apple-touch-icon">
+  <link href="img/Yellow.png" rel="icon">
+  <link href="img/Yellow.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link
@@ -38,7 +38,10 @@
   <link rel="stylesheet" href="css/button.css">
 </head>
 
-<body>
+<body onload="myfunction()">
+  <div id="loading">
+
+  </div>
   <!--==========================
   Header
   ============================-->
@@ -93,16 +96,11 @@
           <li class="drop-down"><a href="projects.html">Our Work</a>
             <ul>
               <li><a href="projects.html">Projects</a></li>
-              <li><a href="event.html">Events / Workshop</a></li>
+              <li><a href="event.html">Events </a></li>
+              <li><a href="workshop.html">Workshops </a></li>
             </ul>
           </li>
           <li><a href="index.html#footer">Contact Us</a></li>
-          <li class="toggle-btn">Toggle Mode
-            <label class="switch btn_d_m">
-            <input type="checkbox" onclick="lm_function()">
-            <span class="slider round"></span>
-            </label>
-          </li>
           </ul>
           </nav><!-- .main-nav -->
 
@@ -232,19 +230,10 @@
       </div>
     </div>
   </main>
-  <footer id="footer" class="section-bg bg-dark">
-
-    <div class="container bg-dark">
-      <div class="copyright text-light">
-        &copy; Copyright <strong class="ayush3">VIBHAV</strong>. All Rights Reserved
-      </div>
+  <hr class="w-75" style="height:2px;border-width:0;color:gray;background-color:gray">
+  <footer id="footer" class="">
+    <div class="container">
       <div class="credits text-light">
-        <!--
-          All the links in the footer should remain intact.
-          You can delete the links only if you purchased the pro version.
-          Licensing information: https://bootstrapmade.com/license/
-          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Rapid
-        -->
         Designed by <a href="#">Vibhav</a>
       </div>
     </div>
@@ -266,6 +255,13 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+  <script type="text/javascript">
+    $(window).load(function() {
+      setTimeout(function(){
+        $('#loading').fadeOut('slow');
+      },800)
+    })
+  </script>
 </body>
 
 </html>
