@@ -120,12 +120,12 @@
   });
 
   // Porfolio isotope and filter
-  $(document).ready(function () {
+  $(window).on('load', function () {
     var portfolioIsotope = $('.portfolio-container').isotope({
       itemSelector: '.portfolio-item',
     });
     $('#portfolio-flters li').on('click', function (e) {
-      e.preventDefault();
+      // e.preventDefault();
       $('#portfolio-flters li').removeClass('filter-active');
       $(this).addClass('filter-active');
 
