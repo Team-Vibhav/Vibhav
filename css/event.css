@@ -60,7 +60,20 @@ body1{
   display: grid;
   place-items: center center;
   font-family: 'Poppins',sans-serif;
-
+}
+@media (min-width:760px) and (max-width:800px) {
+  .carda_w{
+    margin:20px;
+    height:70vh !important;
+  }
+  .carda{
+    height: 60vh !important;
+    margin: 20px !important;
+  }
+  #footer, hr{
+    position: relative;
+    bottom:-90px;
+  }
 }
 @media (min-width:772px){
   .cards1{
@@ -75,22 +88,41 @@ body1{
   background-color: #1c1b29;
   border-radius: 20px;
   box-shadow: 0 0 30px rgba(0,0,0,0.18);
-  height: 65%;
+  height: 100vh;
   margin: 40px auto;
+}
+@media (min-width:800px) {
+  .carda{
+    height:75vh;
+  }
+  .carda_w{
+    width: 75vh;
+    margin: auto;
+  }
 }
 .carda_w{
   background-color: #1c1b29;
   border-radius: 20px;
   box-shadow: 0 0 30px rgba(0,0,0,0.18);
-  height: 65%;
+  height: 90vh;
 }
-@media (max-width:770px) {
+@media (max-width:600px) {
   .cards1{
     padding: 0;
     margin: 40px 15px;
   }
   .carda_w{
     margin-bottom: 25px;
+    height:110vh;
+  }
+  .card1w{
+    height:120vh;
+  }
+  .carda_w .container1{
+    height:50vh;
+  }
+  .container1{
+    height:50vh;
   }
 }
 .container1{
@@ -153,8 +185,7 @@ img{
   font-weight: 400;
 }
 .btn{
-  margin: 20px 30px;
-
+  margin-top: 10px;
 }
 
 .vibhav-zoom{
@@ -168,4 +199,9 @@ img{
 
 body > section > div > p{
   text-align: center;
+}
+@media only screen and (min-width: 1000px) {
+  .size{
+    width: 60%;
+  }
 }

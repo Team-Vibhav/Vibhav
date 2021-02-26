@@ -1066,3 +1066,5 @@ to {
     filter: blur(4px);
   }
 }
+
+.modal-content { background: rgb(43, 43, 43) !important; }
