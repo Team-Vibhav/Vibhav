@@ -159,22 +159,24 @@ body > section > div > div.container.h-100 > div > div > div > div > h3:hover{
     -ms-transform: scale(1);
     transform: scale(1);
     opacity: 1;
+  
     margin-bottom: 15px;
     -webkit-transition: -webkit-transform .4s ease, opacity .4s ease;
     transition: transform .4s ease, opacity .4s ease;
-    max-width: 40%;
-    filter: none;
-    -webkit-filter: grayscale(0);
+    max-width: 60%;
+    filter: rgb(253, 251, 251);
+    -webkit-filter: grayscale(1);
     -webkit-transform: scale(1.01)
 }
 
 .blog-page .single_post .img-post:hover img {
-    -webkit-transform: scale(1.02);
+  filter: none;
+  -webkit-transform: scale(1.02);
     -ms-transform: scale(1.02);
     transform: scale(1.02);
     opacity: .7;
-    filter: rgb(253, 251, 251);
-    -webkit-filter: grayscale(1);
+   
+    -webkit-filter: grayscale(0);
     -webkit-transition: all .8s ease-in-out
 }
 
