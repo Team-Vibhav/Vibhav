@@ -1974,3 +1974,33 @@ padding-top: 20px;
   /* width: 50%; */
   margin-right:20px;
 }
+
+#mymodel1 > div > div > div.modal-body > p{
+  text-align: justify;
+}
+
+#mymodel3 > div > div > div.modal-body > p{
+  text-align: justify;
+}
+#mymodel4 > div > div > div.modal-body > p{
+  text-align: justify;
+}
+#mymodel2 > div > div > div.modal-body > p{
+  text-align: justify;
+}
+
+body > div.cards1.body1 > div.carda.card1.vibhav-zoom.wow.bounceInUp > div.details1 > p{
+  text-align: justify;
+}
+
+body > div.cards1.body1 > div.carda.card3.vibhav-zoom.wow.bounceInUp > div.details1 > p{
+  text-align: justify;
+}
+
+body > div.cards1.body1 > div.carda_w.card1.card1w.vibhav-zoom.wow.bounceInUp.workshop > div.details2.details1 > p{
+  text-align: justify;
+}
+
+body > div.cards1.body1 > div.carda_w.card2.vibhav-zoom.wow.bounceInUp.workshop > div.details2.details1 > p{
+  text-align: justify;
+}
