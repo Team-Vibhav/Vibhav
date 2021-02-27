@@ -1952,6 +1952,12 @@ padding-top: 20px;
   margin: auto;
   display: block;
   
+  
+}
+.vaishnavi img:hover{
+  width: 100%;
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
 }
 /* #nimbus img:hover{
   filter: invert(95%) sepia(27%) saturate(3658%) hue-rotate(312deg) brightness(102%) contrast(101%);
