@@ -8,13 +8,13 @@ const ak = {
       }
     },
     "color": {
-      "value": "#fff"
+      "value": "#b68973"
     },
     "shape": {
       "type": "circle",
       "stroke": {
         "width": 3,
-        "color": "8ac4d0"
+        "color": "#faf3e0"
       },
       "polygon": {
         "nb_sides": 7
@@ -36,12 +36,12 @@ const ak = {
       }
     },
     "size": {
-      "value": 5,
+      "value": 4,
       "random": true,
       "anim": {
         "enable": true,
         "speed": 10,
-        "size_min": 3,
+        "size_min": 2,
         "sync": false
       }
     },
@@ -49,13 +49,13 @@ const ak = {
       "enable": true,
       "distance": 125,
       "color": "#a3ddcb",
-      "opacity": 0.7,
+      "opacity": 0,
       "width": 0.5
     },
     "move": {
       "enable": true,
-      "speed": 8,
-      "direction": "none",
+      "speed": 6,
+      "direction": "top",
       "random": false,
       "straight": false,
       "out_mode": "out",
