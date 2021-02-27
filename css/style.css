@@ -141,7 +141,13 @@ body > section > div > div.container.h-100 > div > div > div > div > h3{
 body > section > div > div.container.h-100 > div > div > div > div > h3:hover{
   color: #ffc75f;
   cursor: pointer;
-
+}
+@media (min-width:780px) {
+  .akboss{
+    border-radius:50%;
+    background:#1e1c29;
+    width:60%;
+  }
 }
 .blog-page .single_post {
     -webkit-transition: all .4s ease;
@@ -159,7 +165,7 @@ body > section > div > div.container.h-100 > div > div > div > div > h3:hover{
     -ms-transform: scale(1);
     transform: scale(1);
     opacity: 1;
-  
+
     margin-bottom: 15px;
     -webkit-transition: -webkit-transform .4s ease, opacity .4s ease;
     transition: transform .4s ease, opacity .4s ease;
@@ -175,13 +181,14 @@ body > section > div > div.container.h-100 > div > div > div > div > h3:hover{
     -ms-transform: scale(1.02);
     transform: scale(1.02);
     opacity: .7;
-   
+
     -webkit-filter: grayscale(0);
     -webkit-transition: all .8s ease-in-out
 }
 
 .blog-page .single_post .img-post:hover .social_share {
-    display: block
+    display: block;
+    margin: 10px -10px;
 }
 
 .blog-page .single_post .img-post .social_share {
@@ -1949,10 +1956,10 @@ padding-top: 20px;
 
 }
 .vaishnavi{
-  
+
   margin: auto;
   display: block;
-  
+
 }
 /* #nimbus img:hover{
   filter: invert(95%) sepia(27%) saturate(3658%) hue-rotate(312deg) brightness(102%) contrast(101%);
@@ -1967,4 +1974,34 @@ padding-top: 20px;
 #workshop{
   /* width: 50%; */
   margin-right:20px;
+}
+
+#mymodel1 > div > div > div.modal-body > p{
+  text-align: justify;
+}
+
+#mymodel3 > div > div > div.modal-body > p{
+  text-align: justify;
+}
+#mymodel4 > div > div > div.modal-body > p{
+  text-align: justify;
+}
+#mymodel2 > div > div > div.modal-body > p{
+  text-align: justify;
+}
+
+body > div.cards1.body1 > div.carda.card1.vibhav-zoom.wow.bounceInUp > div.details1 > p{
+  text-align: justify;
+}
+
+body > div.cards1.body1 > div.carda.card3.vibhav-zoom.wow.bounceInUp > div.details1 > p{
+  text-align: justify;
+}
+
+body > div.cards1.body1 > div.carda_w.card1.card1w.vibhav-zoom.wow.bounceInUp.workshop > div.details2.details1 > p{
+  text-align: justify;
+}
+
+body > div.cards1.body1 > div.carda_w.card2.vibhav-zoom.wow.bounceInUp.workshop > div.details2.details1 > p{
+  text-align: justify;
 }

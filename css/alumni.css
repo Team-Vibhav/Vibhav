@@ -8,6 +8,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+#loading{
+  top:0;
+}
 .dark-mode .alumni-heading{
   background-color: #f5f8fd;
   color: #0b115a;
@@ -32,9 +35,8 @@
 .alumni-heading:hover{
   color: #ffffe0;
   background-color: #101010;
-  border-bottom: 1px solid white;
-  border-radius: 0;
-  box-shadow: 0 3px white;
+  border: 1px solid white;
+  box-shadow: 0 0 3px white;
 }
 .clear-fix:after {
   display: block;
@@ -53,7 +55,6 @@
   position: relative;
   top:110px;
   display: block;
-  background: rgba(10, 10, 10, 0.5);
   padding: 20px;
   justify-content: center;
   font-family: "Do Hyeon", sans-serif;
@@ -174,6 +175,7 @@
 }
 .card__collection .cards--two:hover p {
   left: 8%;
+  top: 320px;
 }
 .card__collection .cards--two:hover img {
   transform: translateY(-15px);
