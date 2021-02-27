@@ -141,7 +141,13 @@ body > section > div > div.container.h-100 > div > div > div > div > h3{
 body > section > div > div.container.h-100 > div > div > div > div > h3:hover{
   color: #ffc75f;
   cursor: pointer;
-
+}
+@media (min-width:780px) {
+  .akboss{
+    border-radius:50%;
+    background:#1e1c29;
+    width:60%;
+  }
 }
 .blog-page .single_post {
     -webkit-transition: all .4s ease;
@@ -159,7 +165,7 @@ body > section > div > div.container.h-100 > div > div > div > div > h3:hover{
     -ms-transform: scale(1);
     transform: scale(1);
     opacity: 1;
-  
+
     margin-bottom: 15px;
     -webkit-transition: -webkit-transform .4s ease, opacity .4s ease;
     transition: transform .4s ease, opacity .4s ease;
@@ -175,13 +181,14 @@ body > section > div > div.container.h-100 > div > div > div > div > h3:hover{
     -ms-transform: scale(1.02);
     transform: scale(1.02);
     opacity: .7;
-   
+
     -webkit-filter: grayscale(0);
     -webkit-transition: all .8s ease-in-out
 }
 
 .blog-page .single_post .img-post:hover .social_share {
-    display: block
+    display: block;
+    margin: 10px -10px;
 }
 
 .blog-page .single_post .img-post .social_share {
@@ -373,6 +380,7 @@ padding-top: 100px;
 
 }
 body {
+
   background-image: url('../img/bg.jpg');
   color: #444;
   font-family: "Open Sans", sans-serif;
@@ -1948,16 +1956,9 @@ padding-top: 20px;
 
 }
 .vaishnavi{
-  
+
   margin: auto;
   display: block;
-  
-  
-}
-.vaishnavi img:hover{
-  width: 100%;
-  -webkit-transform: scale(1.03);
-  transform: scale(1.03);
 }
 /* #nimbus img:hover{
   filter: invert(95%) sepia(27%) saturate(3658%) hue-rotate(312deg) brightness(102%) contrast(101%);
