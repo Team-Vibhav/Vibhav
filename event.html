@@ -34,8 +34,16 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
-  <link href="css/event.css" rel="stylesheet">
+  <link href="css/events.css" rel="stylesheet">
   <link rel="stylesheet" href="css/button.css">
+
+  <style type="text/css">
+   
+    body {
+      background-image: linear-gradient(to right, rgb(30, 28, 41),rgb(30, 28, 41)) !important;
+
+    }
+    </style>
 
 </head>
 
@@ -105,8 +113,23 @@
             </ul>
           </li>
           <li><a href="index.html#footer">Contact Us</a></li>
+          <!-- <li class="toggle-btn">Toggle Mode
+            <label class="switch btn_d_m">
+              <input type="checkbox" onclick="lm_function()">
+              <span class="slider round"></span>
+            </label>
+          </li> -->
         </ul>
       </nav><!-- .main-nav -->
+
+      <script type="text/javascript">
+        function lm_function() {
+          const bg = document.getElementById('event-bg')
+          document.body.classList.toggle('dark-mode');
+          bg.classList.toggle('dark-mode');
+          bg.classList.toggle('section-bg');
+        }
+      </script>
     </div>
   </header><!-- #header -->
 
@@ -131,7 +154,7 @@
 
     <div class="carda card1 vibhav-zoom wow bounceInUp">
       <div class="container1">
-        <img class="img-aksh" src="img/event image/electrovision.jpg" alt="Singapore">
+        <img src="img/event image/vr-bot-maze.jpeg" alt="Singapore">
       </div>
       <div class="details1">
         <h3>Electrovision</h3>
@@ -148,7 +171,7 @@
 
     <div class="carda card2 vibhav-zoom wow bounceInUp">
       <div class="container1">
-        <img class="img-aksh" src="img/event image/cybercircuits.jpg" alt="Singapore">
+        <img src="img/event image/vr-bot-maze.jpeg" alt="Singapore">
       </div>
       <div class="details1">
         <h3>CyberCircuits</h3>
@@ -163,7 +186,7 @@
     </div>
     <div class="carda card3 vibhav-zoom wow bounceInUp">
       <div class="container1">
-        <img class="img-aksh" src="img/event image/nithVR.jpg" alt="Singapore">
+        <img src="img/event image/vr-bot-maze.jpeg" alt="Singapore">
       </div>
       <div class="details1">
         <h3>QuARenteam Titans</h3>
