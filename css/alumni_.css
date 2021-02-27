@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap') repeat scroll 0 0 rgba(0, 0, 0 , 0);
+
 @import 'https://fonts.googleapis.com/css?family=Do+Hyeon';
 *,
 *:before,
@@ -8,10 +10,6 @@
 }
 #loading{
   top:0;
-}
-.wrapper{
-  position: relative;
-  top:110px;
 }
 .alumni-heading{
   text-align: center;
@@ -37,16 +35,108 @@
 
 .img-responsive {
   max-width: 100%;
-  height: 100%;
+  height: 110%;
 }
 
 .card__collection {
+  margin: 10px;
+  margin-bottom: 70px;
   position: relative;
-  padding: 10px;
+  top:110px;
+  display: block;
+  padding: 20px;
+  justify-content: center;
   font-family: "Do Hyeon", sans-serif;
   overflow: hidden;
 }
+@media (min-width: 1752px){
+.card__collection{
+  margin: 7% 13%;
+  top: 20px;
+   }
+ }
+@media (min-width: 1438px) and (max-width:1752px){
+.card__collection{
+  margin:10% 13%;
+  top: 20px;
+  padding: 20px;
+   }
+ }
+@media (min-width: 1200px) and (max-width:1436px){
+.card__collection{
+  padding: 20px 0 20px 10%;
+   }
+ }
+@media (min-width:1020px) and (max-width:1040px){
+  .card__collection{
+    padding: 20px 0;
+  }
+}
+@media (min-width:1040px) and (max-width:1076px){
+  .card__collection{
+    padding: 20px 0 20px 10px;
+  }
+}
+@media (min-width:1076px) and (max-width:1200px){
+  .card__collection{
+    padding: 20px 0 20px 5%;
+  }
+}
+@media (min-width:770px) and (max-width:900px){
+  .card__collection{
+    padding: 20px 0 20px  7%;
+  }
+}
+@media (min-width:900px) and (max-width:1020px){
+  .card__collection{
+    padding: 20px 0 20px  15%;
+  }
+}
+
+@media (min-width:380px) and (max-width:436px) {
+  .card__collection {
+    top: 60px;
+    padding: 20px 0 20px 10%;
+  }
+}
+@media (min-width:360px) and (max-width:380px) {
+  .card__collection {
+    top: 60px;
+    padding: 20px 0 20px 10px;
+  }
+}
+@media (max-width:360px) {
+  .card__collection {
+    top: 60px;
+    padding: 20px 0 20px 0 ;
+  }
+}
+@media (min-width:436px) and (max-width:500px) {
+  .card__collection {
+    top: 60px;
+    padding: 20px 0 20px 15%;
+  }
+}
+@media (min-width:500px) and (max-width:688px) {
+  .card__collection {
+    top: 60px;
+    padding: 20px 0 20px 20%;
+  }
+}
+@media (min-width:750px) and (max-width:770px) {
+  .card__collection {
+    top: 60px;
+    padding: 20px 0 20px 30px;
+  }
+}
+@media (min-width:688px) and (max-width:750px) {
+  .card__collection {
+    top: 60px;
+    padding: 20px 0;
+  }
+}
 .card__collection .cards {
+  width: 300px;
   height: 400px;
   display: block;
   background-size: cover;
@@ -55,8 +145,9 @@
   position: relative;
   overflow: hidden;
   background-position: center;
-  margin: 10px;
+  margin: 20px;
 }
+
 .card__collection .cards--two {
   position: relative;
   backface-visibility: hidden;
@@ -73,6 +164,7 @@
 }
 .card__collection .cards--two:hover p {
   left: 8%;
+  top: 320px;
 }
 .card__collection .cards--two:hover img {
   transform: translateY(-15px);

@@ -1,77 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-
-.toggle-btn {
-  display: block;
-  position: relative;
-  color: #a4a0d6;
-  padding: 10px 15px;
-  transition: 0.3s;
-  font-size: 14px;
-  font-family: "Open Sans", sans-serif;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-
-.switch {
-  margin-left: 5px;
-  position: relative;
-  display: inline-block;
-  width: 44px;
-  height: 24px;
-}
-
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #a4b0d6;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 20px;
-  width: 20px;
-  left: 4px;
-  bottom: 2px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-input:checked+.slider {
-  background-color: #cccca0;
-}
-
-input:focus+.slider {
-  box-shadow: 0 0 3px #ccc;
-}
-
-input:checked+.slider:before {
-  -webkit-transform: translateX(16px);
-  -ms-transform: translateX(16px);
-  transform: translateX(16px);
-}
-
-.slider.round {
-  border-radius: 28px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
-
 .prob-state {
   position: relative;
   display: inline-block;
@@ -261,77 +188,6 @@ input:checked+.slider:before {
   100% {
     top: 8px;
     opacity: 0;
-  }
-}
-
-.welcome-slides {
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-}
-
-.welcome-slides .owl-prev,
-.welcome-slides .owl-next {
-  -webkit-transition-duration: 500ms;
-  -o-transition-duration: 500ms;
-  transition-duration: 500ms;
-  border-radius: 50%;
-  position: absolute;
-  width: 46px;
-  height: 46px;
-  top: 50%;
-  left: 70px;
-  margin-top: -33px;
-  z-index: 10;
-  text-align: center;
-  line-height: 44px;
-  border: 2px solid #9293bc;
-  color: #9293bc;
-  font-size: 34px;
-}
-
-.welcome-slides .owl-prev:hover,
-.welcome-slides .owl-prev:focus,
-.welcome-slides .owl-next:hover,
-.welcome-slides .owl-next:focus {
-  background-color: rgba(255, 255, 255, 0.5);
-  color: #000000;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-
-  .welcome-slides .owl-prev,
-  .welcome-slides .owl-next {
-    left: 30px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-
-  .welcome-slides .owl-prev,
-  .welcome-slides .owl-next {
-    width: 40px;
-    left: 15px;
-    height: 40px;
-    font-size: 18px;
-    line-height: 38px;
-  }
-}
-
-.welcome-slides .owl-next {
-  left: auto;
-  right: 70px;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .welcome-slides .owl-next {
-    right: 30px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .welcome-slides .owl-next {
-    right: 15px;
   }
 }
 
@@ -587,7 +443,7 @@ input:checked+.slider:before {
   left: 0;
   z-index: 10;
   background: rgba(0, 0, 0, 0.6);
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.8)), color-stop(30%, rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0)));
+  background: -webkit-linear-gradient(left bottom, left top, from(rgba(0, 0, 0, 0.8)), color-stop(30%, rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0)));
   background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0) 100%);
   background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0) 100%);
   background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0) 100%);
@@ -701,7 +557,7 @@ to {
   font-size: 3em;
   white-space: nowrap;
   animation: typing 3s steps(18, end), caret .5s step-end infinite;
-
+  animation-delay: 3s;
 }
 
 
