@@ -9,9 +9,19 @@
 #loading{
   top:0;
 }
+.aks{
+  padding: auto;
+  display: flex;
+  justify-content: center;
+}
+.card__collection .cards--two:hover p {
+  left: 8%;
+  top: 320px;
+}
 .wrapper{
   position: relative;
   top:110px;
+  margin-bottom: 170px;
 }
 .alumni-heading{
   text-align: center;
