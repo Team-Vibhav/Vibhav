@@ -209,3 +209,11 @@ body > section > div > p{
 body > div.cards1.body1 > div.carda_w.card2.vibhav-zoom.wow.bounceInUp.workshop > div.details2.details1 > p{
   text-align: justify;
 }
+#mymodel > div > div > div.modal-body > p:nth-child(1){
+  padding: 0;
+  margin: 0 0 0px 0;
+}
+#mymodel1 > div > div > div.modal-body > p:nth-child(1){
+  padding: 0;
+  margin: 0 0 0px 0;
+}
