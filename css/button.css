@@ -476,7 +476,7 @@ input:checked+.slider:before {
 }
 
 .single-welcome-slide .welcome-text-two h2 {
-  font-size: 85px;
+  font-size: 65px;
   color: #ffffff;
   letter-spacing: 2.5px;
   /* text-transform: uppercase; */
