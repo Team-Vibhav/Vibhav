@@ -255,11 +255,15 @@ padding-top: 100px;
 
 }
 body {
-
   background-image: url('../img/bg.jpg');
   color: #444;
   font-family: "Open Sans", sans-serif;
   background-size: cover;
+}
+@media (max-width:770px) {
+  body {
+    background-image: linear-gradient(to right, rgb(30, 28, 41),rgb(30, 28, 41)) !important;
+  }
 }
 
 a {
