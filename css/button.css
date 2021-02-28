@@ -980,7 +980,7 @@ to {
 #loading {
   width: 100%;
   height: 100vh;
-  background: #000 url('../img/6t02.gif') no-repeat center;
+  background: #000 url('../img/103 (4).gif') no-repeat center;
   position: fixed;
   z-index: 99999;
 }
@@ -1092,4 +1092,28 @@ to {
 }
 .imgayush{
   height: 50vh;
+}
+
+
+@media only screen and (max-width: 767px) {
+
+  .wor-card{
+    margin-top: 100px;
+  }
+
+}
+
+@media (max-width: 600px){
+.card1w {
+  height: 90vh;
+
+}
+}
+
+#mymodel > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > p:nth-child(1){
+  margin: 0 0 0 0;
+}
+
+#mymodel1 > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > p:nth-child(1){
+  margin: 0;
 }
