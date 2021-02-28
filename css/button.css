@@ -694,7 +694,7 @@ to {
 
 .typing-text {
   font-family: monospace;
-  color: #f2f8a4;
+  color: #ffd859;
   width: 18ch;
   border-right: .08em solid;
   overflow: hidden;
@@ -1116,4 +1116,9 @@ to {
 
 #mymodel1 > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > p:nth-child(1){
   margin: 0;
+}
+
+.vibhav-font{
+  font-size: 72px;
+  letter-spacing: 3px;
 }
