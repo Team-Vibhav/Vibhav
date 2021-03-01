@@ -33,7 +33,10 @@ section .text1>p {
   color: #b0bec5;
   color: #b0bec5;
 }
-
+.img-aksh{
+  max-width: 100%;
+  height:60vh;
+}
 section.project1 .text1 h4 {
   color: #b0bec5;
   font-family: "Raleway", sans-serif;
@@ -54,20 +57,13 @@ hr{
   background-color: #b0bec5
 }
 
-
-body1{
-  background-color: #151320;
-  display: grid;
-  place-items: center center;
-  font-family: 'Poppins',sans-serif;
-}
 @media (min-width:760px) and (max-width:800px) {
   .carda_w{
     margin:20px;
     height:70vh !important;
   }
   .carda{
-    height: 60vh !important;
+    height: 80vh !important;
     margin: 20px !important;
   }
   #footer, hr{
@@ -76,13 +72,7 @@ body1{
   }
 }
 @media (min-width:772px){
-  .cards1{
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-  padding: 30px;
-  grid-gap: 50px;
-  margin: 30px 30px;
-}
+
 }
 .carda{
   background-color: #1c1b29;
@@ -107,22 +97,18 @@ body1{
   height: 90vh;
 }
 @media (max-width:600px) {
-  .cards1{
-    padding: 0;
-    margin: 40px 15px;
-  }
+
   .carda_w{
-    margin-bottom: 25px;
-    height:110vh;
+    height:70vh !important;
   }
-  .card1w{
-    height:120vh;
+  .carda{
+    height:70vh !important;
   }
   .carda_w .container1{
-    height:50vh;
+    height:40vh !important;
   }
   .container1{
-    height:50vh;
+    height:40vh !important;
   }
 }
 .container1{
@@ -206,6 +192,30 @@ body > section > div > p{
   }
 }
 
-body > div.cards1.body1 > div.carda_w.card2.vibhav-zoom.wow.bounceInUp.workshop > div.details2.details1 > p{
+.body1 > div.carda_w.card2.vibhav-zoom.wow.bounceInUp.workshop > div.details2.details1 > p{
   text-align: justify;
 }
+
+
+.img-res{
+  height: 100%;
+}
+
+@media (min-width: 1400px) {
+  .event-container{
+    margin-left: -120px;
+    width: 120%;
+  }
+}
+
+.des-text-apne{
+color:  #e08383;
+}
+
+.date-Text{
+ color: #4dccc8;
+}
+
+/* .ak-nb{
+  
+} */

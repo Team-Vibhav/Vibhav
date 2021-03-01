@@ -36,7 +36,7 @@
 
   // Header scroll class
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 100) {
+    if ($(this).scrollTop() > 35) {
       $('#header').addClass('header-scrolled');
       $('#header').removeClass('aksh');
     } else {
@@ -45,7 +45,7 @@
     }
   });
 
-  if ($(window).scrollTop() > 100) {
+  if ($(window).scrollTop() > 35) {
     $('#header').addClass('header-scrolled');
   }
 

@@ -476,7 +476,7 @@ input:checked+.slider:before {
 }
 
 .single-welcome-slide .welcome-text-two h2 {
-  font-size: 85px;
+  font-size: 65px;
   color: #ffffff;
   letter-spacing: 2.5px;
   /* text-transform: uppercase; */
@@ -484,7 +484,7 @@ input:checked+.slider:before {
   font-weight: 600;
 }
 
-.single-welcome-slide .welcome-text-two span {
+.single-welcome-slide .welcome-text-two span.vibhav-font {
   background: linear-gradient(to right, #9A3D72 0%, #228BC4 58%, #2FA9AB 80%);
   background-clip: border-box;
   -webkit-background-clip: text;
@@ -694,7 +694,7 @@ to {
 
 .typing-text {
   font-family: monospace;
-  color: #f2f8a4;
+  color: #eed892;
   width: 18ch;
   border-right: .08em solid;
   overflow: hidden;
@@ -1089,4 +1089,35 @@ to {
     font-size: 1.5rem;
   }
 
+}
+.imgayush{
+  height: 50vh;
+}
+
+
+@media only screen and (max-width: 767px) {
+
+  .wor-card{
+    margin-top: 100px;
+  }
+
+}
+
+
+
+#mymodel > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > p:nth-child(1){
+  margin: 0 0 0 0;
+}
+
+#mymodel1 > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > p:nth-child(1){
+  margin: 0;
+}
+
+.vibhav-font{
+  font-size: 72px;
+  letter-spacing: 3px;
+}
+
+.font-new{
+  color: white;
 }
