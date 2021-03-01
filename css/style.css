@@ -142,7 +142,7 @@ body > section > div > div.container.h-100 > div > div > div > div > h3:hover{
   color: #ffc75f;
   cursor: pointer;
 }
-@media (min-width:780px) {
+@media (min-width:1200px) {
   .akboss{
     border-radius:50%;
     background:#1e1c29;
