@@ -63,7 +63,7 @@ hr{
     height:70vh !important;
   }
   .carda{
-    height: 80vh !important;
+    height: 70vh !important;
     margin: 20px !important;
   }
   #footer, hr{
@@ -83,13 +83,27 @@ hr{
 }
 @media (min-width:800px) {
   .carda{
-    height:75vh;
+    height:85vh;
   }
   .carda_w{
     width: 75vh;
     margin: auto;
   }
 }
+
+@media (min-width:1200px) {
+  .carda{
+    height:90vh;
+  }
+  
+}
+
+@media (max-width: 600px){
+.carda {
+    height: 80vh !important;
+}
+}
+
 .carda_w{
   background-color: #1c1b29;
   border-radius: 20px;
@@ -102,7 +116,7 @@ hr{
     height:70vh !important;
   }
   .carda{
-    height:70vh !important;
+    height:80vh !important;
   }
   .carda_w .container1{
     height:40vh !important;
