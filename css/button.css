@@ -826,6 +826,10 @@ to {
   font-size: small;
 }
 
+.text-pahal{
+  font-size:medium;
+}
+
 .glitch {
   font-size: 3rem;
   font-weight: 700;
