@@ -62,11 +62,16 @@ body {
     color: antiquewhite;
 }
 
-    #scoreNumberCont {
-        text-align: center;
-        padding-top: 0em  !important;
-        padding-bottom: 2em;
-        color: antiquewhite;
-        font-size: 1.7rem;
-    }
+#scoreNumberCont {
+    text-align: center;
+    padding-top: 0em  !important;
+    padding-bottom: 2em;
+    color: antiquewhite;
+    font-size: 1.7rem;
+}
 
+#akFormFake input{
+  margin-top: 10px;
+  padding-left: 10px;
+
+}
