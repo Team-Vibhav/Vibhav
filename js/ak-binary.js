@@ -381,7 +381,7 @@
     };
     Main.endGame = function (e) {
         // if (Main.warned == true) {
-            Main.stage.showStartMenu();
+            Main.gameover();
         // } else {
         //     Main.warned = true;
         //     js_Browser.alert("Warning: all your progress will be lost! \n Please click 'end game' again to exit to main menu");
