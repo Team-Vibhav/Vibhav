@@ -1,0 +1,41 @@
+<!-- <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Bit-N-Byte</title>
+  </head>
+  <body>
+    <h1>LeaderBoard</h1>
+
+  <script type="text/javascript">
+    fetch("https://api.apispreadsheets.com/data/10155/").then(res=>{
+    if (res.status === 200){
+      res.json().then(data=>{
+        var yourData = data
+        for (var key in yourData) {
+          if (yourData.hasOwnProperty(key)) {
+            var list_ak_win = yourData[key]
+            var name = []
+              for(var x in list_ak_win){
+                if(list_ak_win[x]['Time'] < s){
+                  if (name == list_ak_win[x]['Name']){
+                    var Score = 0
+                    if (list_ak_win[x]['Score'] <= Score){
+                      delete list_ak_win[x]
+                    }
+                  }else{
+                    name = list_ak_win[x]['Name']
+                  }
+                }
+              }
+          }
+      }
+      }).catch(err => console.log(err))
+    }
+    else{
+      console.log("hello");
+    }
+  });
+  </script>
+  </body>
+</html> -->
