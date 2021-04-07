@@ -6,6 +6,12 @@
   </head>
   <body>
     <h1>LeaderBoard</h1>
+    <table id="myTable">
+      <th>
+        <td>Name</td>
+        <td>Score</td>
+      </th>
+    </table>
 
   <script type="text/javascript">
     fetch("https://api.apispreadsheets.com/data/10155/").then(res=>{
@@ -17,23 +23,31 @@
             var list_ak_win = yourData[key]
             var name = []
               for(var x in list_ak_win){
-                if(list_ak_win[x]['Time'] < s){
-                  if (name == list_ak_win[x]['Name']){
-                    var Score = 0
-                    if (list_ak_win[x]['Score'] <= Score){
-                      delete list_ak_win[x]
-                    }
+                if(list_ak_win[x]['Time'] < 1617778323259){
+                  // console.log('true');
+                  if ( name.includes(list_ak_win[x]['Name']) ) {
+                    delete list_ak_win[x]
+                    console.log('delete')
                   }else{
-                    name = list_ak_win[x]['Name']
+                    name.push(list_ak_win[x]['Name'])
+                    console.log(list_ak_win[x]['Name'])
                   }
                 }
               }
-          }
-      }
+                // for(var x in list_ak_win){
+                //   var table = document.getElementById("myTable");
+                //   var row = table.insertRow(x);
+                //   var cell1 = row.insertCell(x);
+                //   var cell2 = row.insertCell(x+1);
+                //   cell1.innerHTML = list_ak_win[x]['Name'];
+                //   cell2.innerHTML = list_ak_win[x]['Score'];
+                // }
+              }
+            }
       }).catch(err => console.log(err))
     }
     else{
-      console.log("hello");
+      console.log("Error");
     }
   });
   </script>

@@ -123,9 +123,13 @@
 			<button id="startGameButton" class="defbtn strbtn" onclick="ak_start()">
 				Start Game
 			</button>
-			<br />
+			<br/>
 			<button id="instructionsButton" class="defbtn endgame">
 				Instructions
+			</button>
+			<br/>
+			<button style="width:130px; padding:10px" id="akback" onclick="akhome()" class="defbtn endgame">
+				Back
 			</button>
 		</div>
 		<div id="uiPanelL" class="gameLayer">
@@ -285,6 +289,11 @@
 		}
 	}
 	//https://stackoverflow.com/questions/3969475/javascript-pause-settimeout
+	</script>
+	<script type="text/javascript">
+		function akhome() {
+			window.location.pathname = '/index.html'
+		}
 	</script>
 </body>
 
