@@ -75,8 +75,10 @@
 			var score = document.getElementById("scoreNumber").innerText;
 			document.getElementById('ak_score').value = score;
 			var d = new Date();
+			var t = d.getTime();
 			var date = d.toString();
 			document.getElementById('ak_date').value = date;
+			document.getElementById('ak_time').value = t;
 			$.ajax({
 				url:"https://api.apispreadsheets.com/data/10155/",
 				type:"post",
@@ -112,22 +114,30 @@
 			<form id="akForm">
 				<input type="text" id="akname" name="Name" placeholder="Name">
 				<input type="text" id="akroll" name="Roll No" placeholder="Roll No">
-				<input type="text" id="akphone" name="Phone No" placeholder="Phone">
+				<input type="email" id="akemail" name="E-mail" placeholder="E-mail">
+				<input type="tel" id="akphone" name="Phone No" pattern="[1-9]{1}[0-9]{9}" placeholder="Phone">
 				<input id="ak_score" type="hidden" name="Score" value="">
 				<input id="ak_date" type="hidden" name="Date" value="">
+				<input id="ak_time" type="hidden" name="Time" value="">
 			</form>
 			<button id="startGameButton" class="defbtn strbtn" onclick="ak_start()">
 				Start Game
 			</button>
-			<br />
+			<br/>
 			<button id="instructionsButton" class="defbtn endgame">
 				Instructions
+			</button>
+			<br/>
+			<button style="width:130px; padding:10px" id="akback" onclick="akhome()" class="defbtn endgame">
+				Back
 			</button>
 		</div>
 		<div id="uiPanelL" class="gameLayer">
 			<button class="uipch strbtn" id="pauseMenuButton" style="display: none;">
 				Pause
 			</button>
+			<progress value="0" max="150" id="progressBar" style="position:absolute;"></progress>
+			<span id="progressAk"></span>
 		</div>
 		<div id="binField" class="gameLayer">
 			<div id="binMarkLine">
@@ -226,6 +236,17 @@
 			<!-- <img id="videoInstructions" src="img/ak.gif"></img> -->
 			<img  src="img/ak.gif"></img>
 			<br>
+			<div class="containers">
+				<ul class="instructions">
+					<li>It is a binary addition game. Duration of this round is for 20 minutes.</li>
+					<li>Person will be given two minutes for one attempt and to bag a maximum score.</li>
+					<li>Those who are able to play for 2.5 minutes continuosly, only those names will be shown on the leaderboard.</li>
+					<li>Those who are not able to play for 2.5 minutes continuously and their game is over, then that attempt will not be shown in the leaderboard.</li>
+					<li>Participants can play and give as many attempts as they want in those 20 minutes duration, only the highest score will be considered.</li>
+					<li>No submission will be considered after 20 minutes.</li>
+					<li>Please give your valid contact no. and email id.</li>
+				</ul>
+		</div>
 			<button id="gotItButton" class="defbtn">
 				Got it
 			</button>
@@ -247,18 +268,32 @@
 	</script> -->
 	<script>
 	function ak_start() {
-		if(!document.getElementById('akname').value || !document.getElementById('akroll').value || !document.getElementById('akphone').value){
+		if(!document.getElementById('akname').value || !document.getElementById('akroll').value || !document.getElementById('akemail').value || !document.getElementById('akphone').value){
 			alert("Fill the required field")
 			location.reload()
 		}
 		else{
+			var timeleft = 150;
+			var downloadTimer = setInterval(function(){
+			  if(timeleft <= 0){
+			    clearInterval(downloadTimer);
+			  }
+			  document.getElementById("progressBar").value = 150 - timeleft;
+				document.getElementById('progressAk').innerText = 150 - timeleft;
+			  timeleft -= 1;
+			}, 1000);
 		  setTimeout(function(){
 				var ak_end = document.getElementById("endGameButton");
 				ak_end.click();
-			}, 120000);
+			}, 152000);
 		}
 	}
 	//https://stackoverflow.com/questions/3969475/javascript-pause-settimeout
+	</script>
+	<script type="text/javascript">
+		function akhome() {
+			window.location.pathname = '/index.html'
+		}
 	</script>
 </body>
 
