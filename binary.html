@@ -114,8 +114,8 @@
 			<form id="akForm">
 				<input type="text" id="akname" name="Name" placeholder="Name">
 				<input type="text" id="akroll" name="Roll No" placeholder="Roll No">
-				<input type="text" id="akemail" name="E-mail" placeholder="E-mail">
-				<input type="text" id="akphone" name="Phone No" placeholder="Phone">
+				<input type="email" id="akemail" name="E-mail" placeholder="E-mail">
+				<input type="tel" id="akphone" name="Phone No" pattern="[1-9]{1}[0-9]{9}" placeholder="Phone">
 				<input id="ak_score" type="hidden" name="Score" value="">
 				<input id="ak_date" type="hidden" name="Date" value="">
 				<input id="ak_time" type="hidden" name="Time" value="">
@@ -133,6 +133,7 @@
 				Pause
 			</button>
 			<progress value="0" max="120" id="progressBar" style="position:absolute;"></progress>
+			<span id="progressAk"></span>
 		</div>
 		<div id="binField" class="gameLayer">
 			<div id="binMarkLine">
@@ -231,7 +232,7 @@
 			<!-- <img id="videoInstructions" src="img/ak.gif"></img> -->
 			<img  src="img/ak.gif"></img>
 			<br>
-			<div class="container">
+			<div class="containers">
 				<ul class="instructions">
 					<li>It is a binary addition game. Duration of this round is for 20 minutes.</li>
 					<li>Person will be given two minutes for one attempt and to bag a maximum score.</li>
@@ -274,6 +275,7 @@
 			    clearInterval(downloadTimer);
 			  }
 			  document.getElementById("progressBar").value = 120 - timeleft;
+				document.getElementById('progressAk').innerText = 120 - timeleft;
 			  timeleft -= 1;
 			}, 1000);
 		  setTimeout(function(){
